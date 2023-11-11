@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "AR One Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/ar_one_sans.woff2") format("woff2");
+}
+body {
+    color: #fefefe;
+    font-family: "AR One Sans", sans-serif;
+    background: url("../assets/oneshot.png") no-repeat center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+div#scroll {
+    top: 60px;
+    left: 50%;
+    width: 40%;
+    overflow-y: scroll;
+    background: rgba(12, 12, 12, .8);
+    height: calc(100% - 160px);
+    transform: translateX(-50%);
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-left: 2px solid #fefefe;
+    border-right: 2px solid #fefefe;
+}
+*::-webkit-scrollbar {
+    width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #fefefe;
+}
+div#hi {
+    font-size: 42px;
+}
+div#name {
+    height: 87px;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+a {
+    text-decoration: none;
+    color: #c0b40f;
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+    transition: color .3s ease;
+}
+a.svg { top: 2px; }
+a:hover { color: #837b0a; }
+a:hover svg { fill: #837b0a; }
+a svg {
+    fill: #c0b40f;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+    transition: fill .3s ease;
+}
+a.py:hover { color: #3776AB; }
+a.py:hover svg { fill: #3776AB; }
+a.js:hover { color: #339933; }
+a.js:hover svg { fill: #339933; }
+a.lua:hover { color: #2C2D72; }
+a.lua:hover svg { fill: #2C2D72; }
+a.cpp:hover { color: #00599C; }
+a.cpp:hover svg { fill: #00599C; }
+a.bash:hover { color: #4EAA25; }
+a.bash:hover svg { fill: #4EAA25; }
+a.rhel:hover { color: #EE0000; }
+a.rhel:hover svg { fill: #EE0000; }
+a.arch:hover { color: #1793D1; }
+a.arch:hover svg { fill: #1793D1; }
+a.first:hover { color: #0066B3; }
+a.first:hover svg { fill: #0066B3; }
+a.discord:hover { color: #5865F2; }
+a.discord:hover svg { fill: #5865F2; }
+a.youtube:hover { color: #FF0000; }
+a.youtube:hover svg { fill: #FF0000; }
+a.steam:hover { color: #003A5f; }
+a.steam:hover svg { fill: #003A5f; }
+a.roblox:hover { color: #d3cece; }
+a.roblox:hover svg { fill: #d3cece; }
+a.github:hover { color: #fff; }
+a.github:hover svg { fill: #fff; }
+
+@media screen and (max-width: 1040px) {
+    div#scroll {
+        width: 80%;
+    }
+}
