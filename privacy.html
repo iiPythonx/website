@@ -31,12 +31,32 @@
                 padding-bottom: 40px;
                 transform: translateX(-50%);
             }
+            a#back {
+                top: 20px;
+                left: 20px;
+                display: flex;
+                position: fixed;
+                color: #fefefe;
+                align-items: center;
+                text-decoration: none;
+            }
+            a#back svg {
+                margin-right: 5px;
+            }
+            a#back:hover {
+                text-decoration: underline;
+            }
         </style>
 
         <link rel = "icon" type = "image/x-icon" href = "favicon.ico">
         <title>iiPython Privacy Policy</title>
     </head>
     <body>
+        <a href = "https://iipython.dev" id = "back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg> Back to main site
+        </a>
         <div id = "main">
             <h1 id = "iipython-privacy-policy">iiPython Privacy Policy</h1>
             <p>Last updated on November 11th, 2023.</p>
@@ -46,13 +66,26 @@
             <p>Manual data collection:</p>
             <ul>
                 <li>
-                    Forwarding URL (goos.lol)
+                    ROBLOX Gamepass Information (inventory.pixellicio.us)
                     <ul>
-                        <li>Needed for the actual service to work lol</li>
+                        <li>Stored in RAM to speed up subsequent requests</li>
+                    </ul>
+                </li>
+                <li>
+                    URL Destination (old.iipython.dev)
+                    <ul>
+                        <li>Required for the URL shortener to function</li>
+                    </ul>
+                </li>
+                <li>
+                    Image dimensions, color type, and metadata (images.iipython.dev)
+                    <ul>
+                        <li>Image info is stored in RAM to assist with caching</li>
+                        <li>No data about images is written to disk</li>
                     </ul>
                 </li>
             </ul>
-            <p>Automatic collection (all other sites):</p>
+            <p>Automatic collection (all sites):</p>
             <ul>
                 <li>
                     Page visited
@@ -76,6 +109,8 @@
             <h3 id = "pesky-government">Pesky Government</h3>
             <p>If for some reason the FBI/NSA/Police (or any other US agency) wants access to my service data, they will be immediately declined unless they have a search warrant (since then I can&#39;t do anything :c).</p>
             <p>However, even if they seize my drives, all user data is encrypted.</p>
+            <h3 id = "ccpa---gdpr">CCPA & GDPR</h3>
+            <p>My services are exempt from CCPA and GDPR data protection laws.<br>However, you can still email me to have your IP address purged from my logs (even if you don't live in a protected area).</p>
             <h3 id = "cloudflare">Cloudflare</h3>
             <p>It&#39;s worth noting that I use cloudflare for DNS and DDoS protection. Therefore, the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a> also applies.</p>
             <h3 id = "questions-">Questions?</h3>
