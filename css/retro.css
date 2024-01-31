@@ -95,4 +95,9 @@ marquee {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.column img {
+    width: 88px;
+    height: 31px;
 }
