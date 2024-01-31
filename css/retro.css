@@ -52,10 +52,7 @@ div.banner img {
     height: 64px;
 }
 div.sidebar {
-    gap: 48px;
     width: 50%;
-    display: flex;
-    flex-direction: column;
 }
 div.heading {
     display: flex;
