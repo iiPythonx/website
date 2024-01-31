@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Free Pixel";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/free_pixel.woff2") format("woff2");
+}
+body {
+    color: #fefefe;
+    overflow: hidden;
+    font-family: "Free Pixel", sans-serif;
+    background: url("../assets/retro.webp") no-repeat center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+main {
+    gap: 48px;
+    flex-direction: column;
+    left: 50%;
+    width: 820px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+}
+div.flow {
+    gap: 15px;
+    display: flex;
+}
+div.wrapper {
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+}
+div.content {
+    padding: 20px;
+    position: relative;
+    border: 2px dotted #000;
+    background-color: #121212;
+}
+div.banner {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+div.banner img {
+    width: 64px;
+    height: 64px;
+}
+div.sidebar {
+    gap: 48px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+div.heading {
+    display: flex;
+    left: 0px;
+    top: -32px;
+    height: 32px;
+    position: absolute;
+    width: calc(100% - 20px);
+    background-color: #FB0164;
+    border-bottom: #000 dotted;
+    align-items: center;
+    padding-left: 20px;
+}
+div h3 {
+    margin: 0px;
+}
+a {
+    color: #b5e61d;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline dotted;
+}
+ul {
+    padding-left: 20px;
+}
+hr {
+    border-bottom: dotted;
+}
+marquee {
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+.column {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
