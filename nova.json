@@ -1,0 +1,17 @@
+{
+    "project": {
+        "source": "src",
+        "destination": "dist"
+    },
+    "plugins": {
+        "static": {
+            "paths": [
+                "favicon.ico",
+                "assets/",
+                "css/",
+                "fonts/",
+                "js/"
+            ]
+        }
+    }
+}

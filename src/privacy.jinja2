@@ -1,0 +1,64 @@
+{% extends "templates/modern_external.jinja2" %}
+{% set meta_description = "As simple as I can make a privacy policy." %}
+{% set meta_title = "iiPython's Privacy Policy" %}
+{% set title = "iiPython Privacy Policy" %}
+{% block content %}
+    <h1 id = "iipython-privacy-policy">iiPython Privacy Policy</h1>
+    <p>Last updated on December 10th, 2023.</p>
+    <h3 id = "preface">Preface</h3>
+    <p>Hai! I&#39;m iiPython and am <strong>not</strong> a lawyer, so take everything listed here with a grain of salt. The following document describes all the data I collect to keep my services running.</p>
+    <h3 id = "what-s-collected">What&#39;s collected</h3>
+    <p>Manual data collection:</p>
+    <ul>
+        <li>
+            Codelet (<a href = "https://codelet.codes">codelet.codes, inv.codelet.codes</a>)
+            <ul>
+                <li>Please see the <a href = "https://codelet.codes/?page=privacy">Codelet Privacy Policy</a>.</li>
+                <li>Cached data is purged every 10 minutes, and all disk data is erased at the start of every month.</li>
+            </ul>
+        </li>
+        <li>
+            iiPython Website 2021-2022 (<a href = "https://old.iipython.dev">old.iipython.dev</a>)
+            <ul>
+                <li>Built-in URL shortener stores the shortcode and destination.</li>
+                <li>This database does <b>NOT</b> have an erase schedule.</li>
+            </ul>
+        </li>
+        <li>
+            Public Image Proxy (<a href = "https://images.iipython.dev">images.iipython.dev</a>)
+            <ul>
+                <li>Image dimensions, color type, and metadata are all cached in RAM.</li>
+                <li>This cache autoclears every hour and no data about images is written to disk.</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Automatic collection (all sites):</p>
+    <ul>
+        <li>
+            Page visited, request type, http version, and user agent
+            <ul>
+                <li>Provides basic analytics about where requests are coming from and going to.</li>
+            </ul>
+        </li>
+        <li>
+            IP address
+            <ul>
+                <li>Used to block and report IPs that are attempting to harm my services.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id = "where-it-s-stored">Where it&#39;s stored</h3>
+    <p>All analytical data is stored on a 100% locally owned server, under my own roof. No third party has access to this data, as I don&#39;t share or sell any visitor information.</p>
+    <p>Additionally, access logs (which contain most of the recorded data) are encrypted and purged once a month.</p>
+    <h3 id = "data-sharing-exceptions">Data Sharing Exceptions</h3>
+    <p>If there is a lot of malicious traffic coming from a single IP address, I will file an abuse report with the ISP in question (or whoever administered the IP). <strong>No data will be shared with them other then the IP address.</strong></p>
+    <h3 id = "pesky-government">Pesky Government</h3>
+    <p>If for some reason the FBI/NSA/Police (or any other US agency) wants access to my service data, they will be immediately declined unless they have a search warrant (since then I can&#39;t do anything :c).</p>
+    <p>However, even if they seize my drives, all user data is encrypted.</p>
+    <h3 id = "ccpa---gdpr-protection-laws">CCPA & GDPR Protection Laws</h3>
+    <p>My services are exempt from CCPA and GDPR data protection laws.<br>However, you can still email me to have your data purged from my drives (even if you don't live in a protected area).</p>
+    <h3 id = "cloudflare-notice">Cloudflare Notice</h3>
+    <p>It&#39;s worth noting that I use cloudflare for DNS and DDoS protection. Therefore, the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a> also applies.</p>
+    <h3 id = "questions-and-concerns">Questions and Concerns</h3>
+    <p>Email me at <a href = "mailto:ben@iipython.dev">ben@iipython.dev</a>.</p>
+{% endblock %}

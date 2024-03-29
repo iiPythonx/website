@@ -7,4 +7,5 @@ If you do host it yourself, make sure you deny access to .git/ or other sensitiv
 
 ---
 
-It used to be based on a Python backend, but I've moved to 100% static sites now.
+This is a [Nova](https://github.com/iiPythonx/Nova) project, so building it is as simple as running `nova build`.  
+It used to be based on a Python backend, but I've moved to static sites nowadays.

@@ -79,6 +79,12 @@ a:hover {
 ul {
     padding-left: 20px;
 }
+ul.music > li {
+    margin-bottom: 10px;
+}
+hr {
+    border-bottom: dotted;
+}
 marquee {
     width: 100%;
     bottom: 0px;
