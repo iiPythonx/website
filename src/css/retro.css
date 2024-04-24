@@ -107,6 +107,14 @@ ul.music > li {
     padding-left: 100%;
     animation: marquee 15s linear infinite;
 }
+#snowball {
+    right: 15px;
+    bottom: 15px;
+    position: absolute;
+}
+#snowball.move {
+    transition: rotate 1s ease;
+}
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
