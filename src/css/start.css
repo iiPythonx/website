@@ -47,7 +47,7 @@ div#clock {
 }
 #weather {
     gap: 40px;
-    display: flex;
+    display: none;
     left: 50%;
     bottom: 20px;
     align-items: center;
@@ -62,6 +62,11 @@ div#clock {
 #periods {
     gap: 10px;
     display: flex;
+}
+#input {
+    top: 10px;
+    left: 10px;
+    position: absolute;
 }
 .select {
     cursor: pointer;

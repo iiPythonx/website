@@ -78,12 +78,11 @@ Chart.defaults.set("plugins.legend", { display: false });
 
 const ctx = document.getElementById("graph");
 const updateChart = (day, unit) => {
-    window._day = day;
-    window._activeUnit = unit;
-    const lowerBound = Math.max(day * 24, 0);
+    window._day = day, window._activeUnit = unit;
+    const lowerBound = Math.max(day * 24, 0), upperBound = (day + 1) * 24;
     
     // Create chart if it doesn't already exist
-    if (window._chart === null) {
+    if (_chart === null) {
         window._chart = new Chart(ctx, {
             type: "line",
             data: { labels: [], datasets: [] },
@@ -106,18 +105,18 @@ const updateChart = (day, unit) => {
     }
     
     // Load in chart data
-    const d = window._chart.data, o = window._chart.options, u = unitMapping[unit];
-    d.labels = Array.from(window._forecast.hourly.time).splice(lowerBound, 24).map(x => x.split("T")[1]);
+    const d = _chart.data, o = _chart.options, u = unitMapping[unit], h = _forecast.hourly;
+    d.labels = h.time.slice(lowerBound, upperBound).map(x => x.split("T")[1]);
     d.datasets = [
         {
             label: u.name,
-            data: Array.from(window._forecast.hourly[u.key]).splice(lowerBound, 24).map(x => Math.round(x)),
+            data: h[u.key].slice(lowerBound, upperBound).map(x => Math.round(x)),
             lineTension: 0,
             fill: true
         }
     ];
-    o.scales.y.ticks = { callback: (v, i, t) => { return v + u.unit} }
-    o.plugins = { tooltip: { callbacks: { label: (t, d) => { return t.formattedValue + u.unit } } } }
+    o.scales.y.ticks = { callback: v => v + u.unit }
+    o.plugins = { tooltip: { callbacks: { label: t => t.formattedValue + u.unit } } }
     window._chart.update();
 }
 
@@ -154,6 +153,7 @@ navigator.geolocation.getCurrentPosition(async (p) => {
     // Load forecast into graph
     window._forecast = forecast;
     updateChart(0, "temp");
+    document.getElementById("weather").style.display = "flex";
 });
 
 // Handle clock
@@ -178,3 +178,13 @@ const updateClock = () => {
 
 setTimeout(updateClock, interval);
 updateClock();
+
+// Handle searching
+const input = document.getElementById("input");
+window._buffer = "";
+document.addEventListener("keydown", (e) => {
+    if (e.key.length === 1 && !(e.ctrlKey || e.altKey)) window._buffer += e.key;
+    if (e.key === "Backspace" && _buffer) window._buffer = _buffer.substring(0, _buffer.length - 1);
+    if (e.key === "Enter" && _buffer) location.href = `//google.com/search?q=${_buffer}`;
+    input.innerHTML = _buffer;
+});
