@@ -1,3 +1,5 @@
+// Copyright (c) 2024 iiPython
+
 // Handle icon loading
 const getIcon = (code) => {
     switch (code) {
@@ -45,18 +47,92 @@ const getIcon = (code) => {
     }
 };
 
+// Handle unit processing
+const unitMapping = {
+    temp: { name: "Temperature", unit: "°", key: "temperature_2m" },
+    rain: { name: "Precipitation", unit: "%", key: "precipitation_probability" },
+    wind: { name: "Wind", unit: "km/h", key: "wind_speed_10m" }
+}
+for (let unit of Object.keys(unitMapping).reverse()) {
+    const span = document.createElement("span");
+    span.classList.add("select");
+    span.innerText = unitMapping[unit].name;
+    document.getElementById("chart").prepend(span, unit !== "wind" ? " | " : "");
+
+    // Toggle temperature first
+    if (unit == "temp") span.classList.add("active");
+
+    // Handle switching between datasets
+    span.addEventListener("click", () => {
+        for (const span of document.getElementsByClassName("select")) span.classList.remove("active");
+        span.classList.add("active");
+        updateChart(window._day, unit);
+    });
+}
+
+// Handle Chart.js
+window._chart = null, window._forecast = null, window._day = null;
+Chart.register(ChartDataLabels);
+Chart.defaults.set("plugins.datalabels", { color: "#FEFEFE", align: "top" });
+Chart.defaults.set("plugins.legend", { display: false });
+
+const ctx = document.getElementById("graph");
+const updateChart = (day, unit) => {
+    window._day = day;
+    window._activeUnit = unit;
+    const lowerBound = Math.max(day * 24, 0);
+    
+    // Create chart if it doesn't already exist
+    if (window._chart === null) {
+        window._chart = new Chart(ctx, {
+            type: "line",
+            data: { labels: [], datasets: [] },
+            options: {
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        display: false,
+                        ticks: { beginAtZero: true }
+                    }
+                },
+                maintainAspectRatio: false,
+                layout: {
+                    padding: { top: 40 }    
+                }   
+            }
+        });
+    }
+    
+    // Load in chart data
+    const d = window._chart.data, o = window._chart.options, u = unitMapping[unit];
+    d.labels = Array.from(window._forecast.hourly.time).splice(lowerBound, 24).map(x => x.split("T")[1]);
+    d.datasets = [
+        {
+            label: u.name,
+            data: Array.from(window._forecast.hourly[u.key]).splice(lowerBound, 24).map(x => Math.round(x)),
+            lineTension: 0,
+            fill: true
+        }
+    ];
+    o.scales.y.ticks = { callback: (v, i, t) => { return v + u.unit} }
+    o.plugins = { tooltip: { callbacks: { label: (t, d) => { return t.formattedValue + u.unit } } } }
+    window._chart.update();
+}
+
 // Handle forecast processing
-const forecastElement = document.getElementById("weather");
+const forecastElement = document.getElementById("periods");
 navigator.geolocation.getCurrentPosition(async (p) => {
-    const lat = p.coords.latitude, lon = p.coords.longitude;
-    const forecast = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,precipitation_probability,wind_speed_10m,wind_direction_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=America/Chicago`)).json();
+    const lat = p.coords.latitude, lon = p.coords.longitude, tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const forecast = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,precipitation_probability,wind_speed_10m,wind_direction_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=${tz}`)).json();
     for (let i = 0; i < 7; i++) {
         const min = forecast.daily.temperature_2m_min[i], max = forecast.daily.temperature_2m_max[i];
         const name = (new Date(forecast.daily.time[i])).toLocaleDateString("en-US", { weekday: "long", timeZone: "utc" });
 
         // Create element
         const element = document.createElement("div");
-        element.classList.add("period");
+        element.classList.add("period", i === 0 ? "active" : null);
         element.innerHTML = `
             <span>${name.slice(0, 3)}</span>
             <img src = "./assets/icons/${getIcon(forecast.daily.weather_code[i])}.png">
@@ -66,16 +142,39 @@ navigator.geolocation.getCurrentPosition(async (p) => {
             </div>
         `;
         forecastElement.appendChild(element);
+
+        // Handle switching day
+        element.addEventListener("click", () => {
+            for (const e of document.getElementsByClassName("period")) e.classList.remove("active");
+            element.classList.add("active");
+            updateChart(i, window._activeUnit);
+        });
     }
+
+    // Load forecast into graph
+    window._forecast = forecast;
+    updateChart(0, "temp");
 });
 
 // Handle clock
 const time = document.getElementById("time"), date = document.getElementById("date");
+const interval = 100;
+
+window._expected = Date.now() + interval;
+
 const updateClock = () => {
-    const d = new Date();
+    const dt = Date.now() - window._expected;
+    if (dt > interval) window._expected = Date.now() + interval;
+
+    // Handle clock updating
+    const d = new Date(Date.now() - dt);
     time.innerHTML = d.toLocaleTimeString();
     date.innerHTML = d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+
+    // Sync our timing window
+    window._expected += interval;
+    setTimeout(updateClock, Math.max(0, interval - dt));
 };
 
-setInterval(updateClock, 250);  // Accuracy > efficency
+setTimeout(updateClock, interval);
 updateClock();

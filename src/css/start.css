@@ -11,6 +11,7 @@ body {
     font-family: "Free Pixel", sans-serif;
 }
 div.period {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 80px;
@@ -23,10 +24,6 @@ div.period {
 div.period img {
     width: 45px;
     border-radius: 25px;
-}
-div#weather {
-    gap: 10px;
-    display: flex;
 }
 div.temps span {
     font-size: 14px;
@@ -49,8 +46,30 @@ div#clock {
     margin-top: 0px;
 }
 #weather {
+    gap: 40px;
+    display: flex;
     left: 50%;
     bottom: 20px;
+    align-items: center;
     transform: translateX(-50%);
     position: absolute;
+    flex-direction: column;
+}
+#chart {
+    height: 150px;
+    width: 100%;
+}
+#periods {
+    gap: 10px;
+    display: flex;
+}
+.select {
+    cursor: pointer;
+}
+span.active {
+    color: #b5e61d;
+    text-decoration: underline;
+}
+div.active {
+    opacity: .6;
 }
