@@ -122,7 +122,8 @@ const updateChart = (day, unit) => {
 
 // Handle forecast processing
 const forecastElement = document.getElementById("periods");
-navigator.geolocation.getCurrentPosition(async (p) => {
+const updateForecast = async (p) => {
+    forecastElement.innerHTML = "";
     const lat = p.coords.latitude, lon = p.coords.longitude, tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const forecast = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m,precipitation_probability,wind_speed_10m,wind_direction_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=${tz}`)).json();
     for (let i = 0; i < 7; i++) {
@@ -154,6 +155,10 @@ navigator.geolocation.getCurrentPosition(async (p) => {
     window._forecast = forecast;
     updateChart(0, "temp");
     document.getElementById("weather").style.display = "flex";
+}
+navigator.geolocation.getCurrentPosition(async (p) => {
+    await updateForecast(p);
+    setInterval(async () => { await updateForecast(p); }, 3.6e+6);
 });
 
 // Handle clock
