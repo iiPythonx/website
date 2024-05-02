@@ -190,6 +190,6 @@ window._buffer = "";
 document.addEventListener("keydown", (e) => {
     if (e.key.length === 1 && !(e.ctrlKey || e.altKey)) window._buffer += e.key;
     if (e.key === "Backspace" && _buffer) window._buffer = _buffer.substring(0, _buffer.length - 1);
-    if (e.key === "Enter" && _buffer) location.href = `//google.com/search?q=${_buffer}`;
+    if (e.key === "Enter" && _buffer) location.href = `//google.com/search?q=${encodeURIComponent(_buffer)}`;
     input.innerHTML = _buffer;
 });
