@@ -49,9 +49,9 @@ const getIcon = (code) => {
 
 // Handle unit processing
 const unitMapping = {
-    temp: { name: "Temperature", unit: "°", key: "temperature_2m" },
-    rain: { name: "Precipitation", unit: "%", key: "precipitation_probability" },
-    wind: { name: "Wind", unit: "km/h", key: "wind_speed_10m" }
+    temp: { name: "Temperature", unit: "°", key: "temperature_2m", c0: "#e0cf2f", c1: "#94881c" },
+    rain: { name: "Precipitation", unit: "%", key: "precipitation_probability", c0: null, c1: null },
+    wind: { name: "Wind", unit: "km/h", key: "wind_speed_10m", c0: "#b8b8b8", c1: "#757575" }
 }
 for (let unit of Object.keys(unitMapping).reverse()) {
     const span = document.createElement("span");
@@ -111,8 +111,9 @@ const updateChart = (day, unit) => {
         {
             label: u.name,
             data: h[u.key].slice(lowerBound, upperBound).map(x => Math.round(x)),
-            lineTension: 0,
-            fill: true
+            lineTension: .5,
+            fill: u.c1 ? { target: "origin", above: u.c1 } : true,
+            borderColor: u.c0
         }
     ];
     o.scales.y.ticks = { callback: v => v + u.unit }
