@@ -31,6 +31,7 @@ div.flow {
 }
 div.wrapper {
     gap: 48px;
+    width: 77%;
     display: flex;
     flex-direction: column;
 }
@@ -52,7 +53,7 @@ div.banner img {
     height: 64px;
 }
 div.sidebar {
-    width: 50%;
+    width: 23%;
 }
 div.heading {
     display: flex;
