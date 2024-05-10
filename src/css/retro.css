@@ -83,6 +83,9 @@ ul {
 ul.music > li {
     margin-bottom: 10px;
 }
+hr {
+    border-bottom: dotted;
+}
 .column {
     gap: 10px;
     display: flex;

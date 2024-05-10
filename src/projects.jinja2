@@ -1,15 +1,50 @@
 {% extends "templates/retro.jinja2" %}
-{% set title = "iiPython - Music" %}
-{% set description = "Place for me to dump links to my music as well as publish album ratings." %}
+{% set title = "iiPython - Projects" %}
+{% set description = "List of all the projects I've contributed to or maintained." %}
 {% block content %}
     <div class = "wrapper">
         <div class = "content">
-            <div class = "heading"><h3>Preface</h3></div>
-            <p>This page lists all of the collaborative projects I've either been a part of or contributed to in some form.</p>
+            <div class = "heading"><h3>Active Projects</h3></div>
+            <p>
+                <a href = "https://github.com/iiPythonx/nova">Nova</a> - Site-building tool for people who don't like modern frameworks.
+                <a href = "https://github.com/iiPythonx/nightwatch">Nightwatch</a> - An attempt at a user-first privacy-centered chatting app.
+            </p>
         </div>
         <div class = "content">
             <div class = "heading"><h3>Project Listing</h3></div>
-            <p>To be filled out later, fixing website CSS at the moment.</p>
+            <p>
+                <a href = "https://codelet.codes">Codelet</a> (Co-Founder, 2023 - now) <br>
+                Service for Roblox creators to create UGC and Robux giveaways.
+            </p>
+            <p>
+                <a href = "https://devforum.roblox.com/t/deprecated-streamx-reduce-lag-and-prevent-map-cloning/1992484">StreamX</a> (Backend Developer, 2022 - 2023) <br>
+                Service that replicated StreamingEnabled using self-hosted servers.
+            </p>
+            <p>
+                <a>Roblox Status Live</a> (Co-Founder, 2022) <br>
+                Service for keeping track of Roblox outages and downtimes.
+            </p>
+        </div>
+        <div class = "content">
+            <div class = "heading"><h3>Public Contributions</h3></div>
+            <p>Check my <a href = "https://github.com/search?q=author%3AiiPythonx&type=pullrequests">GitHub account</a> for an up-to-date listing of these.</p>
+            <hr>
+            <p>
+                <a href = "https://github.com/jeffvli/feishin">Feishin</a> (2023 - now)
+                <ul>
+                    <li><a href = "https://github.com/jeffvli/feishin/pull/247">Fix MPV loading user scripts</a></li>
+                    <li><a href = "https://github.com/jeffvli/feishin/pull/486">Implement a button size setting</a></li>
+                    <li><a href = "https://github.com/jeffvli/feishin/pull/488">Fix global hotkeys not working on startup</a></li>
+                    <li><a href = "https://github.com/jeffvli/feishin/pull/526">Add a dynamic image background option</a></li>
+                    <li><a href = "https://github.com/jeffvli/feishin/pull/575">Implement sharing via Navidrome</a></li>
+                </ul>
+            </p>
+            <p>
+                <a href = "https://github.com/jamesroberts/fastwsgi">FastWSGI</a> (2023)
+                <ul>
+                    <li><a href = "https://github.com/jamesroberts/fastwsgi/pull/27">Fix running Python scripts from the CLI</a></li>
+                </ul>
+            </p>
         </div>
     </div>
 {% endblock %}
