@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 7px solid transparent;
+    background-clip: content-box;
+}
 @font-face {
     font-family: "Free Pixel";
     font-style: normal;
@@ -83,6 +95,10 @@ ul {
 ul.music > li {
     margin-bottom: 10px;
 }
+ul.ratings {
+    max-height: 280px;
+    overflow-y: scroll;
+}
 hr {
     border-bottom: dotted;
 }
@@ -96,6 +112,9 @@ hr {
 .column img {
     width: 88px;
     height: 31px;
+}
+.star {
+    color: #b5e61d;
 }
 #marquee {
     width: 100%;
