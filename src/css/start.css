@@ -72,7 +72,6 @@ div#clock {
     cursor: pointer;
 }
 span.active {
-    color: #e0cf2f;
     text-decoration: underline;
 }
 div.active {

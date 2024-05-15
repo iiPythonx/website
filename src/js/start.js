@@ -50,7 +50,7 @@ const getIcon = (code) => {
 // Handle unit processing
 const unitMapping = {
     temp: { name: "Temperature", unit: "°", key: "temperature_2m", c0: "#e0cf2f", c1: "#94881c" },
-    rain: { name: "Precipitation", unit: "%", key: "precipitation_probability", c0: null, c1: null },
+    rain: { name: "Precipitation", unit: "%", key: "precipitation_probability", c0: "#37a2ea", c1: "#255b7f" },
     wind: { name: "Wind", unit: "km/h", key: "wind_speed_10m", c0: "#b8b8b8", c1: "#757575" }
 }
 for (let unit of Object.keys(unitMapping).reverse()) {
@@ -60,12 +60,16 @@ for (let unit of Object.keys(unitMapping).reverse()) {
     document.getElementById("chart").prepend(span, unit !== "wind" ? " | " : "");
 
     // Toggle temperature first
-    if (unit == "temp") span.classList.add("active");
+    if (unit == "temp") { span.classList.add("active"); span.style.color = unitMapping[unit].c0; };
 
     // Handle switching between datasets
     span.addEventListener("click", () => {
-        for (const span of document.getElementsByClassName("select")) span.classList.remove("active");
+        for (const span of document.getElementsByClassName("select")) {
+            span.classList.remove("active");
+            span.style.color = "#fefefe";
+        }
         span.classList.add("active");
+        span.style.color = unitMapping[unit].c0;
         updateChart(window._day, unit);
     });
 }
