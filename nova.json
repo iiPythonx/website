@@ -4,14 +4,15 @@
         "destination": "dist"
     },
     "plugins": {
-        "static": {
-            "paths": [
-                "favicon.ico",
-                "assets/",
-                "css/",
-                "fonts/",
-                "js/"
-            ]
+        "static": [
+            "assets/",
+            "css/",
+            "fonts/",
+            "js/",
+            "favicon.ico"
+        ],
+        "minify": {
+            "suffixes": [".js", ".css", ".html"]
         }
     }
 }
