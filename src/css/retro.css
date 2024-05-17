@@ -21,7 +21,7 @@ body {
     color: #fefefe;
     overflow: hidden;
     font-family: "Free Pixel", sans-serif;
-    background: url("../assets/retro.webp") no-repeat center fixed;
+    background: url("../assets/background.avif") no-repeat center fixed;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;

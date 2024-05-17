@@ -12,7 +12,7 @@
             "favicon.ico"
         ],
         "minify": {
-            "suffixes": [".js", ".css", ".html"]
+            "suffixes": [".css", ".html"]
         }
     }
 }
