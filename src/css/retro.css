@@ -15,13 +15,13 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/free_pixel.woff2") format("woff2");
+    src: url("/fonts/free_pixel.woff2") format("woff2");
 }
 body {
     color: #fefefe;
     overflow: hidden;
     font-family: "Free Pixel", sans-serif;
-    background: url("../assets/background.avif") no-repeat center fixed;
+    background: #180A27 url("/assets/background.avif") no-repeat center fixed;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
