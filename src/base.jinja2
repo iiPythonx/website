@@ -24,7 +24,9 @@
                 <div id = "marquee"><p>Reinventing the wheel since 2007.</p></div>
             </div>
             <div class = "flow">
-                {% block content %}{% endblock %}
+                <div class = "wrapper">
+                    {% block content %}{% endblock %}
+                </div>
 
                 <!-- Sidebar -->
                 <div class = "sidebar wrapper">
@@ -32,7 +34,6 @@
                         <div class = "heading"><h3>Links</h3></div>
                         <ul>
                             <li><a href = "/">Main page</a></li>
-                            <li><a href = "/privacy">Privacy policy</a></li>
                             <li>Accounts</li>
                             <ul>
                                 <li><a href = "https://github.com/iiPythonx">GitHub</a></li>
@@ -67,5 +68,6 @@
         </main>
         <img loading = "lazy" src = "./assets/bear.avifs" id = "snowball">
         <script src = "/js/oneko.js" async defer></script>
+        <script src = "/js/iipython.js" async defer></script>
     </body>
 </html>
