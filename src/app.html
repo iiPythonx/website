@@ -3,31 +3,24 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <meta name = "description" content = "{{ description }}">
         <meta name = "theme-color" data-react-helmet = "true" content = "#ffffff">
-        <meta property = "og:title" content = "{{ title or 'iiPython' }}">
-        <meta property = "og:description" content = "{{ description }}">
         <meta property = "og:site_name" content = "iiPython's Home">
-    
+
         <!-- CSS -->
         <link rel = "prefetch" href = "/assets/background.avif" />
         <link rel = "stylesheet" href = "/css/retro.css">
-
-        <link rel = "icon" type = "image/x-icon" href = "/favicon.ico">
-        <title>{{ title or "iiPython" }}</title>
+        %sveltekit.head%
     </head>
     <body>
         <main>
             <div class = "content banner">
-                <img src = "./assets/pfp.avif">
+                <img src = "./assets/pfp.avif" alt = "Goose">
                 <h1>iiPython's Humble Abode</h1>
                 <div id = "marquee"><p>Reinventing the wheel since 2007.</p></div>
             </div>
             <div class = "flow">
-                <div class = "wrapper">
-                    {% block content %}{% endblock %}
-                </div>
-
+                <div class = "wrapper">%sveltekit.body%</div>
+    
                 <!-- Sidebar -->
                 <div class = "sidebar wrapper">
                     <div class = "content">
@@ -54,20 +47,19 @@
                     </div>
                     <div class = "content column">
                         <div class = "heading"><h3>88x31</h3></div>
-                        <img loading = "lazy" src = "./assets/88x31/stand_up_to_google.avifs">
-                        <img loading = "lazy" src = "./assets/88x31/chrome_is_evil.avifs">
-                        <img loading = "lazy" src = "./assets/88x31/gnu_linux.avif">
-                        <img loading = "lazy" src = "./assets/88x31/no_web_3.avifs">
-                        <img loading = "lazy" src = "./assets/88x31/screw_you.avif">
-                        <img loading = "lazy" src = "./assets/88x31/get_firefox.avifs">
-                        <img loading = "lazy" src = "./assets/88x31/no_cookies.avif">
-                        <img loading = "lazy" src = "./assets/88x31/gnu.avif">
+                        <img loading = "lazy" src = "/assets/88x31/stand_up_to_google.avifs" alt = "Stand up to Google">
+                        <img loading = "lazy" src = "/assets/88x31/chrome_is_evil.avifs" alt = "Chrome is Evil">
+                        <img loading = "lazy" src = "/assets/88x31/gnu_linux.avif" alt = "GNU/Linux">
+                        <img loading = "lazy" src = "/assets/88x31/no_web_3.avifs" alt = "Say no to Web3">
+                        <img loading = "lazy" src = "/assets/88x31/screw_you.avif" alt = "Screw You!">
+                        <img loading = "lazy" src = "/assets/88x31/get_firefox.avifs" alt = "Get Firefox">
+                        <img loading = "lazy" src = "/assets/88x31/no_cookies.avif" alt = "No Cookies">
+                        <img loading = "lazy" src = "/assets/88x31/gnu.avif" alt = "GNU">
                     </div>
                 </div>
             </div>
         </main>
-        <img loading = "lazy" src = "./assets/bear.avifs" id = "snowball">
+        <img loading = "lazy" src = "/assets/bear.avifs" id = "snowball" alt = "Snowball">
         <script src = "/js/oneko.js" async defer></script>
-        <script src = "/js/iipython.js" async defer></script>
     </body>
 </html>
