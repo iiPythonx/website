@@ -1,3 +1,13 @@
+<style>
+    ul.ratings {
+        max-height: 280px;
+        overflow-y: scroll;
+    }
+    .star {
+        color: #b5e61d;
+    }
+</style>
+
 <div class = "content">
     <div class = "heading"><h3>My Music</h3></div>
     <p>In addition to being a software developer, I also (sometimes) make some rather simple music and upload it to <a href = "https://www.youtube.com/@iiPythonx">my YouTube channel</a>.</p>

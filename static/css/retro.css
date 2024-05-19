@@ -92,16 +92,6 @@ a:hover {
 ul {
     padding-left: 20px;
 }
-ul.music > li {
-    margin-bottom: 10px;
-}
-ul.ratings {
-    max-height: 280px;
-    overflow-y: scroll;
-}
-hr {
-    border-bottom: dotted;
-}
 .column {
     gap: 10px;
     display: flex;
@@ -112,9 +102,6 @@ hr {
 .column img {
     width: 88px;
     height: 31px;
-}
-.star {
-    color: #b5e61d;
 }
 #marquee {
     width: 100%;
