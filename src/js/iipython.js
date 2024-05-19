@@ -22,5 +22,6 @@ for (const link of document.getElementsByTagName("a")) {
 
         // Update active page
         document.getElementsByClassName("wrapper")[0].innerHTML = cache[relative];
+        history.pushState(null, document.title, relative);
     });
 }
