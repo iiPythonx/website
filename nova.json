@@ -10,7 +10,8 @@
             "fonts/",
             "js/",
             "page/",
-            "favicon.ico"
+            "favicon.ico",
+            "robots.txt"
         ],
         "minify": {
             "suffixes": [".css", ".html"],
