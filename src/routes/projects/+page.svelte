@@ -1,9 +1,3 @@
-<style>
-    hr {
-        border-bottom: dotted;
-    }
-</style>
-
 <div class = "content">
     <div class = "heading"><h3>Active Projects</h3></div>
     <p>
