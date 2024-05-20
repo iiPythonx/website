@@ -1,5 +1,5 @@
 [project]
-mapping = "src:.build"
+mapping    = "src:.build"
 
 [plugins.spa]
 title      = "iiPython"
