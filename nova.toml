@@ -9,4 +9,4 @@ mapping    = "pages:."
 external   = true
 
 [plugins.minify]
-suffixes   = [".html", ".css"]
+suffixes   = [".html", ".css", ".js"]
