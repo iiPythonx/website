@@ -103,7 +103,7 @@ const updateChart = (day, unit) => {
                 maintainAspectRatio: false,
                 layout: {
                     padding: { top: 40 }    
-                }   
+                },
             }
         });
     }
@@ -120,8 +120,9 @@ const updateChart = (day, unit) => {
             borderColor: u.c0
         }
     ];
-    o.scales.y.ticks = { callback: v => v + u.unit }
-    o.plugins = { tooltip: { callbacks: { label: t => t.formattedValue + u.unit } } }
+    o.scales.y.ticks = { callback: v => v + u.unit };
+    if (unit === "rain") o.scales.y.max = 100;
+    o.plugins = { tooltip: { callbacks: { label: t => t.formattedValue + u.unit } } };
     window._chart.update();
 }
 
