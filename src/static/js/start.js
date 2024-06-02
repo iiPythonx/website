@@ -210,7 +210,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Backspace" && _buffer) window._buffer = _buffer.substring(0, _buffer.length - 1);
     if (e.key === "Enter" && _buffer) {
         if (_buffer !== "anime") location.href = `//google.com/search?q=${encodeURIComponent(_buffer)}`
-        else window._buffer = ""; showAnime();
+        else { window._buffer = ""; showAnime(); }
     };
     input.innerHTML = _buffer;
 });
