@@ -190,12 +190,27 @@ const updateClock = () => {
 setTimeout(updateClock, interval);
 updateClock();
 
+// Handle anime
+const anime = document.getElementById("anime");
+function showAnime() {
+    document.querySelector("iframe").src = "https://cdpn.io/pen/debug/oNPzxKo?v=r74OyneNmg8&autoplay=1";
+    anime.style.display = "flex";
+}
+anime.addEventListener("click", () => {
+    anime.style.display = "none";
+    document.querySelector("iframe").src = "";
+});
+
 // Handle searching
 const input = document.getElementById("input");
 window._buffer = "";
 document.addEventListener("keydown", (e) => {
+    if (anime.style.display === "flex") return;
     if (e.key.length === 1 && !(e.ctrlKey || e.altKey)) window._buffer += e.key;
     if (e.key === "Backspace" && _buffer) window._buffer = _buffer.substring(0, _buffer.length - 1);
-    if (e.key === "Enter" && _buffer) location.href = `//google.com/search?q=${encodeURIComponent(_buffer)}`;
+    if (e.key === "Enter" && _buffer) {
+        if (_buffer !== "anime") location.href = `//google.com/search?q=${encodeURIComponent(_buffer)}`
+        else window._buffer = ""; showAnime();
+    };
     input.innerHTML = _buffer;
 });
