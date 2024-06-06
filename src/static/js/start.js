@@ -121,7 +121,7 @@ const updateChart = (day, unit) => {
         }
     ];
     o.scales.y.ticks = { callback: v => v + u.unit };
-    if (unit === "rain") o.scales.y.max = 100;
+    o.scales.y.max = unit === "rain" ? 100 : void 0;
     o.plugins = { tooltip: { callbacks: { label: t => t.formattedValue + u.unit } } };
     window._chart.update();
 }
