@@ -89,7 +89,14 @@ const updateChart = (day, unit) => {
     if (_chart === null) {
         window._chart = new Chart(ctx, {
             type: "line",
-            data: { labels: [], datasets: [] },
+            data: {
+				labels: [],
+				datasets: [],
+				backgroundColor: (context) => {
+					const index = context.dataIndex;
+					return index === 3 ? "#FF0000" : "#0000FF";
+				}
+			},
             options: {
                 scales: {
                     x: {
