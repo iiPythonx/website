@@ -10,3 +10,8 @@ external   = true
 
 [plugins.minify]
 suffixes   = [".html", ".js", ".css"]
+
+# Use uglifyjs and csso for minification
+[plugins.minify.methods]
+js  = "external"
+css = "external"
