@@ -193,7 +193,7 @@ updateClock();
 // Handle anime
 const anime = document.getElementById("anime");
 function showAnime() {
-    document.querySelector("iframe").src = "https://cdpn.io/pen/debug/oNPzxKo?v=r74OyneNmg8&autoplay=1";
+    document.querySelector("iframe").src = "https://cdpn.io/pen/debug/oNPzxKo?v=_k-5U7IeK8g&autoplay=1";
     anime.style.display = "flex";
 }
 anime.addEventListener("click", () => {
