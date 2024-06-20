@@ -79,6 +79,7 @@ window._chart = null, window._forecast = null, window._day = null;
 Chart.register(ChartDataLabels);
 Chart.defaults.set("plugins.datalabels", { color: "#FEFEFE", align: "top" });
 Chart.defaults.set("plugins.legend", { display: false });
+setInterval(() => window._chart.update(), 60000);
 
 const ctx = document.getElementById("graph");
 const updateChart = (day, unit) => {
@@ -95,33 +96,33 @@ const updateChart = (day, unit) => {
                     x: {
                         grid: { display: false }
                     },
-                    y: {
-                        display: false,
-                        ticks: { beginAtZero: true }
-                    }
-                },
-                maintainAspectRatio: false,
-                layout: {
-                    padding: { top: 40 }    
-                },
-            }
-        });
+                    y: { display: false }
+				},
+				maintainAspectRatio: false,
+				layout: {
+					padding: { top: 40 }    
+				}
+			}
+		});
     }
     
     // Load in chart data
     const d = _chart.data, o = _chart.options, u = unitMapping[unit], h = _forecast.hourly;
+	const data = h[u.key].slice(lowerBound, upperBound).map(x => Math.round(x));
     d.labels = h.time.slice(lowerBound, upperBound).map(x => x.split("T")[1]);
     d.datasets = [
         {
             label: u.name,
-            data: h[u.key].slice(lowerBound, upperBound).map(x => Math.round(x)),
+            data: data,
             lineTension: .5,
             fill: u.c1 ? { target: "origin", above: u.c1 } : true,
-            borderColor: u.c0
+            borderColor: u.c0,
+			pointBackgroundColor: (context) => context.dataIndex === new Date().getHours() ? u.c0 : "#000000"
         }
     ];
     o.scales.y.ticks = { callback: v => v + u.unit };
     o.scales.y.max = unit === "rain" ? 100 : void 0;
+	o.scales.y.min = (unit === "rain" ? 0 : Math.min(...data)) - 5;
     o.plugins = { tooltip: { callbacks: { label: t => t.formattedValue + u.unit } } };
     window._chart.update();
 }
