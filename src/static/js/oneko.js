@@ -148,7 +148,7 @@
         (t.style.height = "32px"),
         (t.style.position = "fixed"),
         (t.style.pointerEvents = "none"),
-        (t.style.backgroundImage = "url('./assets/oneko.webp')"),
+        (t.style.backgroundImage = "url('/assets/oneko.webp')"),
         (t.style.imageRendering = "pixelated"),
         (t.style.left = `${l - 16}px`),
         (t.style.top = `${n - 16}px`),

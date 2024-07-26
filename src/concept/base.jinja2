@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "Interesting, is this the 80s?">
+        <meta name = "theme-color" content = "#000">
+        <meta property = "og:title" content = "iiPython / Concept Page">
+        <meta property = "og:description" content = "Interesting, is this the 80s?">
+        <meta name = "darkreader-lock">
+
+        <!-- CSS -->
+        <link rel = "stylesheet" href = "/css/concept/main.css">
+
+        <link rel = "prefetch" href = "/assets/noise.png" />
+        <link rel = "prefetch" href = "/fonts/free_pixel.woff2" />
+        <link rel = "icon" type = "image/x-icon" href = "/favicon.ico">
+        <title>iiPython / Concept</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class = "flow">
+                <img src = "/assets/vhs.png" height = "30" class = "spin">
+                <h4>PLEASE INSERT THE TAPE INTO THE PLAYER.</h4>
+            </div>
+            <div id = "page">
+                <div>
+                    <div class = "head">
+                        <a href = "/concept"><img src = "/assets/pfp.avif" class = "pfp"></a>
+                        <div>
+                            <h1>Benjamin O'Brien</h1>
+                            <p><i id = "slogan"></i></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id = "content">{% block content %}{% endblock %}</div>
+                </div>
+                <div>
+                    <hr>
+                    <div class = "links">
+                        <ul>
+                            <li><b>Accounts</b></li>
+                            <li><a href = "https://discord.com/users/633185043774177280">Discord</a></li>
+                            <li><a href = "https://github.com/iiPythonx">GitHub</a></li>
+                            <li><a href = "https://steamcommunity.com/id/iiPython_">Steam</a></li>
+                            <li><a href = "https://youtube.com/@iiPythonx">YouTube</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Projects</b></li>
+                            <li><a href = "/concept/projects/nightwatch">Nightwatch</a></li>
+                            <li><a href = "/concept/projects/nova">Nova</a></li>
+                            <li><a href = "/concept/projects/lrcup">LRCup</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Friends</b></li>
+                            <li><a href = "https://dmmdgm.dev">dmmdgm.dev</a></li>
+                            <li><a href = "https://k4ffu.dev">k4ffu.dev</a></li>
+                            <li><a href = "https://darkpixlz.com">darkpixlz.com</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Everything</b></li>
+                            <li><a href = "/concept/about">About</a></li>
+                            <li><a href = "/concept/music">Music</a></li>
+                            <li><a href = "/concept/archives">Archives</a></li>
+                            <li><a href = "https://status.iipython.dev">Statuspage</a></li>
+                        </ul>
+                    </div>
+                    <div class = "buttons">
+                        <img loading = "lazy" src = "/assets/88x31/css.gif">
+                        <img loading = "lazy" src = "/assets/88x31/chrome_is_evil.avifs">
+                        <img loading = "lazy" src = "/assets/88x31/gnu_linux.avif">
+                        <img loading = "lazy" src = "/assets/88x31/nft.gif">
+                        <img loading = "lazy" src = "/assets/88x31/sex.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id = "fx"></div>
+
+        <!-- JS -->
+        <script>
+
+            // Handle switching to main
+            function switch_to_main() {
+                document.querySelector("header").style.display = "flex";
+                document.querySelector("main div.flow").remove();
+                document.body.style.backgroundColor = "#0000FF";
+                document.body.style.backgroundImage = "url(/assets/noise.png)";
+                document.querySelector("#page").style.display = "flex";
+            }
+
+            const image = document.querySelector("img.spin");
+            image.addEventListener("click", switch_to_main);
+            if ((Date.now() - +localStorage.getItem("last")) < 900000) {
+                localStorage.setItem("last", Date.now());
+                switch_to_main();
+            }
+
+            // Handle "pausing"
+            const btn_data = {
+                button: document.querySelector("header"),
+                state: 0,
+                text_data: {
+                    0: `
+                        PLAY
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                    `,
+                    1: `
+                        PAUSE
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
+                        </svg>
+                    `
+                },
+                fx_elem: document.getElementById("fx")
+            };
+            btn_data.button.addEventListener("click", () => {
+                btn_data.fx_elem.style.display = btn_data.state ? "none" : "block";
+                btn_data.state = Number(!btn_data.state);
+                btn_data.button.innerHTML = btn_data.text_data[btn_data.state];
+            });
+            btn_data.button.innerHTML = btn_data.text_data[btn_data.state];
+
+            // Handle slogans
+            const slogans = [
+                "Why is this font so weird?",
+                "Now with amazing color support!",
+                "I hate cheese.",
+                "Ya like jazz?",
+                "Reinventing the wheel since 2007.",
+                "Programming takes too much effort.",
+                "Why is the image a Goose?",
+                "?!?!?!?!?!",
+                "Nani?",
+                "Minecraft was better before Microsoft bought it.",
+                "Linux? You mean GNU/Linux?",
+                "I have a vendetta against CSS.",
+                "Bow down to our lord, Flexbox."
+            ];
+            document.querySelector("#slogan").innerText = slogans[Math.floor(Math.random() * slogans.length)];
+
+            // More random effects
+            const pfp = document.querySelector(".pfp")
+            pfp.addEventListener("mouseover", () => pfp.classList.add("spin"));
+            pfp.addEventListener("mouseleave", () => pfp.classList.remove("spin"));
+        </script>
+    </body>
+</html>
