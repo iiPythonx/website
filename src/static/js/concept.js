@@ -8,11 +8,8 @@ function switch_to_main() {
 }
 
 const image = document.querySelector("img.spin");
-image.addEventListener("click", switch_to_main);
-if ((Date.now() - +localStorage.getItem("last")) < 900000) {
-    localStorage.setItem("last", Date.now());
-    switch_to_main();
-}
+image.addEventListener("click", () => { localStorage.setItem("last", Date.now()); switch_to_main(); });
+if ((Date.now() - +localStorage.getItem("last")) < 900000) switch_to_main();
 
 // Handle "pausing"
 const btn_data = {
