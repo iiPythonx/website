@@ -1,33 +1,29 @@
 {% extends "base.jinja2" %}
-{% set description = "Hi. I'm iiPython, and this is my site." %}
+{% set title = "iiPython" %}
+{% set description = "Interesting, is this the 80s?" %}
 {% block content %}
-    <div class = "content">
-        <div class = "heading"><h3>Welcome!</h3></div>
-        <p>Hi! I'm Benjamin (known as iiPython on the internet) and this is my personal space on the internet.</p>
-    </div>
-    <div class = "content">
-        <div class = "heading"><h3>About Me</h3></div>
-        <p>
-            I'm a software developer and sysadmin, proficient in Python, C, C++, Rust, NodeJS, Lua, PowerShell, and more. I also administer RHEL and Arch Linux based servers.
-        </p>
-        <p><b>For some more information about me, check <a href = "/about">my about page</a>.</b></p>
-    </div>
-    <div class = "content">
-        <div class = "heading"><h3>Achievements</h3></div>
-        <ul>
-            <li>Awarded the Cybersecurity Excellence award by <a href = "https://usm.edu">USM</a>.</li>
-            <li>Awarded the Exceptional Project award by <a href = "https://usm.edu">USM</a>.</li>
-            <li>Security+ and RHCSA certified.</li>
-            <li>Received a perfect score on the MAAP Algebra I & II state tests.</li>
-            <li>Attended the <a href = "https://www.vexrobotics.com/">VEX Robotics World Championship</a>.</li>
-            <li>Attended the Mississippi <a href = "https://www.firstinspires.org/robotics/frc">FIRST Robotics State Championship</a>.</li>
-        </ul>
-    </div>
-    <div class = "content">
-        <div class = "heading"><h3>Contact</h3></div>
-        <p>
-            You can contact me at <a href = "mailto:ben@iipython.dev">ben@iipython.dev</a> or through discord (@iipython). <br>
-            My email encryption keys are available <a href = "/keys/public_personal.txt">here</a> and <a href = "/keys/public_proton.txt">here</a>. <br>
-        </p>
-    </div>
+    <h3>Welcome!</h3>
+    <p>
+        Hi! I'm Benjamin (known as iiPython on the internet) and this is my personal space on the internet.
+    </p>
+    <h3>About</h3>
+    <p>
+        I'm a software developer and sysadmin, proficient in Python, C, C++, Rust, NodeJS, Lua, PowerShell, and more. I also administer RHEL and Arch Linux based servers.
+        <br> <br>
+        For some more information about me, check <a href = "/about">my about page</a>.
+    </p>
+    <h3>Achievements</h3>
+    <ul>
+        <li>Awarded the Cybersecurity Excellence award by <a href = "https://usm.edu">USM</a>.</li>
+        <li>Awarded the Exceptional Project award by <a href = "https://usm.edu">USM</a>.</li>
+        <li>Security+ and RHCSA certified.</li>
+        <li>Received a perfect score on the MAAP Algebra I & II state tests.</li>
+        <li>Attended the <a href = "https://www.vexrobotics.com/">VEX Robotics World Championship</a>.</li>
+        <li>Attended the Mississippi <a href = "https://www.firstinspires.org/robotics/frc">FIRST Robotics State Championship</a>.</li>
+    </ul>
+    <h3>Contact</h3>
+    <p>
+        You can contact me at <a href = "mailto:ben@iipython.dev">ben@iipython.dev</a> or through discord (@iipython). <br>
+        My email encryption key is available <a href = "/keys/public_personal.txt">here</a>. <br>
+    </p>
 {% endblock %}

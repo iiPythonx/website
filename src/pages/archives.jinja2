@@ -1,4 +1,6 @@
-{% extends "concept/base.jinja2" %}
+{% extends "base.jinja2" %}
+{% set title = "iiPython / Archives" %}
+{% set description = "Links to site archives, and other data I have." %}
 {% block content %}
     <h3>Snowball</h3>
     <p>
@@ -9,7 +11,8 @@
     <p>
         Here's a short list of my archived site revisions over the years:
         <ul>
-            <li><a href = "/old">2023</a></li>
+            <li><a href = "https://web.archive.org/web/20240802021323/https://iipython.dev/">Mid 2024</a></li>
+            <li><a href = "https://web.archive.org/web/20240802021811/https://iipython.dev/old">Early 2024</a></li>
             <li><a href = "https://web.archive.org/web/20220908091936/https://iipython.cf/">2022-2023</a></li>
             <li><a href = "https://web.archive.org/web/20220127185839/https://iipython.cf/">2020-2021</a></li>
         </ul>
@@ -19,5 +22,5 @@
         Most Geesecraft files are available to download from the official <a href = "https://gc.iipython.dev">Geesecraft website</a>.
         If you need a full copy of a world or something else, feel free to <a href = "mailto:ben@iipython.dev">email me</a>.
     </p>
-    <script src = "/js/oneko.js"></script>
+    <script src = "/js/snowball.js"></script>
 {% endblock %}
