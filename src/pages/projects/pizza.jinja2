@@ -1,0 +1,22 @@
+{% extends "base.jinja2" %}
+{% set title = "Projects / Pizza" %}
+{% set description = "A site building framework for people who like to keep it simple." %}
+{% block content %}
+    <h2>Projects / Pizza</h2>    
+    <p>Metadata that leaves a good aftertaste.</p>
+    <h3>Explanation</h3>
+    <p>
+        Pizza is a <a href = "https://en.wikipedia.org/wiki/Tag_editor">music tagger</a> written in Python designed to provide accurate metadata as fast as possible.
+        It takes your <a href = "https://xiph.org/flac/">FLAC</a> files, indexes them to keep track of them, fetches tags from <a href = "https://musicbrainz.org/">MusicBrainz</a>, and then writes it to your files.
+    </p>
+    <h3>Technologies</h3>
+    <ul>
+        <li><a href = "https://click.palletsprojects.com/">Click</a></li>
+        <li><a href = "https://mutagen.readthedocs.io/en/latest/">Mutagen</a></li>
+    </ul>
+    <h3>Links</h3>
+    <ul>
+        <li><a href = "https://pizza.iipython.dev">Documentation</a></li>
+        <li><a href = "https://github.com/iiPythonx/pizza">GitHub repo</a></li>
+    </ul>
+{% endblock %}
