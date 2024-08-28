@@ -52,7 +52,8 @@ const slogans = [
     "Minecraft was better before Microsoft bought it.",
     "Linux? You mean GNU/Linux?",
     "I have a vendetta against CSS.",
-    "Bow down to our lord, Flexbox."
+    "Bow down to our lord, Flexbox.",
+    "Can I get a baguette?"
 ];
 document.querySelector("#slogan").innerText = slogans[Math.floor(Math.random() * slogans.length)];
 
