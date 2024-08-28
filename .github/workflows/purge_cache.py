@@ -26,7 +26,7 @@ for item in modified_files:
             required_purge.append((item.relative_to(source / "pages")).with_suffix(""))
 
     if item.is_relative_to(source / "static"):
-        required_purge.append(item.relative_to(source))
+        required_purge.append(item.relative_to(source / "static"))
 
 if not required_purge:
     print("No changed files need to be purged.")

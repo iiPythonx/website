@@ -53,7 +53,8 @@ const slogans = [
     "Linux? You mean GNU/Linux?",
     "I have a vendetta against CSS.",
     "Bow down to our lord, Flexbox.",
-    "Can I get a baguette?"
+    "Can I get a baguette?",
+    "Zoooooooooom."
 ];
 document.querySelector("#slogan").innerText = slogans[Math.floor(Math.random() * slogans.length)];
 
