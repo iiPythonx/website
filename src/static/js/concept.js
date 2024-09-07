@@ -11,6 +11,8 @@ const image = document.querySelector("img.spin");
 image.addEventListener("click", () => { localStorage.setItem("last", Date.now()); switch_to_main(); });
 if ((Date.now() - +localStorage.getItem("last")) < 900000) switch_to_main();
 
+document.querySelector(".pfp").addEventListener("click", e => e.currentTarget.src = "/assets/pfp_old.avif");
+
 // Handle "pausing"
 const btn_data = {
     button: document.querySelector("header"),
