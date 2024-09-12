@@ -20,18 +20,20 @@ html, body {
 }
 body {
     overflow-x: hidden;  /* To be safe I guess */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: black url("/assets/background.png") no-repeat center center;
     background-size: cover;
 }
 main {
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    position: absolute;
     gap: 20px;
     width: 66%;
     z-index: 2;
     max-width: 850px;
     display: flex;
+    padding-bottom: 40px;  /* Ensure scrollbar */
 }
 article {
     padding: 20px;
@@ -91,6 +93,24 @@ a:hover {
     margin-left: 0px;
     margin-right: 20px;
     border: 1px solid var(--ayanami-blue);
+}
+
+/* Title */
+#title {
+    font-size: 60px;
+    top: 20px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--ayanami-blue),
+        0 0 82px var(--ayanami-blue),
+        0 0 92px var(--ayanami-blue),
+        0 0 102px var(--ayanami-blue),
+        0 0 151px var(--ayanami-blue);
 }
 
 /* Now playing */
