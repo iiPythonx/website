@@ -1,0 +1,56 @@
+{% extends "main.jinja2" %}
+{% set title = "ben's house" %}
+{% set description = "place to share some thoughts." %}
+{% block content %}
+    <article>
+        <h2>WELCOME!</h2>
+        <img src = "/assets/pfp_square.avif" class = "pfp">
+        <p>This is my personal space on the interwebz where I share whatever I <i>feel like</i>.</p>
+        <br>
+        <p>I'm a programmer proficient in a lot of different languages, I like to branch out a lot, making random things along the way.</p>
+        <br>
+        <p>Some quick facts (if you want them):</p>
+        <ul>
+            <li>I'm working on attending college right now.</li>
+            <li>Python is my programming language of choice (could you tell?).</li>
+            <li>I have a self-hosted music library of 350+ albums.</li>
+            <li>130 random dead projects are sitting on my hard drive right now.</li>
+            <li>I was a commander for our town's local JROTC.</li>
+        </ul>
+    </article>
+    <article>
+        <h2>PROJECTS</h2>
+        <h3><a href = "https://github.com/iiPythonx/nova" class = "link-invert">Nova Framework</a></h3>
+        <br>
+        <p>A site building framework for people who like to keep it simple.</p>
+        <br>
+        <h3><a href = "https://github.com/iiPythonx/pizza" class = "link-invert">Pizza</a></h3>
+        <br>
+        <p>Music tagger written in Python designed to be as fast and accurate as possible.</p>
+        <br>
+        <h3><a href = "https://github.com/iiPythonx/nightwatch" class = "link-invert">Nightwatch</a></h3>
+        <br>
+        <p>IRC-like application with messaging, file uploads, a decentralized design, and no restrictions.</p>
+        <br>
+        <h3><a href = "https://github.com/iiPythonx/website" class = "link-invert">This Website</a></h3>
+        <br>
+        <p>This website, which is written by hand and built/deployed using Nova. <s>Not inspired by <a href = "https://dimden.dev">dimden's website</a> at all.</s></p>
+    </article>
+    <article>
+        <h2>HOBBIES</h2>
+        <p>
+            I heavily enjoy system administration, software development, & networking. <br>
+            On the not so computer related side of things, I like watching:
+            <ul>
+                <li>TV Shows (such as <a href = "https://www.imdb.com/title/tt1839578/" class = "link-invert">Person of Interest</a>)</li>
+                <li><i>Anime</i> (the most notable being <a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/" class = "link-invert">Initial D</a> and <a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/" class = "link-invert">Evangelion</a>)</li>
+                <ul>
+                    <li>Call me a weeb and you will regret it.</li>
+                    <li><s>This sites' accent color is <a href = "https://www.turner.co.jp/ayanamiblue/">Ayanami Blue</a>, lmao.</s></li>
+                </ul>
+            </ul>
+            <br>
+            I also really like rain and storms, for some reason.
+        </p>
+    </article>
+{% endblock %}
