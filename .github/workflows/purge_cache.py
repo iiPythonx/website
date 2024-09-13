@@ -23,7 +23,7 @@ for item in modified_files:
     if item.name == "main.jinja2":
         for file in (source / "pages").iterdir():
             required_purge.append(file.relative_to(source / "pages").with_suffix(""))
-            if required_purge[-1] == "index":
+            if str(required_purge[-1]) == "index":
                 required_purge[-1] = ""
 
             required_purge.append(file.relative_to(source).with_suffix(""))
