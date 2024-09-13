@@ -13,7 +13,7 @@ window._last_track = { additional_info: {} };
 
             // Setup data
             const data = result.track_metadata;
-            if (data.additional_info.recording_mbid === _last_track.additional_info.recording_mbid) return;
+            if (data.additional_info.recording_mbid && data.additional_info.recording_mbid === window._last_track.additional_info.recording_mbid) return;
             
             // Fetch cover art from Stupidfy
             if (!window._spotify_token) {
