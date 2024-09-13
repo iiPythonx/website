@@ -51,13 +51,12 @@ async function update_now_playing() {
 
     // Push to page
     window._last_track = data;
-    data.track_name = `<a href = "https://musicbrainz.org/recording/${data.additional_info.recording_mbid}">${data.track_name}</a>`;
-    data.artist_name = `<a href = "https://musicbrainz.org/artist/${data.additional_info.artist_mbids[0]}">${data.artist_name}</a>`;
+    const track_link = `<a href = "https://musicbrainz.org/recording/${data.additional_info.recording_mbid}">${data.track_name}</a>`;
     now_playing.innerHTML = `
         <a href = "https://musicbrainz.org/release/${data.additional_info.release_mbid}"><img src = "${image_url}"></a>
         <div>
-            ${data.track_name.length > 15 ? `<marquee scrollamount = "3">${data.track_name}</marquee>` : `<span>${data.track_name}</span>`}
-            <span>${data.artist_name}</span>
+            ${data.track_name.length > 15 ? `<marquee scrollamount = "3">${track_link}</marquee>` : `<span>${track_link}</span>`}
+            <span><a href = "https://musicbrainz.org/artist/${data.additional_info.artist_mbids[0]}">${data.artist_name}</a></span>
         </div>
     `;
 }

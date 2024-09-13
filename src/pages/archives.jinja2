@@ -1,0 +1,34 @@
+{% extends "main.jinja2" %}
+{% set title = "ben's house / archives" %}
+{% set description = "archived stuff i still keep for some reason." %}
+{% block content %}
+    <style>
+        #snowball.move {
+            transition: rotate 1s ease;
+        }
+    </style>
+    <article>
+        <h2>SNOWBALL</h2>
+        <p>Snowball still lives on even after 3(?) site revisions:</p>
+        <img src = "/assets/snowball.avif" id = "snowball">
+        <p>And yes, he still <i>spins</i>.</p>
+    </article>
+    <article>
+        <h2>GEESECRAFT</h2>
+        <p>Anything related to Geesecraft season downloads are available at <a href = "https://gc.iipython.dev" class = "link-invert">the Geesecraft website</a>.</p>
+        <br>
+        <p>It's worth noting that you can add the letter M to the filename (but before the extension) to download a minified version (unused chunks purged).</p>
+    </article>
+    <article>
+        <h2>RANDOM JUNK</h2>
+        <p>
+            If you need something random, I also archive the following:
+            <ul class = "links">
+                <li>→ <a href = "https://cdn.iipython.dev/dmmd">DmmD.css v1.2</a></li>
+                <li>→ <a href = "https://cdn.iipython.dev/bear/apple.mp3">Big Apple, 3 A.M.</a></li>
+                <li>→ <a href = "https://cdn.iipython.dev/searching.flac">FLAC version of Searching</a></li>
+            </ul>
+        </p>
+    </article>
+    <script src = "/js/snowball.js" async></script>
+{% endblock %}

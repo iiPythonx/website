@@ -20,10 +20,15 @@ modified_files = [Path(file) for file in output.decode().split("\n") if file.str
 # Calculate required purges
 source, required_purge = Path("src"), []
 for item in modified_files:
+    if item.name == "main.jinja2":
+        for file in (source / "pages").iterdir():
+            required_purge.append(file.relative_to(source / "pages").with_suffix(""))
+            required_purge.append(file.relative_to(source).with_suffix(""))
+
     if item.suffix == ".jinja2":
         required_purge.append(item.with_suffix("").relative_to(source))
         if item.is_relative_to(source / "pages"):
-            required_purge.append((item.relative_to(source / "pages")).with_suffix(""))
+            required_purge.append(item.relative_to(source / "pages").with_suffix(""))
 
     if item.is_relative_to(source / "static"):
         required_purge.append(item.relative_to(source / "static"))

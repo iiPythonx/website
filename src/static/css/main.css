@@ -67,17 +67,17 @@ ul.links {
 }
 a {
     text-decoration: none;
+}
+a:not(.not-pretty):hover {
+    color: var(--ayanami-blue);
+    text-decoration: underline dotted;
     transition: color .5s ease;
 }
-a:hover {
+a.link-invert {
     color: var(--ayanami-blue);
     text-decoration: underline dotted;
 }
-.link-invert {
-    color: var(--ayanami-blue);
-    text-decoration: underline dotted;
-}
-.link-invert:hover {
+a.link-invert:hover {
     color: #fefefe;
     text-decoration: none;
 }
