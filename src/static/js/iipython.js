@@ -10,7 +10,7 @@
         socket.addEventListener("message", async (e) => {
             const data = JSON.parse(e.data);
             if (!data) { now_playing.innerHTML = "Nothing playing."; return; };
-            if (data.mbid.album && data.mbid.album === last_track.mbid.album) return;
+            if (data.mbid.track && data.mbid.track === last_track.mbid.track) return;
         
             // Push to page
             last_track = data;
