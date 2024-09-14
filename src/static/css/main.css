@@ -95,6 +95,19 @@ a.link-invert:hover {
     border: 1px solid var(--ayanami-blue);
 }
 
+/* Online status */
+#online {
+    float: left;
+    position: relative;
+    width: 76px;
+    clear: left;
+    border: 1px solid var(--ayanami-blue);
+    bottom: 11px;
+    text-align: center;
+    font-size: 13px;
+    padding: 2px;
+}
+
 /* Title */
 #title {
     font-size: 60px;
