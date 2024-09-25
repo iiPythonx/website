@@ -20,7 +20,7 @@
     socket.addEventListener("open", () => {
         socket.addEventListener("message", async (e) => {
             const raw = JSON.parse(e.data);
-            last_status = raw.online_status;
+            last_status = raw.online_status || !!raw.now_playing;
             load_status();
 
             // Handle now playing
