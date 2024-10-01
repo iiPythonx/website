@@ -4,6 +4,7 @@ version = "0.1.0"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "beautifulsoup4>=4.12.3",
     "minify-html>=0.15.0",
     "nova-framework>=0.9.1",
 ]
