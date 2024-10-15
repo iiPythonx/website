@@ -2,8 +2,8 @@
     --ayanami-blue: #6dabe4;
 }
 @font-face {
-    font-family: "Free Pixel";
-    src: url("/fonts/free_pixel.woff2");
+    font-family: "Hasklig";
+    src: url("/fonts/hasklig.woff2");
 }
 @font-face {
     font-family: "Pixel NES";
@@ -14,7 +14,17 @@
 * {
     margin: 0px;
     color: #fefefe;
-    font-family: "Free Pixel";
+    font-family: "Hasklig";
+    font-size: 14px;
+}
+h1 > a {
+    font-size: 50px !important;
+}
+h2 {
+    font-size: 24px !important;
+}
+h3 > a {
+    font-size: 18px !important;
 }
 html, body {
     width: 100%;
@@ -119,7 +129,6 @@ footer {
 
 /* Title */
 #title {
-    font-size: 60px;
     top: 20px;
     left: 50%;
     position: absolute;
