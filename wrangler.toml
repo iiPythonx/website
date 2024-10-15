@@ -1,0 +1,8 @@
+name = "website"
+pages_build_output_dir = ".build"
+compatibility_date = "2024-10-01"
+
+# Installing manually so I don't need pyproject.toml/package.json
+[env.production.vars]
+BUN_VERSION = "1.1.29"
+UNSTABLE_PRE_BUILD = "bun i csso-cli uglify-js && pip install beautifulsoup4 minify-html nova-framework"
