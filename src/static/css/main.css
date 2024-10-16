@@ -211,3 +211,44 @@ footer {
     75% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+/* Mobile design */
+@media (max-width: 820px) {
+    aside {
+        width: 100% !important;
+    }
+
+    /* Scale to 95% to keep a nice gap on all sides */
+    main {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    /* Hide "what does it all mean?" */
+    main > aside > img:last-child {
+        display: none;
+    }
+
+    /* Let NERV show up above 88x31s */
+    footer {
+        z-index: 999;
+    }
+
+    /* Push my quick facts down */
+    article:first-child > p:first-of-type {
+        margin-top: 26px;
+    }
+    article:first-child > br:last-of-type {
+        margin: 2px;
+    }
+}
+@media (max-width: 525px) {
+    main {
+        width: 100%;
+    }
+
+    /* Disable online status tracking */
+    .pfp, #online {
+        display: none;
+    }
+}
