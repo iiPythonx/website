@@ -1,20 +1,2 @@
-/js/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/keys/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/fonts/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/pages/*
-  Cache-Control: public, max-age=86400
-
-/
-  Cache-Control: public, max-age=86400
-
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
