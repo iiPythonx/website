@@ -114,6 +114,36 @@ footer {
     position: fixed;
 }
 
+/* DmmD wanted poster */
+header {
+    right: 20px;
+    top: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    cursor: pointer;
+}
+header > a:hover {
+    text-decoration: none !important;
+}
+header > a div {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ff0000;
+}
+header > a div:last-child {
+    border-top: none;
+}
+span.wanted {
+    font-family: "Pixel NES";
+    text-decoration: underline;
+}
+
 /* Online status */
 #online {
     float: left;
