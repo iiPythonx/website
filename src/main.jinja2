@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "{{ description }}">
+        <meta name = "theme-color" content = "#000">
+        <meta property = "og:title" content = "{{ title }}">
+        <meta property = "og:description" content = "{{ description }}">
+        <meta name = "darkreader-lock">
+ 
+        <!-- CSS -->
+        <link rel = "stylesheet" href = "/css/main.css" />
+        <link rel = "icon" type = "image/x-icon" href = "/favicon.ico" />
+        <title>ben's house</title>
+    </head>
+    <body>
+        <header>
+            <h2>Benjamin O'Brien</h2>
+            <div class = "chonk"></div>
+            <a href = "/keys/ed25519.txt">ssh</a>
+            <a href = "/keys/pgp.txt">pgp</a>
+            <a href = "mailto:ben@iipython.dev">ben@iipython.dev</a>
+        </header>
+        <nav>
+            <a href = "/">Home</a>
+            <a href = "/about">About</a>
+            <a href = "/music">Music</a>
+            <a href = "/projects">Projects</a>
+            <a href = "/archives">Archives</a>
+            <a href = "/anime">Anime</a>
+        </nav>
+        <main>
+            <article id = "content" class = "chonk">
+                {% block content %}{% endblock %}
+            </article>
+            <aside>
+                <h3>Links</h3>
+                <ul>
+                    <li>→ <a href = "https://status.iipython.dev">Statuspage</a></li>
+                    <li>→ <a href = "https://gc.iipython.dev">Geesecraft</a></li>
+                    <li>→ <a href = "/privacy.txt">Privacy Policy</a></li>
+                    <li>→ <a href = "https://discord.com/users/633185043774177280">Discord</a></li>
+                    <li>→ <a href = "https://github.com/iiPythonx">GitHub</a></li>
+                    <li>→ <a href = "https://steamcommunity.com/id/iiPython_">Steam</a></li>
+                    <li>→ <a href = "https://youtube.com/@iiPythonx">YouTube</a> <i class = "background">(dead)</i></li>
+                </ul>
+            </aside>
+        </main>
+        <div class = "marquee">
+            <div class = "track">
+                <img loading = "lazy" src = "/assets/88x31/css.gif">
+                <img loading = "lazy" src = "/assets/88x31/chrome_is_evil.avif">
+                <img loading = "lazy" src = "/assets/88x31/gnu_linux.avif">
+                <img loading = "lazy" src = "/assets/88x31/no_cookies.avif">
+                <img loading = "lazy" src = "/assets/88x31/stand_up_to_google.avif">
+                <img loading = "lazy" src = "/assets/88x31/iipython.avif">
+                <img loading = "lazy" src = "/assets/88x31/go2hell.gif">
+                <img loading = "lazy" src = "/assets/88x31/html5.avif">
+                <img loading = "lazy" src = "/assets/88x31/koolaid.gif">
+                <img loading = "lazy" src = "/assets/88x31/cool_shades.gif">
+                <img loading = "lazy" src = "/assets/88x31/dbfire88.gif">
+                <img loading = "lazy" src = "/assets/88x31/f_ckfb.gif">
+                <img loading = "lazy" src = "/assets/88x31/faux.gif">
+                <img loading = "lazy" src = "/assets/88x31/firefox4.gif">
+                <img loading = "lazy" src = "/assets/88x31/getacomp.avif">
+                <img loading = "lazy" src = "/assets/88x31/linux-directory.gif">
+                <img loading = "lazy" src = "/assets/88x31/microsoft_stop.gif">
+                <img loading = "lazy" src = "/assets/88x31/nft.gif">
+                <img loading = "lazy" src = "/assets/88x31/pnfrlenm.gif">
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src = "/js/read.js" async defer></script>
+    </body>
+</html>
