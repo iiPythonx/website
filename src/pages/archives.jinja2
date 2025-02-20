@@ -1,0 +1,42 @@
+{% extends "main.jinja2" %}
+{% set title = "ben's house / archives" %}
+{% set description = "archived stuff i still keep for some reason." %}
+{% block content %}
+    <style>
+        #snowball {
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        #snowball.move {
+            transition: rotate 1s ease;
+        }
+    </style>
+    <article>
+        <h2>Snowball</h2>
+        <hr>
+        <p>Snowball still lives on even after 4(?) site revisions:</p>
+        <img src = "/assets/snowball.avif" id = "snowball">
+        <p>And yes, he still <i>spins</i>.</p>
+    </article>
+    <article>
+        <h2>Geesecraft</h2>
+        <hr>
+        <p>Anything related to Geesecraft season downloads are available at <a href = "https://gc.iipython.dev" class = "link-invert">the Geesecraft website</a>.</p>
+        <br>
+        <p>Non-minified world downloads will be provided upon request from former server members only.</p>
+    </article>
+    <article>
+        <h2>Random Junk</h2>
+        <hr>
+        <p>
+            If you need something random, I also archive the following:
+            <ul class = "external-links">
+                <li>→ <a href = "https://cdn.iipython.dev/dmmd">DmmD.css v1.2</a></li>
+                <li>→ <a href = "https://cdn.iipython.dev/bear/apple.mp3">Big Apple, 3 A.M.</a></li>
+                <li>→ <a href = "https://cdn.iipython.dev/searching.flac">FLAC version of Searching</a></li>
+                <li>→ <a href = "https://web.archive.org/web/20210915000000*/iipython.cf">Pre-production Site</a></li>
+            </ul>
+        </p>
+    </article>
+    <script src = "/js/snowball.js" async></script>
+{% endblock %}

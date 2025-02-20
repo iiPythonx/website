@@ -22,7 +22,7 @@
             <a href = "/keys/pgp.txt">pgp</a>
             <a href = "mailto:ben@iipython.dev">ben@iipython.dev</a>
         </header>
-        <nav>
+        <nav class = "panel">
             <a href = "/">Home</a>
             <a href = "/about">About</a>
             <a href = "/music">Music</a>
@@ -31,20 +31,29 @@
             <a href = "/anime">Anime</a>
         </nav>
         <main>
-            <article id = "content" class = "chonk">
+            <article id = "content" class = "chonk panel">
                 {% block content %}{% endblock %}
             </article>
-            <aside>
-                <h3>Links</h3>
-                <ul>
-                    <li>→ <a href = "https://status.iipython.dev">Statuspage</a></li>
-                    <li>→ <a href = "https://gc.iipython.dev">Geesecraft</a></li>
-                    <li>→ <a href = "/privacy.txt">Privacy Policy</a></li>
-                    <li>→ <a href = "https://discord.com/users/633185043774177280">Discord</a></li>
-                    <li>→ <a href = "https://github.com/iiPythonx">GitHub</a></li>
-                    <li>→ <a href = "https://steamcommunity.com/id/iiPython_">Steam</a></li>
-                    <li>→ <a href = "https://youtube.com/@iiPythonx">YouTube</a> <i class = "background">(dead)</i></li>
-                </ul>
+            <aside class = "panel">
+                <article>
+                    <h3>Links</h3>
+                    <hr>
+                    <ul class = "external-links">
+                        <li>→ <a href = "https://status.iipython.dev">Statuspage</a></li>
+                        <li>→ <a href = "https://gc.iipython.dev">Geesecraft</a></li>
+                        <li>→ <a href = "/privacy.txt">Privacy Policy</a></li>
+                        <li>→ <a href = "https://discord.com/users/633185043774177280" rel = "noreferrer">Discord</a></li>
+                        <li>→ <a href = "https://github.com/iiPythonx" rel = "noreferrer">GitHub</a></li>
+                        <li>→ <a href = "https://steamcommunity.com/id/iiPython_" rel = "noreferrer">Steam</a></li>
+                        <li>→ <a href = "https://youtube.com/@iiPythonx" rel = "noreferrer">YouTube</a> <span class = "background">(dead)</span></li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Current Song</h3>
+                    <hr>
+                    <div id = "now-playing">...</div>
+                </article>
+                <span id = "copyright">© 2023-2025 iiPython</span>
             </aside>
         </main>
         <div class = "marquee">
@@ -73,5 +82,7 @@
 
         <!-- JS -->
         <script src = "/js/read.js" async defer></script>
+        <script src = "/js/generic.js" async defer></script>
+        <script src = "/js/music.js" async defer></script>
     </body>
 </html>

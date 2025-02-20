@@ -1,0 +1,242 @@
+{% extends "main.jinja2" %}
+{% set title = "ben's house / music" %}
+{% set description = "my music and album ratings." %}
+{% block content %}
+    <style>
+        span.stars, span.stars * {
+            font-family: monospace;
+        }
+        span.starred {
+            color: var(--accent);
+        }
+    </style>
+    <article>
+        <h2>Releases</h2>
+        <hr>
+        <p>
+            For a couple months between 2023 and around May of 2024, I made some rather simple music and uploaded it to YouTube.
+            <br><br>
+            Here's the list of everything I published:
+        </p>
+        <ul class = "external-links">
+            <li>→ <a href = "https://youtu.be/IWQ_pvRL9go">Searching</a> (06/26/24)</li>
+            <li>→ <a href = "https://youtu.be/w-bTzYIT2vE">End of Time</a> (04/09/24)</li>
+            <li>→ <a href = "https://youtu.be/Ne5peeTAeqY">Insert Coin</a> (03/30/24)</li>
+            <li>→ <a href = "https://youtu.be/6wkoYh6w2xM">Taco Tuesday</a> (02/17/24)</li>
+            <li>→ <a href = "https://youtu.be/Dl3mg8KgBjE">Glitch in the Matrix</a> (01/28/24)</li>
+            <li>→ <a href = "https://youtu.be/8H-eJoaRjoM">Cyberspace</a> (01/12/24)</li>
+            <li>→ <a href = "https://youtu.be/G4K08lEACcU">Time</a> (12/13/23)</li>
+        </ul>
+    </article>
+    <article>
+        <h2>Ratings</h2>
+        <hr>
+        <p>
+            For my self hosted music collection, I run Navidrome which means I can extract all my album ratings fairly easily.
+            <br><br>
+            This is the current list of them:
+        </p>
+        <ul class = "ratings">
+            <li>Daft Punk: Discovery (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
+            <li>Grim Salvo: Voidstar (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
+            <li>shiey: contrast (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
+            <li>AJR: Neotheater (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>AJR: The Click (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>AK: Fate Loves the Fearless (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>AK: Like I Got It (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Alec Benjamin: 12 Notes (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Alec Benjamin: Narrated for You (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Alec Benjamin: These Two Windows (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Ariana Grande: thank u, next (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Bazanji: Far From Normal (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Bring Me the Horizon: Sempiternal (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Bryce Vine: Drew Barrymore (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Capital Cities: In a Tidal Wave of Mystery (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Casey Edwards: Bury the Light (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Daft Punk: Human After All (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Electric Guest: Dollar (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Eminem: Encore (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Eminem: Music to Be Murdered By: Side B (deluxe edition) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Eminem: Revival (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Eminem: The Eminem Show (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Evanescence: Fallen (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Everything Everything: Cold Reactor (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Everything Everything: Get to Heaven (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Fall Out Boy: Centuries (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Fall Out Boy: The Phoenix (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Falling in Reverse: Voices in My Head (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Glass Animals: How to Be a Human Being (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Glass Animals: I Love You So F***ing Much. (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Glass Animals: ZABA (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Golemm: Hazardous Bubble Basics (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Grim Salvo: Dolores (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Grim Salvo: MILDRED (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Gryffin: Alive (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Hensonn: Omega (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Hensonn: Prey (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Izzamuzzic: Shootout (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Jack Harlow: Sweet Action (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Kendrick Lamar: Not Like Us (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Linkin Park: Hybrid Theory (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Linkin Park: Meteora (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Linkin Park: Minutes to Midnight (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>MOSSBACK: Gravewalker's Anthem (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Madeon: The Prince (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>MitiS: Try (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>NF: CLOUDS (THE MIXTAPE) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>NF: HOPE (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>NF: The Search (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Neffex: Destiny (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Neffex: Grateful (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Nothing But Thieves: Dead Club City (Deluxe) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Oliver Tree: Cowboy Tears (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Oliver Tree: Ugly Is Beautiful (deluxe) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Panic! at the Disco: Too Weird to Live, Too Rare to Die! (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Papa Roach: Getting Away With Murder (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Porter Robinson: Shelter (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Savage Ga$p: in my restless dreams, i see you (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Shinedown: Threat to Survival (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Skillet: Dominion: Day of Destiny (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Skillet: Rise (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Skillet: Victorious: The Aftermath (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Stellar: Stranger (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Three Days Grace: One-X (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Tristam: Flight (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>blackbear: u love u (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>deadmau5: HR 8938 Cephei (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>deadmau5: Polaris (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>deadmau5: Random Album Title (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>deadmau5: Random Album Title (unmixed extended versions) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>deadmau5: while(1&lt;2) (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>dracodraco: freefall (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>grandson: a modern tragedy, vol. 1 (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>lil aaron: ESCALADE (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>mike.: the highs. (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>mike.: the lows. (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>shiey: RUN AWAY (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>twenty one pilots: Blurryface (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>twenty one pilots: Clancy (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>twenty one pilots: Trench (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>Hikaru Utada: One Last Kiss (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
+            <li>50 Cent: Get Rich or Die Tryin' (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>AJR: Living Room (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>AJR: OK ORCHESTRA (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>AK: Don't Look Down (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>AK: Now I'm Forever (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>ARTAN: She's A 10 But... (Remix) (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Akon: Konvicted (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Alan Walker: The Spectre (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Avenged Sevenfold: Shepherd of Fire (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Bazzi: Soul Searching (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Bohnes: Middle Finger (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Bohnes: Raging on a Sunday (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Bones: Unrendered (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Breaking Benjamin: Phobia (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Bryce Vine: Private School (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Chris Webby: Raw Thoughts IV (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Doja Cat: 4 Morant (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>EDEN: i think you think too much of me (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Eminem: Kamikaze (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Eminem: The Death of Slim Shady (Coup de grâce) (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Fall Out Boy: The Last of the Real Ones (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Five Finger Death Punch: AfterLife (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Flo Rida: My House (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Glass Animals: Dreamland (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Grim Salvo: why do I still care? (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Hensonn: Sahara (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Hensonn: Strange (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>INZO: Overthinker (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Initial D: Initial D Absolute Album feat. Takumi Fujiwara (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Jack Harlow: Come Home the Kids Miss You (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Kanye West: Late Registration (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>MGMT: Little Dark Age (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>MOSSBACK: The Island (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Metro Boomin: Am I Dreaming (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>MitiS: Wait (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>NF: NF: EP (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>NF: Perception (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Neffex: Rumors (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Neffex: Statement (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Nickelback: All the Right Reasons (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>One True God: Afterlife (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Panic! at the Disco: Death of a Bachelor (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Post Malone: Motley Crew (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>REZZ: Someone Else (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Royce da 5'9": The Slim Shady LP (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Ryan Caraveo: At Least I Tried (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Ryan Caraveo: Northend Sweetheart (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Savage Ga$p: from hell, with love (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Set It Off: Cinematics (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Set It Off: Midnight (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Shinedown: Amaryllis (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Skillet: Awake (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Skillet: Comatose (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Skillet: Unleashed Beyond (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Stellar: Bad Dream (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Stellar: Mistake (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Tate McRae: greedy (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Caretaker: Everywhere at the end of time (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Chainsmokers: Memories…Do Not Open (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Chainsmokers: So Far So Good (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Living Tombstone: My Ordinary Life (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Weeknd: After Hours (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>The Weeknd: Dawn FM (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Travis Scott: Birds in the Trap Sing McKnight (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>Vick Reputation: Suicide (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>bbno$: lil' freak (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>blackbear: ANONYMOUS (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>blackbear: everything means nothing (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>blueberry: EVA (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>deadmau5: > album title goes here < (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>deadmau5: for lack of a better name (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>sad alex: new heartbreak (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>salem ilese: PS5 (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>shiey: ALL THAT MATTERS (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>shiey: been around (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>shiey: can't be trust (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>slen: Faceless//nights Like These (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>twenty one pilots: Heathens (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>АДЛИН: Dead Inside (<span class = "stars"><span class = "starred">★★★</span>★★</span>)</li>
+            <li>2003 Toyota Corolla: 2003 Toyota Corolla (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>AJR: The Maybe Man (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>AK: On Me (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Alec Benjamin: (Un)Commentary (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Bazzi: Infinite Dream (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Coldplay: A Head Full of Dreams (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Daft Punk: Homework (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Dua Lipa: Future Nostalgia (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Dua Lipa: Radical Optimism (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Eminem: Relapse (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Fetty Wap: Fetty Wap (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Grim Salvo: Boysenberry Sepsis (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Grim Salvo: SKEET MODE (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Hensonn: Bad party (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Hensonn: Night chase (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Maroon 5: Overexposed (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Maroon 5: Red Pill Blues (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Neffex: Best of Me (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Nickelback: Silver Side Up (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Nickelback: The Long Road (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Post Malone: August 26th (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Quinn XCII: Make Time (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Savage Ga$p: forever yours (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Set It Off: Elsewhere (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Stellar: Ashes (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Stellar: Blur (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Stellar: Daredevil (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Stellar: El Dorado (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Three Days Grace: Three Days Grace (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Zara Larsson: So Good (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>blackbear: deadroses (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>blackbear: digital druglord (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>blueberry: EVA 2 (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>deadmau5: Vexillology (<span class = "stars"><span class = "starred">★★</span>★★★</span>)</li>
+            <li>Bryce Vine: Mixed Feelings (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
+            <li>Ed Sheeran: = (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
+            <li>Miley Cyrus: Bangerz (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
+            <li>NF: Moments (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
+            <li>blackbear: cybersex (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
+        </ul>
+        </p>
+    </article>
+{% endblock %}

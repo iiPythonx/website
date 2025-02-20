@@ -1,0 +1,53 @@
+{% extends "main.jinja2" %}
+{% set title = "ben's house / anime" %}
+{% set description = "random info about anime that i've watched" %}
+{% block content %}
+    <style>
+        img.deco {
+            position: absolute;
+            right: 10px; 
+        }
+        .dnote {
+            bottom: 0px;
+        }
+        .initd {
+            top: 10px;
+        }
+        #vroom {
+            position: absolute;
+            right: 100px;
+            top: 110px;
+            rotate: 30deg;
+        }
+    </style>
+    <article>
+        <h2>Favorites</h2>
+        <hr>
+        <ul>
+            <li><a href = "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion">Neon Genesis Evangelion</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Black_Lagoon">Black Lagoon</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Death_Note">Death Note</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Bocchi_the_Rock!">Bocchi The Rock!</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Initial_D">Initial D</a></li>
+        </ul>
+    </article>
+    <article>
+        <h2>Completed</h2>
+        <hr>
+        <p>This list includes all my favorites listed above.</p>
+        <ul>
+            <li><a href = "https://en.wikipedia.org/wiki/Hellsing">Hellsing</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Hellsing">Hellsing: Ultimate</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Cells_at_Work!">Cells at Work!</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Chainsaw_Man">Chainsaw Man</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Dandadan">Dandadan</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Darling_in_the_Franxx">DARLING in the FRANXX</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Elfen_Lied">Elfen Lied</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Great_Teacher_Onizuka">Great Teacher Onizuka</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Golden_Boy_(manga)">Golden Boy</a></li>
+        </ul>
+    </article>
+    <p id = "vroom">*vroom vroom skrrt*</p>
+    <img src = "/assets/l_w_light.avif" class = "deco dnote">
+    <img src = "/assets/86.avif" class = "deco initd">
+{% endblock %}
