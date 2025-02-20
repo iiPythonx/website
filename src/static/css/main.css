@@ -167,6 +167,10 @@ aside {
     text-align: center;
     font-family: monospace;
 }
+.track, nav {
+    display: flex;
+    gap: 10px;
+}
 
 /* TEMPORARY, DOESN'T WORK PROPERLY */
 .marquee {
