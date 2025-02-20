@@ -137,14 +137,19 @@ a.project > svg {
     bottom: 10px;
     position: absolute;
     opacity: 0;
-    background-color: #121212;
 }
 a.project:hover svg {
     opacity: 1;
     transition: opacity .5s ease;
 }
+a.project:hover h3, a.project:hover p {
+    filter: blur(.05rem);
+}
 a.project {
     text-decoration: none;
+}
+a.project h3, a.project p {
+    transition: filter .1s ease;
 }
 
 /* Sidebar */
