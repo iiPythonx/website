@@ -31,11 +31,6 @@ body {
     background: black url("/assets/background.avif") no-repeat center center;
     background-size: cover;
 }
-header {
-    gap: var(--gap);
-    display: flex;
-    align-items: center;
-}
 header > h2 {
     cursor: pointer;
     user-select: none;
