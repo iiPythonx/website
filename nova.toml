@@ -1,17 +1,16 @@
 [project]
-mapping    = "src:.build"
+    mapping    = "src:.build"
 
 [plugins.spa]
-title      = "iiPython"
-title_sep  = " / "
-target     = "#content"
-mapping    = "pages:."
-external   = true
+    title      = "iiPython"
+    title_sep  = " / "
+    target     = "#content"
+    mapping    = "pages:."
+    external   = true
 
 [plugins.minify]
-suffixes   = [".html", ".js", ".css"]
+    suffixes   = [".html", ".js", ".css"]
 
-# Use uglifyjs and csso for minification
 [plugins.minify.methods]
-js  = "external"
-css = "external"
+    js  = "external"
+    css = "external"
