@@ -6,7 +6,7 @@
     title_sep  = " / "
     target     = "#content"
     mapping    = "pages:."
-    external   = true
+    noscript   = true
 
 [plugins.minify]
     suffixes   = [".html", ".js", ".css"]

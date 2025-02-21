@@ -3,12 +3,6 @@
 (() => {
 
     // Process links
-    for (const link of document.querySelectorAll("nav > a")) {
-        link.addEventListener("click", () => {
-            for (const link of document.querySelectorAll("nav > a")) link.classList.remove("active");
-            link.classList.add("active");
-        });
-    }
     Array.from(document.querySelectorAll("nav > a")).find(e => e.textContent.toLowerCase() === (location.pathname.slice(1) || "home")).classList.add("active");
 
     // Handle name changing
@@ -40,4 +34,40 @@
         redraw();
     })).observe(content, { childList: true });
     setTimeout(redraw, 1);
+
+    // Handle SPA
+    const pages = ["/", "/about", "/music", "/projects", "/archives", "/anime"];
+    const length = location.origin.length;
+    const cache = {};
+    const replace = document.querySelector("#content");
+    function setup_links(element) {
+        for (const link of element.getElementsByTagName("a")) {
+            const relative = link.href.slice(length);
+            if (!pages.includes(relative)) continue;
+            link.addEventListener("click", async (e) => {
+                e.preventDefault();
+                replace.innerHTML = `<div style = "height: 100%; display: flex; align-items: center; justify-content: center;"><div class = "lds-dual-ring"></div></div>`;
+
+                // Handle color changing
+                for (const link of document.querySelectorAll("nav > a")) link.classList.remove("active");
+                link.classList.add("active");
+
+                // Fetch page from backend
+                if (!cache[relative]) cache[relative] = await (await fetch(`/pages${relative === '/' ? '/index' : relative}`)).text();
+
+                // Process document title
+                const title = relative.slice(1);
+                document.title = `iiPython${title && (' / ' + title[0].toUpperCase() + title.slice(1))}`;
+
+                // Start replacing content
+                replace.innerHTML = "";
+                replace.append(document.createRange().createContextualFragment(cache[relative]));
+                history.pushState(null, document.title, relative);
+
+                // Catch new links
+                setup_links(replace);
+            });
+        }
+    }
+    setup_links(document);
 })();
