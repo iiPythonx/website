@@ -103,12 +103,12 @@ nav > a.active {
     color: var(--accent);
 }
 a {
-    text-decoration: underline dotted;
+    text-decoration: underline;
     transition: opacity .2s ease;
 }
 a:hover {
     opacity: .8;
-    text-decoration: underline solid;
+    text-decoration: none;
 }
 
 /* Projects page */
@@ -197,6 +197,9 @@ footer {
 footer > a {
     text-decoration: none;
 }
+footer > a:hover {
+    text-decoration: underline;
+}
 
 /* Loading spinner */
 .lds-dual-ring,
@@ -220,6 +223,6 @@ footer > a {
     animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
