@@ -33,7 +33,7 @@
         if (mutations[0].addedNodes.length && mutations[0].addedNodes[0].className === "read-progress") return;
         redraw();
     })).observe(content, { childList: true });
-    setTimeout(redraw, 1);
+    setTimeout(redraw, 50);
 
     // Handle SPA
     const pages = ["/", "/about", "/music", "/projects", "/archives", "/anime"];

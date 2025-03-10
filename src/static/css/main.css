@@ -44,6 +44,7 @@ main {
 #content {
     position: relative;
     overflow-y: scroll;
+    scrollbar-width: thin;
 }
 nav, #content, aside {
     padding: 10px;
