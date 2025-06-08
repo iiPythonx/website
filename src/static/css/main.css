@@ -54,6 +54,9 @@ nav, main {
     background-color: var(--background);
     backdrop-filter: blur(.5rem);
 }
+nav {
+    height: 20px;
+}
 article:not(#content, :last-of-type) {
     margin-bottom: 15px;
 }
@@ -185,6 +188,9 @@ aside {
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     image-rendering: -webkit-optimize-contrast;
+}
+.m88, .m88 > div {
+    height: 31px;
 }
 
 /* Git hash */
