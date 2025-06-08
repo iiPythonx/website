@@ -4,4 +4,4 @@ compatibility_date = "2024-10-01"
 
 # Installing manually so I don't need pyproject.toml/package.json
 [env.production.vars]
-UNSTABLE_PRE_BUILD = "bun i csso-cli uglify-js && rm bun.lockb && pip install lxml beautifulsoup4 minify-html nova-framework"
+UNSTABLE_PRE_BUILD = "bun i csso-cli uglify-js && pip install lxml beautifulsoup4 minify-html nova-framework"
