@@ -2,34 +2,59 @@
 {% set title = "ben's house" %}
 {% set description = "place to share some thoughts." %}
 {% macro link(url, title, description) %}
-    <a href = "{{ url }}" class = "project" target = "_blank" rel = "noreferrer">
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
-        {% include "static/assets/link.svg" %}
-    </a>
+    <li class = "project">
+        <a href = "{{ url }}" target = "_blank" rel = "noreferrer">
+            {{ title }}
+            {% include "static/assets/link.svg" %}
+            <br>
+            <span>→ {{ description }}</span>
+        </a>
+    </li>
+    <hr>
 {% endmacro %}
 {% block content %}
+    <style>
+        li.project {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        li.project:not(:first-child) {
+            margin-top: 10px;
+        }
+        li.project > a {
+            text-decoration: none;
+        }
+        li.project svg {
+            right: 10px;
+            bottom: 10px;
+            position: absolute;
+            opacity: 0;
+        }
+        li.project:hover svg {
+            opacity: 1;
+            transition: opacity .5s ease;
+        }
+    </style>
     <article>
-        <h2>Online</h2>
+        <h2>Project Index</h2>
         <hr>
-        <div class = "project-row">
-            {{ link("https://github.com/iiPythonx/nightwatch", "Nightwatch"    , "IRC-like privacy-friendly messaging application.")                      }}
-            {{ link("https://github.com/iiPythonx/nova"      , "Nova Framework", "Site building framework for people who like to keep it simple.")        }}
-            {{ link("https://github.com/iiPythonx/xpp"       , "xpp"           , "Programming language written from scratch, inspired by Assembly.")      }}
-            {{ link("https://github.com/iiPythonx/website"   , "Website"       , "This website, which is written by hand and built/deployed using Nova.") }}
-            {{ link("https://radio.iipython.dev"             , "Radio"         , "A fresh, modern take on a web radio.")                                  }}
-        </div>
+        For a <em>complete</em> list of my projects, please visit the <a href = "https://index.iipython.dev">iiPython Index</a>.
     </article>
     <article>
-        <h2>Real-life</h2>
+        <h2>Major Projects</h2>
         <hr>
-        <div class = "project-row">
-            {{ link("https://discord.gg/redboxtinkering", "Redbox Tinkering"      , "Attempting to reverse engineer Redbox kiosks.")      }}
-            {{ link("https://uniform.iipython.dev"      , "ROTC Uniform Autograde", "Basic uniform autograde utility for ROTC cadets.")   }}
-            {{ link("https://github.com/iiPythonx/logic", "Logic Processor"       , "A logic symbol processor for PHI-1113.")             }}
-            {{ link("https://github.com/iiPythonx/sound", "Files through Sound"   , "Sending files through air using sound frequencies.") }}
-            {{ link("https://cdbar.iipython.dev"        , "cdbar"                 , "A website for quickly looking up CD barcodes.")      }}
-            {{ link("https://github.com/iiPythonx/usps" , "USPS CLI"              , "A CLI for tracking packages from USPS.")             }}
-        </div>
+        <ul>
+            {{ link("https://github.com/iiPythonx/nightwatch", "Nightwatch"            , "IRC-like privacy-friendly messaging application.")                      }}
+            {{ link("https://github.com/iiPythonx/nova"      , "Nova Framework"        , "Site building framework for people who like to keep it simple.")        }}
+            {{ link("https://github.com/iiPythonx/xpp"       , "xpp"                   , "Programming language written from scratch, inspired by Assembly.")      }}
+            {{ link("https://github.com/iiPythonx/website"   , "Website"               , "This website, which is written by hand and built/deployed using Nova.") }}
+            {{ link("https://radio.iipython.dev"             , "Radio"                 , "A fresh, modern take on a web radio.")                                  }}
+            {{ link("https://discord.gg/redboxtinkering"     , "Redbox Tinkering"      , "Attempting to reverse engineer Redbox kiosks.")                         }}
+            {{ link("https://uniform.iipython.dev"           , "ROTC Uniform Autograde", "Basic uniform autograde utility for ROTC cadets.")                      }}
+            {{ link("https://github.com/iiPythonx/logic"     , "Logic Processor"       , "A logic symbol processor for PHI-1113.")                                }}
+            {{ link("https://github.com/iiPythonx/sound"     , "Files through Sound"   , "Sending files through air using sound frequencies.")                    }}
+            {{ link("https://cdbar.iipython.dev"             , "cdbar"                 , "A website for quickly looking up CD barcodes.")                         }}
+            {{ link("https://github.com/iiPythonx/usps"      , "USPS CLI"              , "A CLI for tracking packages from USPS.")                                }}
+        </ul>
     </article>
 {% endblock %}

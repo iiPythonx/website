@@ -115,43 +115,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* Projects page */
-div.project-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-a.project {
-    cursor: pointer;
-    flex: 1;
-    min-width: 300px;
-    padding: 5px;
-    border: 1px solid #fff;
-    position: relative;
-}
-a.project > p {
-    font-size: 12px;
-}
-a.project > svg {
-    right: 10px;
-    bottom: 10px;
-    position: absolute;
-    opacity: 0;
-}
-a.project:hover svg {
-    opacity: 1;
-    transition: opacity .5s ease;
-}
-a.project:hover h3, a.project:hover p {
-    filter: blur(.05rem);
-}
-a.project {
-    text-decoration: none;
-}
-a.project h3, a.project p {
-    transition: filter .1s ease;
-}
-
 /* Sidebar */
 .external-links {
     list-style: none;
@@ -206,6 +169,14 @@ footer > a {
 }
 footer > a:hover {
     text-decoration: underline;
+}
+
+/* June improvements */
+h2 {
+    font-family: monospace;
+}
+hr {
+    border-bottom: none;
 }
 
 /* Loading spinner */
