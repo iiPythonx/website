@@ -1,4 +1,4 @@
-(() => {
+{
     const bear = document.getElementById("snowball");
     var rotation = 0;
     bear.addEventListener("click", () => {
@@ -10,4 +10,4 @@
         bear.classList.remove("move");
         (rotation = 0), (bear.style.rotate = "0deg");
     });
-})();
+}

@@ -1,6 +1,6 @@
 // Copyright (c) 2025 iiPython
 
-(() => {
+{
 
     // Process links
     Array.from(document.querySelectorAll("nav > a")).find(e => e.textContent.toLowerCase() === (location.pathname.slice(1) || "home")).classList.add("active");
@@ -70,4 +70,4 @@
         }
     }
     setup_links(document);
-})();
+}

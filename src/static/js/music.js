@@ -1,6 +1,6 @@
 // Copyright (c) 2024-2025 iiPython
 
-(() => {
+{
     let last_track = { mbid: {} };
     const now_playing = document.getElementById("now-playing");
 
@@ -32,4 +32,4 @@
             `;
         });
     });
-})();
+}
