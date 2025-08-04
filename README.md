@@ -1,11 +1,10 @@
 # iiPythonx/website
 
-This is my personal repo for [my website](https://iipython.dev).  
-It's completely static, and can be served with any modern web server (I personally use nginx).  
-
-If you do host it yourself, make sure you deny access to .git/ or other sensitive locations.
+This is the source for my website, [iipython.dev](https://iipython.dev).  
+It's built as needed and deployed as a static site through [Cloudflare Workers](https://workers.cloudflare.com/).
 
 ---
 
-This is a [Nova](https://github.com/iiPythonx/Nova) project, so building it is as simple as running `nova build`.  
-It used to be based on a Python backend, but I've moved to static sites nowadays.
+Building it is as simple as installing [Nova](https://github.com/iiPythonx/Nova), and then running `nova build`.  
+The configuration is available in `nova.toml`, which configures minification and single page routing.
+
