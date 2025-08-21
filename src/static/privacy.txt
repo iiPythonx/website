@@ -1,3 +1,40 @@
+iiPython Privacy Policy, Revision 6.
+Applies to the following domains:
+    - lan.iipython.dev
+    - mail.iipython.dev
+    - covers.iipython.dev
+    - aos-us-1.admsoftware.org
+
+The following are not covered by this policy:
+    - iipython.dev           (Running on CloudFlare workers)
+    - pizza.iipython.dev     ^
+    - radar.iipython.dev     ^
+    - index.iipython.dev     ^
+    - uniform.iipython.dev   ^
+
+    CloudFlare privacy policy -> https://www.cloudflare.com/privacypolicy/
+
+==== >= 08/20/2025
+
+1. No information of any kind is collected by any of my services. I don't even have
+a place for you to select a username or fill out an address form.
+
+2. No access logs of any kind are kept for my public services. NGINX has been
+configured to log errors only, and even then the only information stored is the
+access time and URL (no ip, no user-agent, nothing).
+
+3. No data is sold. As stated above, I store nothing so there's nothing to sell.
+
+4. Note that some endpoints (notably wss://lan.iipython.dev/now-playing) are
+proxied through CloudFlare and are therefore subjected to the CloudFlare privacy policy.
+
+    This policy is available here -> https://www.cloudflare.com/privacypolicy/
+
+5. Any questions about any of this can be sent to: ben <at> thiswebsite <dot> tld.
+                                             (gotta stop the bots from scraping it somehow)
+
+==== < 08/20/2025
+
 Hark! O gentle user, lend thine ear,
 To learn of privacy, without a fear.
 In this digital realm, where shadows creep,
