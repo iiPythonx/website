@@ -1,18 +1,25 @@
-iiPython Privacy Policy, Revision 6.
-Applies to the following domains:
-    - lan.iipython.dev
-    - mail.iipython.dev
-    - covers.iipython.dev
-    - aos-us-1.admsoftware.org
-
-The following are not covered by this policy:
-    - iipython.dev           (Running on CloudFlare workers)
+iiPython Privacy Policy, Revision 6.1.
+The following are NOT covered by this policy:
+    - iipython.dev           (Running on CloudFlare workers, never hits my infrastructure)
     - pizza.iipython.dev     ^
     - radar.iipython.dev     ^
     - index.iipython.dev     ^
     - uniform.iipython.dev   ^
 
     CloudFlare privacy policy -> https://www.cloudflare.com/privacypolicy/
+
+The following ARE covered by this policy:
+    - lan.iipython.dev
+    - mail.iipython.dev
+    - covers.iipython.dev
+
+Special circumstances:
+    - aos-us-1.admsoftware.org
+
+    Subject to the AOS Privacy Policy, available at https://docs.admsoftware.org/AOS/legal/privacy.
+    Any questions regarding that policy should be directed to gdpr@admsoftware.org.
+
+    * My main policy does apply, however additional logging practices take place (on their part, not mine).
 
 ==== >= 08/20/2025
 
