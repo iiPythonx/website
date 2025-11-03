@@ -9,17 +9,18 @@
         span.starred {
             color: var(--accent);
         }
-        ul {
+        ul.ratings {
             padding: 0px;
-        }
-        li {
-            display: flex;
-            justify-content: space-between;
 
-            & > span:first-child {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                text-wrap: nowrap;
+            li {
+                display: flex;
+                justify-content: space-between;
+
+                & > span:first-child {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-wrap: nowrap;
+                }
             }
         }
     </style>

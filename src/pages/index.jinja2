@@ -19,24 +19,21 @@
             font-family: monospace;
             color: rgba(255, 255, 255, 0.6)
         }
-        .bigboi {
-            flex: 1;
-        }
         #funni {
             cursor: pointer;
         }
 
         /* Reapply base #content to article */
-        article {
+        article#box {
             display: flex;
             flex-direction: column;
             gap: .5em;
             overflow-y: scroll;
             scrollbar-width: thin;
-            height: calc(100% - 30px);
+            height: calc(100% - 20px);
         }
     </style>
-    <article class = "secondbigboi">
+    <article id = "box">
         <details name = "prologue" open>
             <summary>Prologue</summary>
             Hi. I'm Benjamin, <br>
@@ -76,7 +73,7 @@
     </article>
     <div id = "extras">
         <span id = "clock"></span>
-        <div class = "bigboi"></div>
+        <div class = "chonk"></div>
         <span id = "funni">:3</span>
     </div>
 {% endblock %}

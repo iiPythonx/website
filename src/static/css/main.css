@@ -88,7 +88,6 @@ article > hr {
 /* Now playing */
 #now-playing {
     gap: 10px;
-    margin-top: 10px;
     display: flex;
 }
 #now-playing > a {
