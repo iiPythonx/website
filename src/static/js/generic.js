@@ -68,24 +68,56 @@
                 setup_links(replace);
             });
         }
+
+        // :3
+        const funni = document.getElementById("funni");
+        if (funni) funni.addEventListener("click", () => {
+            document.getElementById("content").innerHTML = `
+                <video style = "flex: 1; width: 100%;" loop autoplay>
+                    <source src = "https://cdn.iipython.dev/lfac2.mp4" type = "video/mp4">
+                </video>
+            `;
+        });
+
+        if (window.clock_tick) window.clock_tick();
     }
     setup_links(document);
 
-    // Index JS
-    const clock_element = document.getElementById("clock");
-    if (clock_element) {
-        
-        // Clock
-        const clock = () => {
-            clock_element.innerText = `August 5th, 06:52:33 PM CDT`;
-        }
-        
-        setInterval(clock, 100);
-        clock();
+    // Clock
+    {
+        let clock_element;
 
-        // :3
-        document.getElementById("funni").addEventListener("click", () => {
-            console.log("clicked on funni");
+        const clock = () => {
+            clock_element = document.getElementById("clock");
+            if (!clock_element) return;
+            clock_element.innerText = (new Date()).toLocaleString();
+        }
+        window.clock_tick = clock;
+        
+        setInterval(clock, 1000);
+        clock();
+    }
+
+    // Handle profile picture
+    {
+        const pfp = document.getElementById("pfp");
+
+        let progress = 5;
+        let modifier = null;
+        setInterval(() => {
+            if (!modifier) return;
+            progress += modifier;
+            if (progress < 0 || progress > 5) return;
+            pfp.style.animation = `spin ${progress}s linear infinite`;
+        }, 50);
+
+        pfp.addEventListener("mouseover", () => {
+            if (progress > 5) progress = 5;
+            modifier = -.2;
+        });
+        pfp.addEventListener("mouseleave", () => {
+            if (progress < 0) progress = 0;
+            modifier = .05;
         });
     }
 }
