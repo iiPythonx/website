@@ -70,4 +70,22 @@
         }
     }
     setup_links(document);
+
+    // Index JS
+    const clock_element = document.getElementById("clock");
+    if (clock_element) {
+        
+        // Clock
+        const clock = () => {
+            clock_element.innerText = `August 5th, 06:52:33 PM CDT`;
+        }
+        
+        setInterval(clock, 100);
+        clock();
+
+        // :3
+        document.getElementById("funni").addEventListener("click", () => {
+            console.log("clicked on funni");
+        });
+    }
 }

@@ -3,7 +3,7 @@
     --width: 1050px;
     --height: 500px;
     --accent: #6dabe4;  /* Ayanami Blue */
-    --background: rgba(18, 18, 18, .8);
+    --background: rgba(0, 0, 0, 0.8);
 }
 @font-face {
     font-family: "Hasklig";
@@ -37,9 +37,13 @@ header > h2 {
     user-select: none;
 }
 main {
-    gap: var(--gap);
     display: flex;
     height: var(--height);
+}
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 #content {
     position: relative;
@@ -53,6 +57,7 @@ nav, main {
     border: 1px solid #fff;
     background-color: var(--background);
     backdrop-filter: blur(.5rem);
+    border-radius: 5px;
 }
 nav {
     height: 20px;
@@ -198,9 +203,37 @@ hr {
     border-radius: 50%;
     border: 3.2px solid currentColor;
     border-color: currentColor transparent currentColor transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
+    animation: spin 1.2s linear infinite;
 }
-@keyframes lds-dual-ring {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Profile picture */
+#pfp {
+    width: 30px;
+    height: 30px;
+    animation: spin 5s linear infinite;
+}
+
+/* Accordions */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    margin-bottom: 10px;
+}
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    cursor: pointer;
+}
+details[open] {
+    padding: 0.5em;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
 }

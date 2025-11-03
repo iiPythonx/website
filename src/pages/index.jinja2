@@ -2,23 +2,43 @@
 {% set title = "ben's house" %}
 {% set description = "place to share some thoughts." %}
 {% block content %}
-    <article>
-        <h2>Prologue</h2>
-        <hr>
-        <p>
-            Hi. I'm Benjamin, <br>
-            I'm a software developer, sysadmin, cybersecurity analyst and privacy enthusiast.
-            <br><br>
-            This website serves as my personal space on the internet where I share random projects,
-            host infrastructure, and more. For more information, check the <a href = "https://github.com/iiPythonx/website" target = "_blank" rel = "noreferrer">Github Page</a>.
-            <br><br>
-            I've been programming for around 10 years and know about 8 independent programming languages,
-            the most notable being Python, Javascript, & Lua.
-        </p>
-    </article>
-    <article>
-        <h2>Fun Facts</h2>
-        <hr>
+    <style>
+        #extras {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: calc(100% - 20px);
+            border-top: 1px solid #fff;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        #extras span {
+            font-family: monospace;
+            color: rgba(255, 255, 255, 0.6)
+        }
+        .bigboi {
+            flex: 1;
+        }
+        #funni {
+            cursor: pointer;
+        }
+    </style>
+    <details name = "index" open>
+        <summary>Prologue</summary>
+        Hi. I'm Benjamin, <br>
+        a software developer, system administrator, and privacy fanatic.
+        <br><br>
+        This website serves as my personal space on the internet where I share random projects,
+        host infrastructure, and more. For more information, check the <a href = "https://github.com/iiPythonx/website" target = "_blank" rel = "noreferrer">Github Page</a>.
+        <br><br>
+        I've been programming for around 10 years and know about 8 independent programming languages,
+        the most notable being Python, Javascript, & Lua.
+    </details>
+    <details name = "index">
+        <summary>Fun Facts</summary>
         <ul>
             <li>I'm working on my Masters in Cybersecurity.</li>
             <li>I have a self-hosted music library of 370+ albums.</li>
@@ -26,23 +46,25 @@
             <li>I own 4 Redbox kiosks, yes, the movie renting machines.</li>
             <li>I <em>(used)</em> to run a yearly Minecraft server, called <a href = "https://gc.iipython.dev">Geesecraft</a>.</li>
         </ul>
-    </article>
-    <article>
-        <h2>Hobbies</h2>
-        <hr>
-        <p>
-            I heavily enjoy system administration, software development, & networking. <br>
-            On the not so computer related side of things, I like watching:
+    </details>
+    <details name = "index">
+        <summary>Hobbies</summary>
+        I heavily enjoy system administration, software development, & networking. <br>
+        On the not so computer related side of things, I like watching:
+        <ul>
+            <li>TV Shows (such as <a href = "https://www.imdb.com/title/tt1839578/">Person of Interest</a>)</li>
+            <li><i>Anime</i> (the most notable being <a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/">Initial D</a> and <a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/">Evangelion</a>)</li>
             <ul>
-                <li>TV Shows (such as <a href = "https://www.imdb.com/title/tt1839578/">Person of Interest</a>)</li>
-                <li><i>Anime</i> (the most notable being <a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/">Initial D</a> and <a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/">Evangelion</a>)</li>
-                <ul>
-                    <li>Call me a weeb and you will regret it.</li>
-                    <li><s>This sites' accent color is <a href = "https://www.turner.co.jp/ayanamiblue/">Ayanami Blue</a>, lmao.</s></li>
-                </ul>
+                <li>Call me a weeb and you will regret it.</li>
+                <li><s>This sites' accent color is <a href = "https://www.turner.co.jp/ayanamiblue/">Ayanami Blue</a>, lmao.</s></li>
             </ul>
-            <br>
-            I also really like rain and storms, for some reason.
-        </p>
-    </article>
+        </ul>
+        <br>
+        I also really like rain and storms, for some reason.
+    </details>
+    <div id = "extras">
+        <span id = "clock"></span>
+        <div class = "bigboi"></div>
+        <span id = "funni">:3</span>
+    </div>
 {% endblock %}
