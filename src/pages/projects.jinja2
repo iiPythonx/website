@@ -35,14 +35,9 @@
             transition: opacity .5s ease;
         }
     </style>
-    <article>
-        <h2>Project Index</h2>
-        <hr>
-        For a <em>complete</em> list of my projects, please visit the <a href = "https://index.iipython.dev">iiPython Index</a>.
-    </article>
-    <article>
-        <h2>Major Projects</h2>
-        <hr>
+    <span>For a <em>complete</em> list of my projects, please visit the <a href = "https://index.iipython.dev">iiPython Index</a>.</span>
+    <details name = "projects" open>
+        <summary>Major Projects</summary>
         <ul>
             {{ link("https://github.com/iiPythonx/nightwatch", "Nightwatch"            , "IRC-like privacy-friendly messaging application.")                      }}
             {{ link("https://github.com/iiPythonx/nova"      , "Nova Framework"        , "Site building framework for people who like to keep it simple.")        }}
@@ -56,5 +51,5 @@
             {{ link("https://cdbar.iipython.dev"             , "cdbar"                 , "A website for quickly looking up CD barcodes.")                         }}
             {{ link("https://github.com/iiPythonx/usps"      , "USPS CLI"              , "A CLI for tracking packages from USPS.")                                }}
         </ul>
-    </article>
+    </details>
 {% endblock %}

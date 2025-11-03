@@ -2,62 +2,55 @@
 {% set title = "ben's house / about me" %}
 {% set description = "random fun facts about me." %}
 {% block content %}
-    <article>
-        <h2>Background</h2>
-        <hr>
-        <p>
-            Like I said before on my main page, I'm Benjamin (known as iiPython just for the hell of it really) and I'm (primarily) a software developer. <br>
-            I write random programs, websites, whatever I feel like really and then deploy it for the internet to look at.
-            <br><br>
-            In addition to normal computer science, I'm a heavy fan of the cybersecurity and cryptography fields and plan to major in
-            one (<i>or both!</i>) of them. I also believe privacy is a basic right and take mine very seriously.
-            <br><br>
-            So far, I'm RHCSA and Security+ certified, with hopefully more on the way.
-        </p>
-    </article>
-    <article>
-        <h2>Hobbies (ext.)</h2>
-        <hr>
-        <p>
-            I couldn't fit everything that I like doing into the main page obviously, so here's a more filled out list:
+    <details name = "background" open>
+        <summary>Background</summary>
+        Like I said before on my main page, I'm Benjamin (known as iiPython just for the hell of it really) and I'm (primarily) a software developer. <br>
+        I write random programs, websites, whatever I feel like really and then deploy it for the internet to look at.
+        <br><br>
+        In addition to normal computer science, I'm a heavy fan of the cybersecurity and cryptography fields and plan to major in
+        one (<i>or both!</i>) of them. I also believe privacy is a basic right and take mine very seriously.
+        <br><br>
+        So far, I'm RHCSA and Security+ certified, with hopefully more on the way.
+    </details>
+    <details name = "hobbies">
+        <summary>Hobbies</summary>
+        I couldn't fit everything that I like doing into the main page obviously, so here's a more filled out list:
+        <ul>
+            <li>Watching TV shows / Anime</li>
             <ul>
-                <li>Watching TV shows / Anime</li>
-                <ul>
-                    <li>Some favorites of mine, <i>in no particular order:</i></li>
-                    <li>Person of Interest</li>
-                    <li>Initial D</li>
-                    <li>Neon Genesis Evangelion</li>
-                    <li>Hellsing</li>
-                    <li>Black Lagoon</li>
-                    <li>See my <a href = "/anime">anime</a> page for more...</li>
-                </ul>
-                <li>Listening to music</li>
-                <ul>
-                    <li>I'm kind of an audiophile in this regard, I have an all-FLAC album collection along with a pair of Philips X2HR's.</li>
-                </ul>
-                <li>System administration</li>
-                <ul>
-                    <li>Arch Linux, Fedora, Debian-based (ew), you name it.</li>
-                    <li>I <i>very lightly</i> messed with Windows Server 2019 during my Security+ certification.</li>
-                </ul>
-                <li>Network management</li>
-                <li>Going places I've never been before</li>
-                <ul>
-                    <li>I went on a family trip to France in August 2024.</li>
-                    <li>I've hit up Dallas during the VEX World Championship 2022.</li>
-                    <li>Las Vegas? Been there, done that.</li>
-                </ul>
+                <li>Some favorites of mine, <i>in no particular order:</i></li>
+                <li>Person of Interest</li>
+                <li>Initial D</li>
+                <li>Neon Genesis Evangelion</li>
+                <li>Hellsing</li>
+                <li>Black Lagoon</li>
+                <li>See my <a href = "/anime">anime</a> page for more...</li>
             </ul>
-        </p>
-    </article>
-    <article>
-        <h2>Checklist</h2>
-        <hr>
+            <li>Listening to music</li>
+            <ul>
+                <li>I'm kind of an audiophile in this regard, I have an all-FLAC album collection along with a pair of Philips X2HR's.</li>
+            </ul>
+            <li>System administration</li>
+            <ul>
+                <li>Arch Linux, Fedora, Debian-based (ew), you name it.</li>
+                <li>I <i>very lightly</i> messed with Windows Server 2019 during my Security+ certification.</li>
+            </ul>
+            <li>Network management</li>
+            <li>Going places I've never been before</li>
+            <ul>
+                <li>I went on a family trip to France in August 2024.</li>
+                <li>I've hit up Dallas during the VEX World Championship 2022.</li>
+                <li>Las Vegas? Been there, done that.</li>
+            </ul>
+        </ul>
+    </details>
+    <details name = "checklist">
+        <summary>Life Checklist</summary>
         <ul>
             <li><s>Get into college</s></li>
             <li>Make enough money to move into my own house in another state</li>
             <li>Take a decent trip to Japan</li>
             <li>Acquire a PhD in Cybersecurity?</li>
         </ul>
-    </article>
+    </details>
 {% endblock %}

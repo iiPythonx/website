@@ -9,17 +9,15 @@
         span.starred {
             color: var(--accent);
         }
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
-    <article>
-        <h2>Ratings</h2>
-        <hr>
-        <p>
-            For my self hosted music collection, I run Navidrome which means I can extract all my album ratings fairly easily.
-            <br><br>
-            This is the current list of them:
-        </p>
+    <details name = "ratings" open>
+        <summary>Music Ratings</summary>
         <ul class = "ratings">
-            <li>Daft Punk: Discovery (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
+            <li>Daft Punk: Discovery <span class = "stars"><span class = "starred">★★★★★</span></span></li>
             <li>Grim Salvo: Voidstar (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
             <li>shiey: contrast (<span class = "stars"><span class = "starred">★★★★★</span></span>)</li>
             <li>AJR: Neotheater (<span class = "stars"><span class = "starred">★★★★</span>★</span>)</li>
@@ -219,6 +217,5 @@
             <li>NF: Moments (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
             <li>blackbear: cybersex (<span class = "stars"><span class = "starred">★</span>★★★★</span>)</li>
         </ul>
-        </p>
-    </article>
+    </details>
 {% endblock %}

@@ -25,43 +25,55 @@
         #funni {
             cursor: pointer;
         }
+
+        /* Reapply base #content to article */
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            height: calc(100% - 30px);
+        }
     </style>
-    <details name = "index" open>
-        <summary>Prologue</summary>
-        Hi. I'm Benjamin, <br>
-        a software developer, system administrator, and privacy fanatic.
-        <br><br>
-        This website serves as my personal space on the internet where I share random projects,
-        host infrastructure, and more. For more information, check the <a href = "https://github.com/iiPythonx/website" target = "_blank" rel = "noreferrer">Github Page</a>.
-        <br><br>
-        I've been programming for around 10 years and know about 8 independent programming languages,
-        the most notable being Python, Javascript, & Lua.
-    </details>
-    <details name = "index">
-        <summary>Fun Facts</summary>
-        <ul>
-            <li>I'm working on my Masters in Cybersecurity.</li>
-            <li>I have a self-hosted music library of 370+ albums.</li>
-            <li>I was the cyber commander for our town's local JROTC.</li>
-            <li>I own 4 Redbox kiosks, yes, the movie renting machines.</li>
-            <li>I <em>(used)</em> to run a yearly Minecraft server, called <a href = "https://gc.iipython.dev">Geesecraft</a>.</li>
-        </ul>
-    </details>
-    <details name = "index">
-        <summary>Hobbies</summary>
-        I heavily enjoy system administration, software development, & networking. <br>
-        On the not so computer related side of things, I like watching:
-        <ul>
-            <li>TV Shows (such as <a href = "https://www.imdb.com/title/tt1839578/">Person of Interest</a>)</li>
-            <li><i>Anime</i> (the most notable being <a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/">Initial D</a> and <a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/">Evangelion</a>)</li>
+    <article class = "secondbigboi">
+        <details name = "prologue" open>
+            <summary>Prologue</summary>
+            Hi. I'm Benjamin, <br>
+            a software developer, system administrator, and privacy fanatic.
+            <br><br>
+            This website serves as my personal space on the internet where I share random projects,
+            host infrastructure, and more. For more information, check the <a href = "https://github.com/iiPythonx/website" target = "_blank" rel = "noreferrer">Github Page</a>.
+            <br><br>
+            I've been programming for around 10 years and know about 8 independent programming languages,
+            the most notable being Python, Javascript, & Lua.
+        </details>
+        <details name = "facts">
+            <summary>Fun Facts</summary>
             <ul>
-                <li>Call me a weeb and you will regret it.</li>
-                <li><s>This sites' accent color is <a href = "https://www.turner.co.jp/ayanamiblue/">Ayanami Blue</a>, lmao.</s></li>
+                <li>I'm working on my Masters in Cybersecurity.</li>
+                <li>I have a self-hosted music library of 370+ albums.</li>
+                <li>I was the cyber commander for our town's local JROTC.</li>
+                <li>I own 4 Redbox kiosks, yes, the movie renting machines.</li>
+                <li>I <em>(used)</em> to run a yearly Minecraft server, called <a href = "https://gc.iipython.dev">Geesecraft</a>.</li>
             </ul>
-        </ul>
-        <br>
-        I also really like rain and storms, for some reason.
-    </details>
+        </details>
+        <details name = "hobbies">
+            <summary>Hobbies</summary>
+            I heavily enjoy system administration, software development, & networking. <br>
+            On the not so computer related side of things, I like watching:
+            <ul>
+                <li>TV Shows (such as <a href = "https://www.imdb.com/title/tt1839578/">Person of Interest</a>)</li>
+                <li><i>Anime</i> (the most notable being <a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/">Initial D</a> and <a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/">Evangelion</a>)</li>
+                <ul>
+                    <li>Call me a weeb and you will regret it.</li>
+                    <li><s>This sites' accent color is <a href = "https://www.turner.co.jp/ayanamiblue/">Ayanami Blue</a>, lmao.</s></li>
+                </ul>
+            </ul>
+            <br>
+            I also really like rain and storms, for some reason.
+        </details>
+    </article>
     <div id = "extras">
         <span id = "clock"></span>
         <div class = "bigboi"></div>

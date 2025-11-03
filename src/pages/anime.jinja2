@@ -5,7 +5,16 @@
     <style>
         img.deco {
             position: absolute;
-            right: 10px; 
+            right: 10px;
+        }
+        details {
+            width: 60%;
+
+            div {
+                max-height: 200px;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+            }
         }
         .dnote {
             bottom: 0px;
@@ -20,36 +29,41 @@
             rotate: 30deg;
         }
     </style>
-    <article>
-        <h2>Favorites</h2>
-        <hr>
+    <span>As of recent, just check <a href = "https://anilist.co/user/iiPython/">my AniList profile</a> :3</span>
+    <details name = "favorites" open>
+        <summary>Favorites</summary>
         <ul>
-            <li><a href = "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion">Neon Genesis Evangelion</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Black_Lagoon">Black Lagoon</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Death_Note">Death Note</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Initial_D">Initial D</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Solo_Leveling">Solo Leveling</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Spy_×_Family">SPY x FAMILY</a></li>
+            <li><a href = "https://anilist.co/anime/30/Neon-Genesis-Evangelion/">Neon Genesis Evangelion</a></li>
+            <li><a href = "https://anilist.co/anime/889/Black-Lagoon/">Black Lagoon</a></li>
+            <li><a href = "https://anilist.co/anime/1535/Death-Note/"">Death Note</a></li>
+            <li><a href = "https://anilist.co/anime/185/Initial-D-1st-Stage/">Initial D</a></li>
+            <li><a href = "https://anilist.co/anime/151807/Solo-Leveling/">Solo Leveling</a></li>
+            <li><a href = "https://anilist.co/anime/140960/SPY-x-FAMILY/">SPY x FAMILY</a></li>
         </ul>
-    </article>
-    <article>
-        <h2>Completed</h2>
-        <hr>
-        <p>This list includes all my favorites listed above.</p>
-        <ul>
-            <li><a href = "https://en.wikipedia.org/wiki/Hellsing">Hellsing</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Hellsing">Hellsing: Ultimate</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Cells_at_Work!">Cells at Work!</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Chainsaw_Man">Chainsaw Man</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Dandadan">Dandadan</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Darling_in_the_Franxx">DARLING in the FRANXX</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Elfen_Lied">Elfen Lied</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Great_Teacher_Onizuka">Great Teacher Onizuka</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Golden_Boy_(manga)">Golden Boy</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Bocchi_the_Rock!">Bocchi The Rock!</a></li>
-            <li><a href = "https://en.wikipedia.org/wiki/Tokyo_Ghoul">Tokyo Ghoul</a></li>
-        </ul>
-    </article>
+    </details>
+    <details name = "completed">
+        <summary>Completed</summary>
+        <div>
+            <ul>
+                <li><a href = "https://anilist.co/anime/1/Cowboy-Bebop/">Cowboy Bebop</a></li>
+                <li><a href = "https://anilist.co/anime/154587/Frieren-Beyond-Journeys-End/">Frieren: Beyond Journey's End</a></li>
+                <li><a href = "https://anilist.co/anime/116589/86-EIGHTYSIX/">86: Eighty-six</a></li>
+                <li><a href = "https://anilist.co/anime/120377/Cyberpunk-Edgerunners/">Cyberpunk: Edgerunners</a></li>
+                <li><a href = "https://anilist.co/anime/20447/Noragami/">Noragami</a></li>
+                <li><a href = "https://anilist.co/anime/270/Hellsing/">Hellsing</a></li>
+                <li><a href = "https://anilist.co/anime/777/Hellsing-Ultimate/">Hellsing: Ultimate</a></li>
+                <li><a href = "https://anilist.co/anime/100977/Cells-at-Work/">Cells at Work!</a></li>
+                <li><a href = "https://anilist.co/anime/127230/Chainsaw-Man/">Chainsaw Man</a></li>
+                <li><a href = "https://anilist.co/anime/171018/DAN-DA-DAN/">Dandadan</a></li>
+                <li><a href = "https://anilist.co/anime/99423/DARLING-in-the-FRANXX/">DARLING in the FRANXX</a></li>
+                <li><a href = "https://anilist.co/anime/226/Elfen-Lied/">Elfen Lied</a></li>
+                <li><a href = "https://anilist.co/anime/245/GTO-Great-Teacher-Onizuka/">Great Teacher Onizuka</a></li>
+                <li><a href = "https://anilist.co/anime/268/GOLDEN-BOY/">Golden Boy</a></li>
+                <li><a href = "https://anilist.co/anime/130003/OCCHI-THBE-ROCK/">Bocchi The Rock!</a></li>
+                <li><a href = "https://anilist.co/anime/20605/Tokyo-Ghoul/">Tokyo Ghoul</a></li>
+            </ul>
+        </div>
+    </details>
     <p id = "vroom">*vroom vroom skrrt*</p>
     <img src = "/assets/l_w_light.avif" class = "deco dnote">
     <img src = "/assets/86.avif" class = "deco initd">
