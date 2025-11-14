@@ -75,15 +75,6 @@ article > hr {
 .chonk {
     flex: 1;
 }
-.read-progress {
-    right: 5px;
-    bottom: 5px;
-    position: sticky;
-    display: block;
-    font-size: 11px;
-    margin-left: auto;
-    width: max-content;
-}
 
 /* Now playing */
 #now-playing {
