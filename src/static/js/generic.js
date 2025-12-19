@@ -59,9 +59,6 @@
         });
 
         if (window.clock_tick) window.clock_tick();
-
-        // Handle beacon bc yuh
-        navigator.sendBeacon("https://ghost.iipython.dev/cheesepizza", window.location.href);
     }
     setup_links(document);
 
