@@ -32,6 +32,26 @@ svg {
     fill: var(--default-fg);
 }
 
+.inline-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        hr {
+            margin-bottom: 10px;
+        }
+
+        a {
+            width: fit-content;
+        }
+    }
+}
+
 /* Links */
 a {
     text-decoration: none;
