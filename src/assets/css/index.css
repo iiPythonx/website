@@ -45,15 +45,12 @@ svg {
         hr {
             margin-bottom: 10px;
         }
-
-        a {
-            width: fit-content;
-        }
     }
 }
 
 /* Links */
 a {
+    width: fit-content;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     color: var(--default-link);
@@ -87,13 +84,12 @@ body, html {
 
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 main {
     width: 50%;
-    height: 50%;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 10px;
