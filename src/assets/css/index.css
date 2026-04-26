@@ -1,0 +1,72 @@
+/* Poppins */
+@font-face {
+    font-family: "Poppins";
+    font-weight: normal;
+    src: url("../fonts/poppins.woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: bold;
+    src: url("../fonts/poppins_bold.woff2");
+}
+
+/* Somewhat of a CSS reset */
+* {
+    margin: 0px;
+    color: #dfd3d3;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    transition: color .25s ease;
+
+    &:hover {
+        color: #d4a5a5;
+    }
+}
+
+/* Background styling */
+body, html {
+    height: 100%;
+    background: #15181d;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Main header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        user-select: none;
+        cursor: pointer;
+        margin-right: auto;
+    }
+}
+
+.caret {
+    font-weight: normal;
+    animation: 1s blink infinite;
+}
+
+@keyframes blink {
+    0%   { opacity:   0% }
+    50%  { opacity: 100% }
+    100% { opacity:   0% }
+}
