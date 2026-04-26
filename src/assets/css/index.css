@@ -1,3 +1,11 @@
+/* Variables! */
+:root {
+    --ayanami-blue: #6dabe4;
+    --default-bg: #15181d;
+    --default-fg: #dfd3d3;
+    --link-hover: #d4a5a5;
+}
+
 /* Poppins */
 @font-face {
     font-family: "Poppins";
@@ -14,7 +22,7 @@
 /* Somewhat of a CSS reset */
 * {
     margin: 0px;
-    color: #dfd3d3;
+    color: var(--default-fg);
     font-family: Poppins;
 }
 
@@ -23,14 +31,14 @@ a {
     transition: color .25s ease;
 
     &:hover {
-        color: #d4a5a5;
+        color: var(--link-hover);
     }
 }
 
 /* Background styling */
 body, html {
     height: 100%;
-    background: #15181d;
+    background: var(--default-bg);
 }
 
 body {
@@ -57,6 +65,13 @@ header {
         user-select: none;
         cursor: pointer;
         margin-right: auto;
+
+        span:first-child {
+            background: linear-gradient(to right, var(--ayanami-blue), var(--link-hover));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
 
