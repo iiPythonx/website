@@ -30,29 +30,26 @@
 a {
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
-    color: var(--default-fg);
+    color: var(--default-link);
     transition-duration: 250ms;
     transition-timing-function: ease;
     transition-property: color, border-color, opacity;
     
     &.link-active {
-        color: var(--default-link);
         border-color: var(--default-link);
     }
     
     &.link-invert {
+        color: var(--default-fg);
+
         &:hover {
             color: var(--default-link);
         }
     }
     
-    &:not(.link-invert) {
-        color: var(--default-link);
-
-        &:hover {
-            opacity: .8;
-            border-color: var(--default-link);
-        }
+    &:not(.link-invert):hover {
+        opacity: .8;
+        border-color: var(--default-link);
     }
 }
 
@@ -105,4 +102,9 @@ header {
     0%   { opacity:   0% }
     50%  { opacity: 100% }
     100% { opacity:   0% }
+}
+
+/* Page content */
+.page-title {
+    margin: 10px 0px 10px 0px;
 }
