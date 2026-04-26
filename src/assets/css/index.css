@@ -3,7 +3,7 @@
     --ayanami-blue: #6dabe4;
     --default-bg: #15181d;
     --default-fg: #dfd3d3;
-    --link-hover: #d4a5a5;
+    --link-hover: 212, 165, 165;
 }
 
 /* Poppins */
@@ -29,9 +29,16 @@
 a {
     text-decoration: none;
     transition: color .25s ease;
+    border-bottom: 1px solid rgba(var(--link-hover), 0);
+    transition: border-color .5s ease;
 
     &:hover {
-        color: var(--link-hover);
+        color: rgb(var(--link-hover));
+    }
+
+    &.link-active {
+        color: rgb(var(--link-hover));
+        border-color: rgba(var(--link-hover), 1);
     }
 }
 
@@ -67,7 +74,7 @@ header {
         margin-right: auto;
 
         span:first-child {
-            background: linear-gradient(to right, var(--ayanami-blue), var(--link-hover));
+            background: linear-gradient(to right, var(--ayanami-blue), rgb(var(--link-hover)));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

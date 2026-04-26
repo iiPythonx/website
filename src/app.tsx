@@ -1,4 +1,10 @@
 import { useState } from "preact/hooks";
+import { Link, Route, Switch } from "wouter";
+
+import { AboutPage } from "./pages/about";
+import { ProjectPage } from "./pages/projects";
+import { ContactPage } from "./pages/contact";
+
 import "./assets/css/index.css";
 
 const AVAILABLE_NAMES = [
@@ -21,11 +27,18 @@ export function App() {
                 <span>{AVAILABLE_NAMES[displayNameIndex]}</span>
                 <span class = "caret">_</span>
             </h2>
-            <a href = "/about">About</a>
-            <a href = "/projects">Projects</a>
-            <a href = "/contact">Contact</a>
+            <Link className = {(a) => a ? "link-active" : ""} href = "/about">About</Link>
+            <Link className = {(a) => a ? "link-active" : ""} href = "/projects">Projects</Link>
+            <Link className = {(a) => a ? "link-active" : ""} href = "/contact">Contact</Link>
         </header>
         <hr />
-        <section id = "content"><span>Hello, world!</span></section>
+        <section id = "content">
+            <Switch>
+                <Route path = "/about" component = {AboutPage} />
+                <Route path = "/projects" component = {ProjectPage} />
+                <Route path = "/contact" component = {ContactPage} />
+                <Route><AboutPage /></Route>
+            </Switch>
+        </section>
     </>
 }
