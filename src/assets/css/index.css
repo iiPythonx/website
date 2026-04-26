@@ -1,9 +1,9 @@
 /* Variables! */
 :root {
-    --ayanami-blue: #6dabe4;
-    --default-bg: #15181d;
-    --default-fg: #dfd3d3;
-    --link-hover: 212, 165, 165;
+    --ayanami-blue: #6dabe4ff;
+    --default-bg: #15181dff;
+    --default-fg: #dfd3d3ff;
+    --default-link: #d4a5a5ff;
 }
 
 /* Poppins */
@@ -26,19 +26,33 @@
     font-family: Poppins;
 }
 
+/* Links */
 a {
     text-decoration: none;
-    transition: color .25s ease;
-    border-bottom: 1px solid rgba(var(--link-hover), 0);
-    transition: border-color .5s ease;
-
-    &:hover {
-        color: rgb(var(--link-hover));
-    }
-
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: var(--default-fg);
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-property: color, border-color, opacity;
+    
     &.link-active {
-        color: rgb(var(--link-hover));
-        border-color: rgba(var(--link-hover), 1);
+        color: var(--default-link);
+        border-color: var(--default-link);
+    }
+    
+    &.link-invert {
+        &:hover {
+            color: var(--default-link);
+        }
+    }
+    
+    &:not(.link-invert) {
+        color: var(--default-link);
+
+        &:hover {
+            opacity: .8;
+            border-color: var(--default-link);
+        }
     }
 }
 
@@ -74,7 +88,7 @@ header {
         margin-right: auto;
 
         span:first-child {
-            background: linear-gradient(to right, var(--ayanami-blue), rgb(var(--link-hover)));
+            background: linear-gradient(to right, var(--ayanami-blue), var(--default-link));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

@@ -27,9 +27,9 @@ export function App() {
                 <span>{AVAILABLE_NAMES[displayNameIndex]}</span>
                 <span class = "caret">_</span>
             </h2>
-            <Link className = {(a) => a ? "link-active" : ""} href = "/about">About</Link>
-            <Link className = {(a) => a ? "link-active" : ""} href = "/projects">Projects</Link>
-            <Link className = {(a) => a ? "link-active" : ""} href = "/contact">Contact</Link>
+            <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/about">About</Link>
+            <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/projects">Projects</Link>
+            <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/contact">Contact</Link>
         </header>
         <hr />
         <section id = "content">
