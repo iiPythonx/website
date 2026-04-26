@@ -26,6 +26,12 @@
     font-family: Poppins;
 }
 
+svg {
+    height: 18px;
+    width: 18px;
+    fill: var(--default-fg);
+}
+
 /* Links */
 a {
     text-decoration: none;
