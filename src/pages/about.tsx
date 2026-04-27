@@ -48,12 +48,10 @@ export function AboutPage() {
         <div className = "inline-columns">
             <section>
                 <h2 class = "page-title">Accounts</h2>
-                <hr />
                 <ItemMapping itemList = {ACCOUNT_LIST} />
             </section>
             <section>
                 <h2 class = "page-title">Frens!</h2>
-                <hr />
                 <ItemMapping itemList = {[
                     { name: "DmmD", link: "https://dmmdgm.dev", text: "dmmdgm.dev" },
                     { name: "Ernesto", link: "https://k4ffu.dev", text: "k4ffu.dev" },
@@ -63,7 +61,6 @@ export function AboutPage() {
             </section>
             <section>
                 <h2 class = "page-title">Services</h2>
-                <hr />
                 <a href = "https://covers.iipython.dev">Pizza</a>
                 <a href = "https://index.iipython.dev">Project Index</a>
                 <a href = "https://radar.iipython.dev">NOAA Weather Radar</a>

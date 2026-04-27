@@ -28,7 +28,7 @@ const FEATURED_PROJECTS = [
 
 export function ProjectPage() {
     return <>
-        <h2 class = "page-title">Preface :3</h2>
+        <h2 class = "page-title">Preface</h2>
         <p>
             I've made a <b>lot</b> of projects during my time on the internet.
             Because of that, this page only covers projects that I think were big enough to warrant a mention.

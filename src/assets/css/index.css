@@ -130,3 +130,37 @@ header {
 .page-title {
     margin: 10px 0px 10px 0px;
 }
+
+/* 88x31 marquee */
+.m88 > div, nav {
+    display: flex;
+    gap: 10px;
+}
+.m88 {
+    overflow: hidden;
+    margin-top: auto;
+}
+.m88 img {
+    height: 31px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+.m88, .m88 > div {
+    height: 31px;
+}
+
+
+/* Snowball */
+#snowball {
+    cursor: pointer;
+    margin-top: 5px;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+#snowball.move {
+    transition: rotate 1s ease;
+}
