@@ -1,6 +1,6 @@
 const IIPYTHON_SUBDOMAINS = [
     "cdn", "q3", "radar", "os", "covers", "pizza", "cdbar", "uniform", "pack", "remote",
-    "index", "vcs", "radio", "map", "cmd", "xpp"
+    "index", "vcs", "radio", "map", "cmd", "xpp", "rcs", "lan", "av1"
 ];
 
 const FEATURED_PROJECTS = [
@@ -34,6 +34,7 @@ export function ProjectPage() {
             Because of that, this page only covers projects that I think were big enough to warrant a mention.
             For a <b>full</b> project list, check out the <a href = "https://index.iipython.dev">iiPython Index</a>.
         </p>
+        <br />
         <h2 class = "page-title">Featured</h2>
         <div style = {{ display: "flex", gap: "10px", flexDirection: "column" }}>
             {FEATURED_PROJECTS.map((project) => <div>
@@ -41,6 +42,7 @@ export function ProjectPage() {
                 <span dangerouslySetInnerHTML = {{ __html: project.desc }}></span>
             </div>)}
         </div>
+        <br />
         <h2 class = "page-title">Public Services</h2>
         <div style = {{ display: "flex", gap: "10px", flexWrap: "wrap"}}>
             {IIPYTHON_SUBDOMAINS.map((subdomain) => <div style = {{ width: "200px" }}><a href = {`https://${subdomain}.iipython.dev`}>{subdomain}.iipython.dev</a></div>)}

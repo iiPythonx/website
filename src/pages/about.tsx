@@ -43,7 +43,17 @@ export function AboutPage() {
             Although I do have around 12 years of experience with <a href = "https://python.org">Python</a> so you might as well assume they're correlated somehow.
         </p>
         <br />
+        <p>I'm also interested in video encoding, with particular interest in <a href = "https://en.wikipedia.org/wiki/AV1">AV1</a> and other tech like <a href = "https://en.wikipedia.org/wiki/Opus_(audio_format)">opus</a>.</p>
+        <br />
         <p>For ways to contact me, check out my <Link href = "/contact">contact page</Link>!</p>
+        <br />
+        <h2 class = "page-title">Life</h2>
+        <p>
+            I'm currently attending <a href = "https://msstate.edu">Mississippi State University</a>, studying Cyber Security and Operations.
+            As part of that, I'm an active member of the <a href = "https://www.viceroyscholars.org">VICEROY</a> program and currently act as the K-12 sector lead for our cybersecurity assessment program.
+        </p>
+        <br />
+        <p>I'm also <a href = "https://www.comptia.org/en-us/certifications/security/">Security+</a> certified, with plans to renew my <a href = "https://www.redhat.com/en/services/certification/rhcsa">RHCSA</a> and <a href = "https://www.comptia.org/en-us/certifications/network/">Network+</a>.</p>
         <br />
         <div className = "inline-columns">
             <section>
