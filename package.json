@@ -6,17 +6,20 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
-        "preview": "vite preview"
+        "preview": "bun run build && vite preview",
+        "deploy": "bun run build && wrangler deploy"
     },
     "dependencies": {
         "preact": "^10.29.1",
         "wouter": "^3.9.0"
     },
     "devDependencies": {
+        "@cloudflare/vite-plugin": "^1.33.2",
         "@preact/preset-vite": "^2.10.5",
         "@types/node": "^24.12.2",
         "typescript": "~6.0.2",
         "vite": "^8.0.10",
-        "vite-plugin-svgr": "^5.2.0"
+        "vite-plugin-svgr": "^5.2.0",
+        "wrangler": "^4.85.0"
     }
 }

@@ -25,13 +25,16 @@ export function App() {
         if (!marqueeRef.current) return;
 
         const box = marqueeRef.current.querySelector("div");
+        if (!box) return;
+
         box.style.position = "relative";
 
         // Setup animation
         let offset = 0, last = 0;
-        function frame(time) {
+        function frame(time: number) {
             if (time - last >= 10 && marqueeRef.current) {
-                const target = box.firstElementChild;
+                const target = box?.firstElementChild;
+                if (!target || !box) return;
 
                 // Calculate bounding boxes
                 const truth = marqueeRef.current.getBoundingClientRect().left;
@@ -39,7 +42,7 @@ export function App() {
             
                 // Push last button to opposite side
                 if (rect.left + rect.width <= truth) {
-                    box.appendChild(target);
+                    box?.appendChild(target);
                     offset += rect.width + 10;
                 }
             
@@ -54,8 +57,10 @@ export function App() {
     }, [marqueeRef.current]);
 
     useEffect(() => {
-        var rotation = 0;
         const snowball = snowballRef.current;
+        if (!snowball) return;
+
+        var rotation = 0;
         snowball.addEventListener("click", () => {
             snowball.classList.add("move");
             rotation += 3600;

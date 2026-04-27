@@ -23,7 +23,7 @@ function ItemMapping({ itemList }: { itemList: Item[] }) {
     return itemList.map((item) => {
         const Icon = item.icon;
         return <div style = {{ display: "flex", gap: "6px", alignItems: "center" }}>
-            {item.icon && <Icon />}
+            {Icon && <Icon />}
             <span style = {{ width: "70px" }}>{item.name}:</span>
             <span><a href = {item.link}>{item.text}</a></span>
         </div>
