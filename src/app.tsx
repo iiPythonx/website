@@ -54,7 +54,7 @@ export function App() {
             requestAnimationFrame(frame);
         }
         requestAnimationFrame(frame);
-    }, [marqueeRef.current]);
+    }, []);
 
     useEffect(() => {
         const snowball = snowballRef.current;
