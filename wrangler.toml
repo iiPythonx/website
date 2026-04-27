@@ -1,7 +1,6 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
 name = "website"
-pages_build_output_dir = ".build"
-compatibility_date = "2025-01-01"
+compatibility_date = "2026-04-27"
 
-# Installing manually so I don't need pyproject.toml/package.json
-[env.production.vars]
-UNSTABLE_PRE_BUILD = "bun i csso-cli uglify-js && pip install lxml beautifulsoup4 nova-framework"
+[assets]
+not_found_handling = "single-page-application"

@@ -1,0 +1,166 @@
+/* Variables! */
+:root {
+    --ayanami-blue: #6dabe4ff;
+    --default-bg: #15181dff;
+    --default-fg: #dfd3d3ff;
+    --default-link: #d4a5a5ff;
+}
+
+/* Poppins */
+@font-face {
+    font-family: "Poppins";
+    font-weight: normal;
+    src: url("../fonts/poppins.woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: bold;
+    src: url("../fonts/poppins_bold.woff2");
+}
+
+/* Somewhat of a CSS reset */
+* {
+    margin: 0px;
+    color: var(--default-fg);
+    font-family: Poppins;
+}
+
+svg {
+    height: 18px;
+    width: 18px;
+    fill: var(--default-fg);
+}
+
+.inline-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        hr {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Links */
+a {
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: var(--default-link);
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-property: color, border-color, opacity;
+    
+    &.link-active {
+        border-color: var(--default-link);
+    }
+    
+    &.link-invert {
+        color: var(--default-fg);
+
+        &:hover {
+            color: var(--default-link);
+        }
+    }
+    
+    &:not(.link-invert):hover {
+        opacity: .8;
+        border-color: var(--default-link);
+    }
+}
+
+/* Background styling */
+body, html {
+    height: 100%;
+    background: var(--default-bg);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 50%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Main header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        user-select: none;
+        cursor: pointer;
+        margin-right: auto;
+
+        span:first-child {
+            background: linear-gradient(to right, var(--ayanami-blue), var(--default-link));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.caret {
+    font-weight: normal;
+    animation: 1s blink infinite;
+}
+
+@keyframes blink {
+    0%   { opacity:   0% }
+    50%  { opacity: 100% }
+    100% { opacity:   0% }
+}
+
+/* Page content */
+.page-title {
+    margin: 10px 0px 10px 0px;
+}
+
+/* 88x31 marquee */
+.m88 > div, nav {
+    display: flex;
+    gap: 10px;
+}
+.m88 {
+    overflow: hidden;
+    margin-top: auto;
+}
+.m88 img {
+    height: 31px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+.m88, .m88 > div {
+    height: 31px;
+}
+
+
+/* Snowball */
+#snowball {
+    cursor: pointer;
+    margin-top: 5px;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+#snowball.move {
+    transition: rotate 1s ease;
+}
