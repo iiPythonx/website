@@ -117,10 +117,10 @@ header {
 
 .caret {
     font-weight: normal;
-    animation: 1s blink infinite;
+    animation: 1s blinking infinite;
 }
 
-@keyframes blink {
+@keyframes blinking {
     0%   { opacity:   0% }
     50%  { opacity: 100% }
     100% { opacity:   0% }
