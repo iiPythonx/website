@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "preact/hooks";
-import { Link, Route, Switch } from "wouter";
+import { Link, Route, Switch, useLocation } from "wouter";
 
 import { AboutPage } from "./pages/about";
 import { ProjectPage } from "./pages/projects";
@@ -20,6 +20,7 @@ export function App() {
     const [displayNameIndex, setDisplayNameIndex] = useState<number>(0);
     const marqueeRef = useRef<HTMLDivElement | null>(null);
     const snowballRef = useRef<HTMLImageElement | null>(null);
+    const [location,] = useLocation();
 
     useEffect(() => {
         if (!marqueeRef.current) return;
@@ -81,7 +82,7 @@ export function App() {
                 <span>{AVAILABLE_NAMES[displayNameIndex]}</span>
                 <span class = "caret">_</span>
             </h2>
-            <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/about">About</Link>
+            <Link className = {(a) => a || location === "/" ? "link-active" : "link-invert"} href = "/about">About</Link>
             <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/projects">Projects</Link>
             <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/contact">Contact</Link>
         </header>
