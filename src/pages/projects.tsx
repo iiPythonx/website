@@ -12,7 +12,7 @@ interface ProjectProps {
     site?:       string
 }
 
-function Project({ id, name, description, end, aka, code, site }: ProjectProps) {
+function Project({ id, name, description, aka, site }: ProjectProps) {
     const [expanded, setExpanded] = useState<boolean>(false);
 
     const handleExpansion = () => {
