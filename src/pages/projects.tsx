@@ -1,6 +1,6 @@
 const IIPYTHON_SUBDOMAINS = [
     "cdn", "q3", "radar", "os", "pizza", "cdbar", "uniform", "pack", "remote",
-    "index", "git", "radio", "map", "cmd", "xpp", "rcs", "lan", "av1"
+    "index", "git", "radio", "map", "cmd", "xpp", "rcs", "lan", "av1", "nd"
 ];
 
 const FEATURED_PROJECTS = [
