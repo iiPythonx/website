@@ -40,7 +40,7 @@
     scrollbar-width: thin;
     scrollbar-color: var(--default-link) #fff0;
     overflow-y: scroll;
-    max-height: calc(100vh - var(--top-indent) - 180px);
+    max-height: calc(100vh - var(--top-indent) - 120px);
 
     & > * {
         width: calc(100% - 10px);

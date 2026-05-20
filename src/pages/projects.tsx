@@ -24,13 +24,13 @@ function Project({ id, name, description, aka, site }: ProjectProps) {
             <span className = {`dark project-id ${expanded ? 'expanded' : ''}`}>{id}</span>
             {site ? <a href = {site}>{name}</a> : <span>{name}</span>}
             {aka && <span className = "dark">&#40;{aka}&#41;</span>}
-            <span className = "expand-caret" style = {{ rotate: expanded ? "0deg" : "90deg" }}>&#9660;</span>
+            <span className = "expand-caret" style = {{ rotate: expanded ? "-90deg" : "0deg" }}>◀</span>
         </h4>
         {expanded && <span dangerouslySetInnerHTML = {{ __html: description }}></span> }
     </div>;
 }
 
-function ProjectListing() {
+export default function ProjectListing() {
     return <div className = "project-list">
         {(projects as ProjectProps[]).sort((a, b) => b.id - a.id).map(
             (project) => <>
@@ -39,11 +39,4 @@ function ProjectListing() {
             </>
         )}
     </div>;
-}
-
-export function ProjectPage() {
-    return <>
-        <h2 class = "page-title">Listing</h2>
-        <ProjectListing />
-    </>
 }

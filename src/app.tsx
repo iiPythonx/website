@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import { Link, Route, Switch, useLocation } from "wouter";
+import { lazy, Suspense } from "preact/compat";
 
 import { AboutPage } from "./pages/about";
-import { ProjectPage } from "./pages/projects";
 import { ContactPage } from "./pages/contact";
 
 import "./assets/css/index.css";
@@ -15,6 +15,8 @@ const AVAILABLE_NAMES = [
     // Not sure if I want other variants here rn
     // ...
 ]
+
+const ProjectPage = lazy(() => import("./pages/projects"));
 
 export function App() {
     const [displayNameIndex, setDisplayNameIndex] = useState<number>(0);
@@ -90,7 +92,9 @@ export function App() {
         <section id = "content">
             <Switch>
                 <Route path = "/about" component = {AboutPage} />
-                <Route path = "/projects" component = {ProjectPage} />
+                <Route path = "/projects">
+                    {() => <Suspense fallback={{}}><ProjectPage /></Suspense>}
+                </Route>
                 <Route path = "/contact" component = {ContactPage} />
                 <Route><AboutPage /></Route>
             </Switch>
