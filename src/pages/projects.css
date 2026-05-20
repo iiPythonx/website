@@ -1,0 +1,48 @@
+.dark {
+    color: #414141;
+}
+
+.project-id {
+    transition: color .25s ease;
+
+    &.expanded {
+        color: var(--default-link);
+    }
+}
+
+.project:has(.project-title:hover) {
+    .project-id {
+        color: var(--default-link);
+    }
+}
+
+.project * {
+    font-family: monospace;
+}
+
+.project-title {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.expand-caret {
+    margin-left: auto;
+    user-select: none;
+    transition: rotate .25s ease;
+}
+
+.project-list {
+    width: calc(100% + 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--default-link) #fff0;
+    overflow-y: scroll;
+    max-height: calc(100vh - var(--top-indent) - 180px);
+
+    & > * {
+        width: calc(100% - 10px);
+    }
+}

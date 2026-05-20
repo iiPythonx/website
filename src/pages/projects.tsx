@@ -1,51 +1,49 @@
-const IIPYTHON_SUBDOMAINS = [
-    "cdn", "q3", "radar", "os", "pizza", "cdbar", "uniform", "pack", "remote",
-    "index", "git", "radio", "map", "cmd", "xpp", "rcs", "lan", "av1", "nd"
-];
+import projects from "./projects.json";
+import "./projects.css";
+import { useState } from "preact/hooks";
 
-const FEATURED_PROJECTS = [
-    {
-        link: "https://github.com/iiPythonx/snorlax",
-        name: "Snorlax",
-        desc: `Self-hosted archival service for preserving YouTube videos, powered by <a href = "https://github.com/yt-dlp/yt-dlp">yt-dlp</a>.`
-    },
-    {
-        link: "https://github.com/iiPythonx/radio",
-        name: "iiPython Radio",
-        desc: "Modern take on a web radio, powered by Websockets with decent client synchronization."
-    },
-    {
-        link: "https://github.com/iiPythonx/cdbar",
-        name: "cdbar",
-        desc: "Frontend that takes a CD barcode and spits out release data in exchange."
-    },
-    {
-        link: "https://github.com/iiPythonx/xpp",
-        name: "xpp",
-        desc: "A custom programming language, written in pure Python and intentionally limiting to encourage creativity."
+interface ProjectProps {
+    id:          number;
+    name:        string;
+    description: string;
+    end?:        number;
+    aka?:        string;
+    code?:       string;
+    site?:       string
+}
+
+function Project({ id, name, description, end, aka, code, site }: ProjectProps) {
+    const [expanded, setExpanded] = useState<boolean>(false);
+
+    const handleExpansion = () => {
+        setExpanded(!expanded);
     }
-];
+
+    return <div class = "project">
+        <h4 className = "project-title" onClick={handleExpansion}>
+            <span className = {`dark project-id ${expanded ? 'expanded' : ''}`}>{id}</span>
+            {site ? <a href = {site}>{name}</a> : <span>{name}</span>}
+            {aka && <span className = "dark">&#40;{aka}&#41;</span>}
+            <span className = "expand-caret" style = {{ rotate: expanded ? "0deg" : "90deg" }}>&#9660;</span>
+        </h4>
+        {expanded && <span dangerouslySetInnerHTML = {{ __html: description }}></span> }
+    </div>;
+}
+
+function ProjectListing() {
+    return <div className = "project-list">
+        {(projects as ProjectProps[]).sort((a, b) => b.id - a.id).map(
+            (project) => <>
+                <Project {...project} />
+                <hr className = "dark" />
+            </>
+        )}
+    </div>;
+}
 
 export function ProjectPage() {
     return <>
-        <h2 class = "page-title">Preface</h2>
-        <p>
-            I've made a <b>lot</b> of projects during my time on the internet.
-            Because of that, this page only covers projects that I think were big enough to warrant a mention.
-            For a <b>full</b> project list, check out the <a href = "https://index.iipython.dev">iiPython Index</a>.
-        </p>
-        <br />
-        <h2 class = "page-title">Featured</h2>
-        <div style = {{ display: "flex", gap: "10px", flexDirection: "column" }}>
-            {FEATURED_PROJECTS.map((project) => <div>
-                <h4><a href = {project.link}>{project.name}</a></h4>
-                <span dangerouslySetInnerHTML = {{ __html: project.desc }}></span>
-            </div>)}
-        </div>
-        <br />
-        <h2 class = "page-title">Public Services</h2>
-        <div style = {{ display: "flex", gap: "10px", flexWrap: "wrap"}}>
-            {IIPYTHON_SUBDOMAINS.map((subdomain) => <div style = {{ width: "200px" }}><a href = {`https://${subdomain}.iipython.dev`}>{subdomain}.iipython.dev</a></div>)}
-        </div>
+        <h2 class = "page-title">Listing</h2>
+        <ProjectListing />
     </>
 }

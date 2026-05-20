@@ -4,6 +4,7 @@
     --default-bg: #15181dff;
     --default-fg: #dfd3d3ff;
     --default-link: #d4a5a5ff;
+    --top-indent: 120px;
 }
 
 /* Poppins */
@@ -89,7 +90,7 @@ body {
 
 main {
     width: 50%;
-    margin-top: 120px;
+    margin-top: var(--top-indent);
     display: flex;
     flex-direction: column;
     gap: 10px;
