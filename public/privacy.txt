@@ -1,3 +1,68 @@
+iiPython Privacy Policy, Revision 26.5.22-1
+
+Applicable Services:
+    - iipython.dev:         Class A
+    - cdn.iipython.dev:     Class A
+    - c2.iipython.dev:      Class A
+    - q3.iipython.dev:      Class A
+    - radar.iipython.dev:   Class A
+    - os.iipython.dev:      Class A
+    - cdbar.iipython.dev:   Class A
+    - uniform.iipython.dev: Class A
+    - pack.iipython.dev:    Class A
+    - remote.iipython.dev:  Class A
+    - nd.iipython.dev:      Class B
+    - cmd.iipython.dev:     Class B
+    - pizza.iipython.dev:   Class B
+    - git.iipython.dev:     Class B
+    - radio.iipython.dev:   Class B
+    - map.iipython.dev:     Class B
+    - mail.iipython.dev:    Class B
+
+Class A:
+    1. All of these domains are handled specifically through Cloudflare Workers or some
+    other Cloudflare based product. As such, the only applicable data collection happening
+    is specified directly in the Cloudflare privacy policy.
+
+    Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
+
+    2. No personal information of any kind is obtained from any of these services. There
+    are no sign up forms, there are no account services, there are no access logs.
+
+    3. No data is sold. As stated above, [I] store nothing so there's nothing to sell.
+
+Class B:
+
+    1. These domains are proxied through Cloudflare directly to my own infrastructure. As such,
+    the Cloudflare privacy policy still applies, along with my personal data collection.
+
+    Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
+
+    2. No information of any kind is collected from these services, with the strict exception of
+    cmd.iipython.dev, nd.iipython.dev, and mail.iipython.dev.
+
+        cmd.iipython.dev: full account system with profile. you are the one providing data, and
+        nothing else is being collected besides what you provide. there are no access logs, no
+        account locking, no ip tracking, etc. data includes username, fastest typing speed, bio,
+        password hash, etc. please see the source code at https://github.com/iiPythonx/cmd to see
+        what data is collected and how it is utilized.
+
+        nd.iipython.dev: this domain serves navidrome, which will log the amount of visitors that
+        visit a specific share url. no additional data is collected besides this metric.
+
+        mail.iipython.dev: this is a fully fledged mail server, and thus logs and analyzes all
+        incoming mail traffic, logged data includes ip addresses, geographical location, spam list
+        status, and more. sending mail to this server automatically assumes acceptance of these
+        logging practices.
+
+    3. No data is sold. As stated above, I store nothing personal so there's nothing to sell.
+
+    4. RTBF: If you would like your information deleted from any of these services, please send me
+    an email at ben <at> thiswebsite <dot> tld.
+            (gotta stop the bots from scraping it somehow)
+
+==== >= 05/22/2026
+
 iiPython Privacy Policy, Revision 6.1.
 The following are NOT covered by this policy:
     - iipython.dev           (Running on CloudFlare workers, never hits my infrastructure)
