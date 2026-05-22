@@ -93,7 +93,7 @@ export function App() {
             <Switch>
                 <Route path = "/about" component = {AboutPage} />
                 <Route path = "/projects">
-                    {() => <Suspense fallback={{}}><ProjectPage /></Suspense>}
+                    {() => <Suspense fallback={null}><ProjectPage /></Suspense>}
                 </Route>
                 <Route path = "/contact" component = {ContactPage} />
                 <Route><AboutPage /></Route>

@@ -1,823 +1,1583 @@
 [
     {
-        "id": 2001,
-        "name": "ii-Python/iiPythonx",
-        "description": "The repository I use for editing my GitHub profile, although it also keeps all of my Linux dotfiles. Still active as of 2025.",
-        "code": "https://github.com/iiPythonx/iiPythonx",
-        "aka": "dotfiles",
-        "end": 25
-    },
-    {
-        "id": 2002,
-        "name": "Website (2020)",
-        "description": "The original implementation of my website, hosted at <a href = 'https://web.archive.org/web/20201217090754/https://iipython.cf/'>iipython.cf</a>."
-    },
-    {
-        "id": 2003,
-        "name": "Prism",
-        "description": "The only discord bot you will ever need (satire), died after nearly 3 years of hard work on it. I quit making discord bots afterwards due to Discord's addition of the intent system.",
-        "code": "https://github.com/iiPythonx/prism",
-        "end": 21
-    },
-    {
-        "id": 2004,
-        "name": "RoBot",
-        "description": "Keypress-based scriptable automation system for the Roblox client. All it was able to do was move around a little and was extremely janky, but yet it's my most starred repo.",
-        "code": "https://github.com/iiPythonx/robot"
-    },
-    {
-        "id": 2005,
-        "name": "Sprint",
-        "description": "A custom shell meant to be minimal with commands, color support, multi-line editing, and more.",
-        "code": "https://github.com/iiarchives/sprint"
-    },
-    {
-        "id": 2006,
-        "name": "Throwaway Keys",
-        "description": "A project that I designed to create secret keys for use in projects without needing to manually generate one.",
-        "code": "https://github.com/iiarchives/throwaway-keys"
-    },
-    {
-        "id": 2101,
-        "name": "Advent of Code",
-        "description": "Project to handle my source code solutions for the 2021 <a href = 'https://adventofcode.com/2021/about'>Advent of Code</a>."
-    },
-    {
-        "id": 2102,
-        "name": "Autofix",
-        "description": "Background script to execute AUTORUN.INF files on flash drives, similar to old versions of Windows.",
-        "code": "https://github.com/iiarchives/autofix"
-    },
-    {
-        "id": 2103,
-        "name": "Cubic",
-        "description": "A discord bot with an extensive economy system, designed partially as a test of new features before being implemented into <a href = 'https://github.com/iiPythonx/prism'>Prism</a>."
-    },
-    {
-        "id": 2104,
-        "name": "Custom Presence",
-        "description": "Program that allowed users to set a custom discord status using <a href = 'https://pypi.org/project/pypresence'>pypresence</a>.",
-        "code": "https://github.com/iiarchives/Custom-Presence"
-    },
-    {
-        "id": 2105,
-        "name": "DOS-Style Website",
-        "description": "A website that was very reminiscent of the DOS era of computing. Page layout and system was incredibly inspired by <a href = 'https://github.com/qwertyquerty'>qtqt's website</a> from 2021 which you can <a href = 'https://web.archive.org/web/20210624003236/http://qtqt.cf/'>see here</a>."
-    },
-    {
-        "id": 2106,
-        "name": "Fetch",
-        "description": "CLI tool to download files, similar to <a href = 'https://www.gnu.org/software/wget'>wget</a> and <a href = 'https://curl.se'>curl</a>, but written in pure Python with no dependencies. Never got killed, but I stopped working on it after <a href = 'https://github.com/DmmDGM'></a> dmed me and I ended up doing something else."
-    },
-    {
-        "id": 2107,
-        "name": "File Archive",
-        "description": "A website that allowed me to archive files in a root folder and then authorize specific accounts to access it. The theme was based on <a href = 'https://github.com/nostalgic-css/NES.css'>NES.css</a>, and ran for about 5 months."
-    },
-    {
-        "id": 2108,
-        "name": "Honknet",
-        "description": "Honknet was a collaboration between me and <a href = 'https://github.com/DmmDGM'>DmmD</a> where we attempted to make a chat system. It was later converted to Plasma, which died a year later."
-    },
-    {
-        "id": 2109,
-        "name": "JAUS",
-        "description": "Just Another Url Shortener, a flask website that literally just acted as an old ass url shortener. Killed because it was slow and useless."
-    },
-    {
-        "id": 2110,
-        "name": "Minicraft RP",
-        "description": "Program that provided discord rich presence for people playing <a href = 'https://github.com/MinicraftPlus/minicraft-plus-revived'>Minicraft+</a>."
-    },
-    {
-        "id": 2111,
-        "name": "Modbot",
-        "description": "A discord bot that was centered around moderation, mostly chat filtering and was used for a very short time in a private discord server."
-    },
-    {
-        "id": 2112,
-        "name": "MyShell",
-        "description": "A customizable shell program that allowed you to load custom 'kernels', giving full control over what was ran."
-    },
-    {
-        "id": 2113,
-        "name": "Neutron",
-        "description": "A web logging system, complete with web interface and Python module. It would hook into your code and send all tracebacks to the server of your choosing for remote viewing.",
-        "aka": "Nebula"
-    },
-    {
-        "id": 2114,
-        "name": "OPP",
-        "description": "A package manager that was intended to be cross platform and similar to <a href = 'https://en.wikipedia.org/wiki/APT_(software)'>apt</a>."
-    },
-    {
-        "id": 2115,
-        "name": "PyHTTPFS",
-        "description": "Flask based system that was meant to act as a static file sharing tool. Killed and removed because people kept using it and it was insecure."
-    },
-    {
-        "id": 2116,
-        "name": "PyNet (v1)",
-        "description": "A raw socket service that allowed sharing 'webpages' using a TUI client along with a web interface for controlling and administering the pages."
-    },
-    {
-        "id": 2117,
-        "name": "PyNet (v2)",
-        "description": "Basically a perfect copy of PyNet v1, but with a version bump and client changes."
-    },
-    {
-        "id": 2118,
-        "name": "PyNet (v3)",
-        "description": "A full rewrite of PyNet, including a client, server, custom byte protocol, tooling, and web services to manage it all. This variant was never completed, but the remnants of it still linger in my head from time to time."
-    },
-    {
-        "id": 2119,
-        "name": "Sprint v2",
-        "description": "Attempted rewrite of <a href = 'https://github.com/iiarchives/sprint'>Sprint</a>, but I never found the time to fix it. It was also plagued by unicode escape color bugs.",
-        "code": "https://github.com/iiarchives/sprint-v2"
-    },
-    {
-        "id": 2120,
-        "name": "Tempmon",
-        "description": "Script I made to monitor my CPU temps, because my PC was overheating while trying to play Half-Life 2."
-    },
-    {
-        "id": 2121,
-        "name": "Time Lock",
-        "description": "Terminal app that utilized tapping keys in a timed pattern in order to unlock or access data."
-    },
-    {
-        "id": 2122,
-        "name": "Webchat",
-        "description": "Web chat system I made while in school suspension so I could talk to my friends easier then trying to get on discord. The database was implemented with Redis, which was a mistake but it was my first time using it."
-    },
-    {
-        "id": 2123,
-        "name": "Windows Cleaner",
-        "description": "Script that used powershell and registry editing to clean up and debloat a stock Windows 10 system."
-    },
-    {
-        "id": 2124,
-        "name": "iiPython.py",
-        "description": "Python library where I shoved a bunch of 'useful' primitives, including a socket library, terminal utilities/coloring, and a keypress system.",
-        "code": "https://github.com/iiarchives/iipython.py",
-        "end": 22
-    },
-    {
-        "id": 2201,
-        "name": "iiPython Auth",
-        "description": "A custom implementation of an OAuth2 providing system. Killed before being implemented into any other projects."
-    },
-    {
-        "id": 2202,
-        "name": "Bongo Shell",
-        "description": "Attempt at a bash-compatible shell written in Nim, failed due to lack of motivation."
-    },
-    {
-        "id": 2203,
-        "name": "Dioxide",
-        "description": "Tool that locks students out of <a href = 'https://central-access.net'>ActiveStudent</a> accounts. Had a week of weaponization against my local school district, before being shut down to prevent expulsion."
-    },
-    {
-        "id": 2204,
-        "name": "Disk Speedtest",
-        "description": "Very small CLI tool that benchmarks connected flash drives using <a href = 'https://wiki.archlinux.org/title/Hdparm'>hdparm</a>."
-    },
-    {
-        "id": 2205,
-        "name": "Down Site",
-        "description": "A 'system offline' website that was meant to compliment my <a href = 'https://web.archive.org/web/20220809130557/https://iipython.cf/'>2022 flat site design</a>.",
-        "code": "https://github.com/iiarchives/downsite"
-    },
-    {
-        "id": 2206,
-        "name": "eDOS",
-        "description": "Emulated operating system that was intended to be stored completely in a tarball.",
-        "code": "https://github.com/iiarchives/edos"
-    },
-    {
-        "id": 2207,
-        "name": "English Sucks",
-        "description": "Project that would run the Minecraft Java 1.18 language file through Google Translate around 7 times, then saved the result to a resource pack to make funny item names."
-    },
-    {
-        "id": 2208,
-        "name": "Enigma",
-        "description": "TUI based Engima machine that was implemented using <a href = 'https://pypi.org/project/pyenigma'>pyenigma</a> as a school project."
-    },
-    {
-        "id": 2209,
-        "name": "Fedora95",
-        "description": "Collection of bash scripts that turned <a href = 'https://docs.fedoraproject.org/en-US/releases/rawhide'>Fedora Rawhide</a> into a <a href = 'https://github.com/grassmunk/Chicago95'>Chicago95</a> primed environment.",
-        "code": "https://github.com/iiarchives/fedora95"
-    },
-    {
-        "id": 2210,
-        "name": "Hamsters",
-        "description": "A project that was intended to essentially be an in-terminal game engine powered by pixel graphics. You were supposed to be able to scan a QR code visible on your screen and load a game off of that 'cartridge'. Killed because I couldn't find a good way to read from the screen."
-    },
-    {
-        "id": 2211,
-        "name": "Haze Cipher",
-        "description": "A cipher that was intended to be reversible and hard to crack. It ended up being neither of those things, but at least I tried; it was removed from GitHub to prevent people from using it for serious data."
-    },
-    {
-        "id": 2213,
-        "name": "iiPythonator",
-        "description": "Discord self-bot that was meant to play music and music only, and it did a damn good job of that."
-    },
-    {
-        "id": 2214,
-        "name": "iiPython Intranet",
-        "description": "A web interface that would spin up reverse proxies at runtime for projects and handle authentication. I killed it off due to lack of time and motivation."
-    },
-    {
-        "id": 2215,
-        "name": "Website (2022-23)",
-        "description": "The source code for my 2022-2023 website, which allowed users to define 'templates' and could switch their website template at any time. Some of my examples include <a href = 'https://web.archive.org/web/20230722054317/https://iipython.dev/'>my bear website</a> and <a href = 'https://web.archive.org/web/20220809130557/https://iipython.cf/'>my flat design</a>.",
-        "end": 23
-    },
-    {
-        "id": 2216,
-        "name": "Image Loader v2",
-        "description": "A Python web server that allowed Roblox servers to request images as comma seperated RGB values, so the image could be recreated using parts in-game."
-    },
-    {
-        "id": 2217,
-        "name": "Launch+",
-        "description": "A single page app designed with <a href = 'https://github.com/iiarchives/nitrogen'>Nitrogen</a> (also dead) to act as Kiosk and provide apps such as weather access."
-    },
-    {
-        "id": 2218,
-        "name": "Nitrogen",
-        "description": "Python module that was similar to <a href = 'https://electronjs.org'>Electron</a>, allowing you to open web pages in <a href = 'https://doc.qt.io/'>Qt</a> and send data to the Python backend.",
-        "code": "https://github.com/iiarchives/nitrogen"
-    },
-    {
-        "id": 2219,
-        "name": "p2p",
-        "description": "Project that allowed sending files over an HTTP tunnel between two devices using Peer to Peer networking."
-    },
-    {
-        "id": 2220,
-        "name": "PHAT",
-        "description": "A hardware based key system that was meant to use USB flash drives as authentication devices.",
-        "code": "https://github.com/iiarchives/phat"
-    },
-    {
-        "id": 2221,
-        "name": "Rickroll",
-        "description": "A flask site that literally just rickrolls you, nothing else."
-    },
-    {
-        "id": 2222,
-        "name": "Roblox Status Live",
-        "description": "Collection of web services for monitoring the status of Roblox's vast network of servers and APIs. Included a collection agent, storage system, and frontend.",
-        "code": "https://github.com/robloxstatuslive",
-        "aka": "RSL"
-    },
-    {
-        "id": 2223,
-        "name": "Service Launcher",
-        "description": "CLI tool that acted very similar to <a href = 'https://systemd.io/'>systemd</a> units. It took a config file defining what to run, and provided a daemon/CLI to interact with the processes."
-    },
-    {
-        "id": 2224,
-        "name": "Start Page",
-        "description": "A startpage I made that was designed to be quick and minimal, originally designed for a member of one of my group chats."
-    },
-    {
-        "id": 2225,
-        "name": "StreamX",
-        "description": "A project I helped design that acted as a self-hosted alternative to Roblox's <a href = 'https://create.roblox.com/docs/workspace/streaming'>StreamingEnabled</a>. The original devforum thread is still available <a href = 'https://devforum.roblox.com/t/deprecated-streamx-reduce-lag-and-prevent-map-cloning/1992484'>here</a>.",
-        "code": "https://github.com/roblox-streamx",
-        "end": 23
-    },
-    {
-        "id": 2226,
-        "name": "Virtual Assistant",
-        "description": "Python program that acted as a personal assistant running locally on your PC. No AI was used in it, I was using wildcard pattern matching which was just as bad as you can imagine."
-    },
-    {
-        "id": 2227,
-        "name": "WebTransfer",
-        "description": "File transferring web application built with Flask, you just had to make an account and add a friend to send any sized file to them.",
-        "code": "https://github.com/iiarchives/webtransfer"
-    },
-    {
-        "id": 2228,
-        "name": "x2 Website",
-        "description": "The official website for x2, which allowed users to publish packages and download others. At this point its useless, and x2 has turned into <a href = 'https://github.com/iiPythonx/xpp'>xpp</a>."
-    },
-    {
-        "id": 2229,
-        "name": "xpp",
-        "description": "Complete rewrite and modernization of both the X Programming Language, and what was formerly known as x2. Custom programming language inspired by Batch, x86 Assembly, and others.",
-        "code": "https://github.com/iiPythonx/xpp",
-        "aka": "x2",
-        "end": 24
-    },
-    {
-        "id": 2301,
-        "name": "2023 Countdown",
-        "description": "A project designed to perform a countdown until New Years 2023. Reused in 2024, with varying degrees of success due to date processing issues.",
-        "end": 24
-    },
-    {
-        "id": 2302,
-        "name": "Album Downloader",
-        "description": "Selenium-based utility to download entire albums from the now defunct <a href = 'https://free-mp3-download.net'>free-mp3-download.net</a> website."
-    },
-    {
-        "id": 2303,
-        "name": "Alpha",
-        "description": "Mockup of a very extendable and easy to understand programming language, eventually turned into <a href = 'https://github.com/gooslol/english'>English</a>."
-    },
-    {
-        "id": 2304,
-        "name": "Chungus",
-        "description": "A pure-python math engine designed to be implemented into <a href = 'https://github.com/iiPythox/xpp'>xpp</a>."
-    },
-    {
-        "id": 2305,
-        "name": "CubeRPC",
-        "description": "An extremely basic Discord RPC for <a href = 'https://musikcube.com'>musikcube</a>.",
-        "code": "https://github.com/iiarchives/cuberpc"
-    },
-    {
-        "id": 2306,
-        "name": "GArchive",
-        "description": "Code for the original website for <a href = 'https://gc.iipython.dev'>Geesecraft</a>. Replaced by DmmD's new <a href = 'https://github.com/dmmd-archive/geesecraft'>Svelte-based code</a>.",
-        "code": "https://github.com/iiarchives/garchive/tree/cb087fb7be23bacc0a8612719762e235a0fbeecc",
-        "end": 24
-    },
-    {
-        "id": 2307,
-        "name": "Goose NFT",
-        "description": "Jokily made terminal NFT system where a user could sign text files using a Public/Private keypair and then verify the files."
-    },
-    {
-        "id": 2308,
-        "name": "ISM",
-        "description": "iiPython System Manager, a web UI that was similar to <a href = 'https://grafana.com'>Grafana</a>, allowing you to keep a quick tab on your system.",
-        "code": "https://github.com/iiarchives/ism"
-    },
-    {
-        "id": 2309,
-        "name": "Modrinth Modpack Updater",
-        "description": "A CLI tool that would take a JSON file containing modpack information, and automatically update all the mods to a specific Minecraft version.",
-        "aka": "packupd"
-    },
-    {
-        "id": 2310,
-        "name": "Ooga Booga",
-        "description": "URL shortener that was meant to replace JAUS, rewritten using modern async libraries and all.",
-        "code": "https://github.com/iiarchives/ooga-booga"
-    },
-    {
-        "id": 2311,
-        "name": "Shuttle",
-        "description": "Chat system that was (essentially) meant to be Honknet v2, a collab between me and <a href = 'https://github.com/DmmDGM'>DmmD</a> to make a decentralized, modern chat system. It is on an indefinite hold as of May 2025.",
-        "code": "https://github.com/shuttle-chat",
-        "end": 25
-    },
-    {
-        "id": 2312,
-        "name": "UU-Extended",
-        "description": "Minecraft Java mod based on <a href = 'https://fabricmc.net'>Fabric</a> to extend <a href = 'https://feed-the-beast.fandom.com/wiki/UU-Matter'>UU-Matter</a> from <a href = 'https://wiki.techreborn.ovh/'>Tech Reborn</a>.",
-        "code": "https://github.com/iiarchives/uu-extended",
-        "end": 24
-    },
-    {
-        "id": 2313,
-        "name": "Xenon",
-        "description": "A Roblox streaming engine that was meant as a no-server-required rewrite of <a href = 'https://github.com/roblox-streamx'>StreamX</a>. It could stream anything except for attachment connections, and was much easier to implement. The original devforum thread is available <a href = 'https://devforum.roblox.com/t/xenon-streaming-engine-an-alternative-to-streamingenabled/2178495'>here</a>.",
-        "code": "https://github.com/iiPythonx/xenon"
-    },
-    {
-        "id": 2314,
-        "name": "Codelet",
-        "description": "A code giveaway platform for Roblox, intended to supersede 'FTS' giveaways. The project was made in conjunction with <a href = 'https://github.com/pyxfluff'>pyxfluff</a> but never published.",
-        "end": 24
-    },
-    {
-        "id": 2315,
-        "name": "English",
-        "description": "Simple to use, english language based programming language. First project to be included in the <a href = 'https://github.com/gooslol'>Goos.lol</a> organization.",
-        "code": "https://github.com/gooslol/english"
-    },
-    {
-        "id": 2316,
-        "name": "Goos.lol",
-        "description": "The official Goos.lol website, which is still visible on the <a href = 'https://web.archive.org/web/20240320011427/https://goos.lol/'>wayback machine</a>."
-    },
-    {
-        "id": 2317,
-        "name": "iiPython Core",
-        "description": "Core service for all of my data and sites, meant to be a home for datasets. I abandoned it after getting the main UI up and indexing my music."
-    },
-    {
-        "id": 2318,
-        "name": "Musescore Downloader",
-        "description": "A site that allowed users to download sheet music from <a href = 'https://musescore.com'>Musescore</a> via the use of <a href = 'https://github.com/LibreScore/dl-librescore'>dl-librescore</a>."
-    },
-    {
-        "id": 2319,
-        "name": "Prism v3",
-        "description": "The final variation of <a href = 'https://github.com/iiPythonx/prism'>Prism</a>, featuring slash commands, intents, and all the other garbage that Discord implemented. Killed because I grew sick and tired of making Discord bots.",
-        "code": "https://github.com/iiPythonx/prism-v3"
-    },
-    {
-        "id": 2320,
-        "name": "Textnet",
-        "description": "Another attempted rewrite of PyNet, this one included a terminal rendering solution that was somewhat modernized but otherwise didn't get very far."
-    },
-    {
-        "id": 2321,
-        "name": "Weather Archiver",
-        "description": "An old website designed to constantly record data from <a href = 'https://openweathermap.org'>OpenWeatherMap</a>, store it, and then graph it with a neat UI.",
-        "code": "https://github.com/iiPythonx/weather",
-        "end": 24
-    },
-    {
-        "id": 2401,
-        "name": "igame",
-        "description": "A python module for making terminal games, giving access to easy audio control, menu systems, and function timeouts. Implemented in some of <a href = 'https://k4ffu.dev'>K4ffu</a>'s projects, otherwise not used."
-    },
-    {
-        "id": 2402,
-        "name": "8255",
-        "description": "Assembly-inspired programming language that required manually managing the memory stack, dropping memory, etc.",
-        "code": "https://github.com/iiPythonx/8255"
-    },
-    {
-        "id": 2403,
-        "name": "Acellus",
-        "description": "Collection of decompiled scripts of <a href = 'https://www.acellus.com/'>Acellus</a>'s web interface. Allowed speeding up videos, preventing tab detection, pasting into writing tutor, and more.",
-        "code": "https://github.com/iiPythonx/acellus"
-    },
-    {
-        "id": 2404,
-        "name": "Album Art Downloader",
-        "description": "Python script that will automatically scan my music directory for any albums without cover art, and will then open <a href = 'https://covers.musichoarders.xyz'>MusicHoarder's cover website</a>."
-    },
-    {
-        "id": 2405,
-        "name": "Anime CLI",
-        "description": "TUI script that streams anime directly from torrents, originally based on <a href = 'https://consumet.org/'>Consumet</a>. It is one of the only projects that was published by <a href = 'https://github.com/gooslol'>Goos.lol</a>.",
-        "code": "https://github.com/gooslol/anisq",
-        "aka": "anisq",
-        "end": 25
-    },
-    {
-        "id": 2406,
-        "name": "Assistant",
-        "description": "A remake of my original Virtual Assistant, this time using ChatGPT and actually implementing features such as weather, music control, etc."
-    },
-    {
-        "id": 2407,
-        "name": "cdbar",
-        "description": "Website that displays information about various CDs given a barcode, powered by <a href = 'https://musicbrainz.org'>MusicBrainz</a>.",
-        "code": "https://github.com/iiPythonx/cdbar",
-        "site": "https://cdbar.iipython.dev"
-    },
-    {
-        "id": 2409,
-        "name": "Cephei",
-        "description": "Intended to be a chat system, it started as a rewrite of the currently on hold <a href = 'https://github.com/shuttle-chat'>Shuttle project</a>. I implemented a login and signup flow and then got tired of it."
-    },
-    {
-        "id": 2410,
-        "name": "CRS",
-        "description": "Central Routing System, a websocket based <a href = 'https://fastapi.tiangolo.com'>FastAPI</a> project that was intended to be used to replace <a href = 'https://en.wikipedia.org/wiki/REST'>REST</a> for some of my microservices and join them together.",
-        "code": "https://github.com/iiarchives/crs",
-        "end": 25
-    },
-    {
-        "id": 2411,
-        "name": "Distributed Filesystem",
-        "description": "Test implementation of a distributed filesystem across several different nodes spanning different IP networks. Never completed.",
-        "aka": "interfax"
-    },
-    {
-        "id": 2412,
-        "name": "dnsbench",
-        "description": "Quick script that benchmarks local DNS servers using <a href = 'https://pypi.org/project/dnspython'>dnspython</a>."
-    },
-    {
-        "id": 2413,
-        "name": "Emojizer",
-        "description": "Discord bot that communicates with <a href = 'https://github.com/xtekky/gpt4free'>gpt4free</a> and responds to users with emojis only."
-    },
-    {
-        "id": 2414,
-        "name": "Feishin",
-        "description": "My personal fork of <a href = 'https://github.com/jeffvli'>jeffvli</a>'s <a href = 'https://github.com/jeffvli/feishin'>Feishin</a>, an Electron-based music player. This fork includes theming changes, QOL improvements, completely revamped Discord RPC, and much more.",
-        "code": "https://github.com/iiPythonx/feishin/tree/custom",
-        "end": 25
-    },
-    {
-        "id": 2415,
-        "name": "Feishin Micro",
-        "description": "Miniplayer for Feishin, that floats on your desktop and allows you to control the app without opening the entire window. Includes scrolling text UI, a song visualizer, and that's about it.",
-        "code": "https://github.com/iiarchives/feishin-micro"
-    },
-    {
-        "id": 2416,
-        "name": "Feishin RPC",
-        "description": "External RPC application for Feishin that was meant to improve the Discord RPC experience. This was later built into my <a href = 'https://github.com/iiPythonx/feishin/tree/custom'>custom fork</a> so it is no longer maintained.",
-        "code": "https://github.com/iipythonx/feishin-rpc"
-    },
-    {
-        "id": 2417,
-        "name": "Fiku",
-        "description": "Attempted rewrite of <a href = 'https://github.com/krateng/maloja'>Maloja</a>, with the goal of being MUCH more efficient. Goal completed, although I only got like 3 pages implemented.",
-        "code": "https://github.com/iiarchives/fiku"
-    },
-    {
-        "id": 2418,
-        "name": "File System",
-        "description": "Attempt at a blazing fast, privacy centered, and modern file sharing service.",
-        "code": "https://github.com/iiarchives/fs",
-        "aka": "Goos.lol Files"
-    },
-    {
-        "id": 2419,
-        "name": "Halo",
-        "description": "An attempted remake of <a href = 'https://github.com/iiPythonx/nova'>Nova</a> with the main selling point being speed."
-    },
-    {
-        "id": 2420,
-        "name": "RFS",
-        "description": "A remote filesystem for copying files from system to system without SSH or something that requires a lot of setup.",
-        "code": "https://github.com/iiPythonx/rfs",
-        "aka": "LBoH",
-        "end": 25
-    },
-    {
-        "id": 2421,
-        "name": "LRCup",
-        "description": "Python CLI and library for interacting with the <a href = 'https://lrclib.net'>LRCLIB.net API</a>. It also includes tools for embedding lyrics, along with general LRC tools.",
-        "code": "https://github.com/iiPythonx/lrcup",
-        "end": 26
-    },
-    {
-        "id": 2422,
-        "name": "Navidrome Play Mover",
-        "description": "Script that can move track plays between albums in <a href = 'https://github.com/navidrome/navidrome'>Navidrome</a>."
-    },
-    {
-        "id": 2423,
-        "name": "ndcli",
-        "description": "Navidrome browsing CLI tool, implemented in Python and then later attempted in Go. Allowed checking track/album/artist statistics from the terminal.",
-        "code": "https://github.com/iiPythonx/ndcli"
-    },
-    {
-        "id": 2424,
-        "name": "NETGEAR UI",
-        "description": "Replacement interface for the NETGEAR C7800 series router, since the default one sucks.",
-        "code": "https://github.com/iiPythonx/netgear"
-    },
-    {
-        "id": 2425,
-        "name": "Website (Modern)",
-        "description": "My latest modern website, which has still gone through nearly 4 different variations at this point.",
-        "code": "https://github.com/iiPythonx/website",
-        "site": "https://iipython.dev",
-        "end": 25
-    },
-    {
-        "id": 2426,
-        "name": "Nightwatch",
-        "description": "A chat system similar to all the ones I've made previously, but this time with a full server, complete client, bot library, web frontend, and still actively maintained.",
-        "code": "https://github.com/iiPythonx/nightwatch",
-        "end": 25
-    },
-    {
-        "id": 2427,
-        "name": "Nova",
-        "description": "A site building framework built using the Python <a href = 'https://pypi.org/project/websockets'>websockets</a> module, <a href = 'https://github.com/pallets/jinja'>Jinja2</a> and no other dependencies. It's capable of auto minification, TypeScript compilation, and more.",
-        "code": "https://github.com/iiPythonx/nova",
-        "end": 25
-    },
-    {
-        "id": 2428,
-        "name": "Now Playing",
-        "description": "A microservice for sending now playing information from <a href = 'https://listenbrainz.org'>ListenBrainz</a> in a websocket. Actively in production use on my <a href = 'https://iipython.dev'>website</a>."
-    },
-    {
-        "id": 2429,
-        "name": "OBS Feishin",
-        "description": "A widget to display music information from Feishin in <a href = 'https://obsproject.com'>OBS Studio</a>. Made in a night, and never used again."
-    },
-    {
-        "id": 2430,
-        "name": "Pizza",
-        "description": "Metadata collection system and management tool, meant to compete primarily with <a href = 'https://beets.io'>beets</a>.",
-        "code": "https://github.com/iiPythonx/pizza",
-        "site": "https://pizza.iipython.dev"
-    },
-    {
-        "id": 2431,
-        "name": "Pizza Proxy",
-        "description": "Cover art proxying system for use in <a href = 'https://github.com/iiPythonx/feishin'>my fork of Feishin</a>, which allows users to get cover art in their RPC without opening ports.",
-        "code": "https://github.com/iiarchives/pizza-cdn",
-        "aka": "pizza-cdn",
-        "site": "https://covers.iipython.dev"
-    },
-    {
-        "id": 2432,
-        "name": "Statuspage",
-        "description": "Simple, fast as hell, efficient on resources multi-server status page powered by Cloudflare Pages. Killed due to me no longer needing a statuspage.",
-        "code": "https://github.com/iiPythonx/statuspage"
-    },
-    {
-        "id": 2433,
-        "name": "TP Link Lightbulb",
-        "description": "Basic TP-Link lightbulb controller written with Electron, since I couldn't find any better solutions.",
-        "code": "https://github.com/iiarchives/tplinkbulb",
-        "aka": "tplinkbulb"
-    },
-    {
-        "id": 2434,
-        "name": "USPS",
-        "description": "A fully featured USPS package tracker with additional support for UPS packages. I've used it to receive nearly 15 different packages over the past year.",
-        "code": "https://github.com/iiPythonx/usps",
-        "end": 25
-    },
-    {
-        "id": 2501,
-        "name": "DmmD OS",
-        "description": "An in-browser operating system based on Windows 95, designed to be ran from within <a href = 'https://github.com/DmmDGM/dmmd-bios'>DmmD's BIOS</a>.",
-        "code": "https://github.com/iiPythonx/dmmd-os",
-        "site": "https://os.iipython.dev"
-    },
-    {
-        "id": 2502,
-        "name": "dmmd-py",
-        "description": "A python library/module to wrap all of <a href = 'https://github.com/dmmdgm'></a>'s APIs. As of right now that just includes his <a href = 'https://github.com/dmmdgm/dmmd-icdn'>iCDN</a>.",
-        "code": "https://github.com/iiPythonx/dmmd-py"
-    },
-    {
-        "id": 2503,
-        "name": "Networking",
-        "description": "A Cloudflare-backed site that showed HTTP(s) connection statistics and routing information."
-    },
-    {
-        "id": 2504,
-        "name": "PNV3",
-        "description": "The final form of PyNet, an actively in development rewrite of PyNet v3, hence keeping the original acronym.",
-        "code": "https://github.com/iiPythonx/pnv3"
-    },
-    {
-        "id": 2505,
-        "name": "Radar",
-        "description": "<a href = 'https://leafletjs.com/'>Leaflet</a>-powered web interface for the <a href = 'https://www.weather.gov/'>National Weather Service</a>'s radar API, because I couldn't find a site with a clean looking dark UI.",
-        "code": "https://github.com/iiPythonx/radar",
-        "site": "https://radar.iipython.dev"
-    },
-    {
-        "id": 2506,
-        "name": "Radio",
-        "description": "A next generation web radio project, powered by websockets and <a href = 'https://fastapi.tiangolo.com/'>FastAPI</a>.",
-        "code": "https://github.com/iiPythonx/radio",
-        "site": "https://radio.iipython.dev"
-    },
-    {
-        "id": 2507,
-        "name": "Sound",
-        "description": "Send files with sound or die trying: encode binary into hexadecimal, send as sound waves, receive on the other end and reconstruct the file.",
-        "code": "https://github.com/iiPythonx/sound"
-    },
-    {
-        "id": 2508,
-        "name": "htx",
-        "description": "Zero-dependency HTTP server and reverse proxy built entirely from scratch as an experiment/proof of concept. It can act as a standalone HTTP server, giving low level access to the protocol, and also has reverse proxy functionality.",
-        "code": "https://github.com/iiPythonx/htx"
-    },
-    {
-        "id": 2509,
-        "name": "il",
-        "description": "Python module for making clean logs, boxes, lines, and everything of the sort.",
-        "code": "https://github.com/iiPythonx/il",
-        "aka": "indigo-logger"
-    },
-    {
-        "id": 2510,
-        "name": "logic",
-        "description": "A logic symbol processor for PHI-1113 that I wrote in the span of a couple weeks. My professor thought it was 'pretty neat'.",
-        "code": "https://github.com/iiPythonx/logic"
-    },
-    {
-        "id": 2511,
-        "name": "NJROTC Autograde",
-        "description": "The goal was to create an application that allows for quick and easy autograding of cadet uniforms for using in JROTC.",
-        "code": "https://github.com/iiPythonx/rotc-autograde",
-        "aka": "uniform",
-        "site": "https://uniform.iipython.dev"
-    },
-    {
-        "id": 2512,
-        "name": "cdrip",
-        "description": "Local <a href = 'https://bun.sh'>Bun</a>-based codebase that runs a webserver and then allows you to rip any CDs in your system using <a href = 'https://xiph.org/paranoia/'>cdparanoia</a>.",
-        "code": "https://github.com/iiPythonx/cdrip"
-    },
-    {
-        "id": 2513,
-        "name": "cdmaker",
-        "description": "Tool that creates fully readable CD images (bin/cue) given a directory of WAV files. I made it because I couldn't find any other tooling that worked out of the box without needing any dependencies or weird setup beforehand, while this script only requires you to have Python 3.",
-        "code": "https://github.com/iiarchives/cdmaker"
-    },
-    {
-        "id": 2514,
-        "name": "pdb",
-        "description": "This is the site you are actively reading off of, pretty basic frontend for a massive ass JSON(c) file that has all my project data on it.",
-        "code": "https://github.com/iiPythonx/projects",
-        "aka": "project index",
-        "site": "https://index.iipython.dev"
-    },
-    {
-        "id": 2515,
-        "name": "metrics",
-        "description": "FastAPI based ASGI system that records Cloudflare site metrics, including TTFB, TLS Handshake Time, TLS Connection Time, and more. Can be ran from a customizable amount of nodes all around the world, with a 1-4 limit.",
-        "code": "https://github.com/iiPythonx/metrics",
-        "site": "https://metrics.iipython.dev"
-    },
-    {
-        "id": 2516,
-        "name": "carbon",
-        "description": "Asynchronous NoSQL database that uses SQLite as a backend for data storage. It has full support for replication and was a fun experiment to work on.",
-        "code": "https://github.com/iiPythonx/carbon"
-    },
-    {
-        "id": 2517,
-        "name": "radon",
-        "description": "An attempt at a decentralized network for sending encrypted data between peers.",
-        "code": "https://github.com/iiPythonx/radon"
-    },
-    {
-        "id": 2518,
-        "name": "ghost",
-        "description": "Work-in-progress self-hosted privacy-respecting analytics server designed to provide nothing but a visit count.",
-        "code": "https://github.com/iiPythonx/ghost"
-    },
-    {
-        "id": 2519,
-        "name": "cmd",
-        "aka": "cmd.iipython.dev",
-        "description": "Web terminal complete with games, social interaction via email, a typing test, baud rate emulation, and more.",
-        "code": "https://github.com/iiPythonx/cmd",
-        "site": "https://cmd.iipython.dev"
-    },
-    {
-        "id": 2520,
-        "name": "rei",
-        "description": "CLI meant to assist with everything from managing projects to updating DNS records.",
-        "code": "https://github.com/iiPythonx/rei"
-    },
-    {
-        "id": 2521,
-        "name": "genrerip",
-        "description": "Tool to automatically find accurate music genres via MusicBrainz and LastFM.",
-        "code": "https://github.com/iiPythonx/genrerip"
-    },
-    {
-        "id": 2522,
-        "name": "shadow",
-        "description": "HTTP/1.1 compliant ASGI system, meant to replace HTX (2508).",
-        "code": "https://github.com/iiPythonx/ghost/blob/main/shadow.py",
-        "end": 26
-    },
-    {
-        "id": 2523,
-        "name": "snorlax",
-        "description": "A YouTube archival service, all running locally. It supports downloading videos as well as entire channels, displaying it in a fairly decent interface.",
-        "code": "https://github.com/iiPythonx/snorlax",
-        "end": 26
-    },
-    {
-        "id": 2601,
-        "name": "iavx",
-        "description": "The iiPython AV1 Encoding System. As of 03/01/26 it's been used to encode around 10 different shows.",
-        "code": "https://github.com/iiPythonx/iavx"
-    },
-    {
-        "id": 2602,
-        "name": "sniffer",
-        "description": "Automatically trace all externally linked domains on a website and display them in a node tree.",
-        "site": "https://sniff.iipython.dev"
-    },
-    {
-        "id": 2603,
-        "name": "pixel-os",
-        "description": "New work-in-progress web based operating system, with full modding support.",
-        "code": "https://github.com/iiPythonx/pixel",
-        "site": "https://pixel.iipython.dev"
-    },
-    {
-        "id": 2604,
-        "name": "cyanide",
-        "description": "Central report system for K-12 schools in Mississippi, ranking vulnerabilities by risk.",
-        "code": "https://github.com/iiPythonx/cyanide"
+        "index": 2001,
+        "title": "ii-Python/iiPythonx",
+        "about": "The repository I use for editing my GitHub profile, although it also keeps all of my Linux dotfiles. Still active as of 2025.",
+        "until": null,
+        "alias": "dotfiles",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/iiPythonx"
+            }
+        ]
+    },
+    {
+        "index": 2002,
+        "title": "Website (2020)",
+        "about": "The original implementation of my website, hosted at <a href = 'https://web.archive.org/web/20201217090754/https://iipython.cf/'>iipython.cf</a>.",
+        "until": 20,
+        "alias": null,
+        "links": [
+            {
+                "type": "site",
+                "link": "https://web.archive.org/web/20201217090754/https://iipython.cf/"
+            }
+        ]
+    },
+    {
+        "index": 2003,
+        "title": "Prism",
+        "about": "The only discord bot you will ever need (satire), died after nearly 3 years of hard work on it. I quit making discord bots afterwards due to Discord's addition of the intent system.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/prism"
+            }
+        ]
+    },
+    {
+        "index": 2004,
+        "title": "RoBot",
+        "about": "Keypress-based scriptable automation system for the Roblox client. All it was able to do was move around a little and was extremely janky, but yet it's my most starred repo.",
+        "until": 20,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/robot"
+            }
+        ]
+    },
+    {
+        "index": 2005,
+        "title": "Sprint",
+        "about": "A custom shell meant to be minimal with commands, color support, multi-line editing, and more.",
+        "until": 20,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/sprint"
+            }
+        ]
+    },
+    {
+        "index": 2006,
+        "title": "Throwaway Keys",
+        "about": "A project that I designed to create secret keys for use in projects without needing to manually generate one.",
+        "until": 20,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/throwaway-keys"
+            }
+        ]
+    },
+    {
+        "index": 2101,
+        "title": "Advent of Code",
+        "about": "Project to handle my source code solutions for the 2021 <a href = 'https://adventofcode.com/2021/about'>Advent of Code</a>.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/aoc"
+            }
+        ]
+    },
+    {
+        "index": 2102,
+        "title": "Autofix",
+        "about": "Background script to execute AUTORUN.INF files on flash drives, similar to old versions of Windows.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/autofix"
+            }
+        ]
+    },
+    {
+        "index": 2103,
+        "title": "Cubic",
+        "about": "A discord bot with an extensive economy system, designed partially as a test of new features before being implemented into <a href = 'https://github.com/iiPythonx/prism'>Prism</a>.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/cubic"
+            }
+        ]
+    },
+    {
+        "index": 2104,
+        "title": "Custom Presence",
+        "about": "Program that allowed users to set a custom discord status using <a href = 'https://pypi.org/project/pypresence'>pypresence</a>.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/Custom-Presence"
+            }
+        ]
+    },
+    {
+        "index": 2105,
+        "title": "DOS-Style Website",
+        "about": "A website that was very reminiscent of the DOS era of computing. Page layout and system was incredibly inspired by <a href = 'https://github.com/qwertyquerty'>qtqt's website</a> from 2021 which you can <a href = 'https://web.archive.org/web/20210624003236/http://qtqt.cf/'>see here</a>.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2106,
+        "title": "Fetch",
+        "about": "CLI tool to download files, similar to <a href = 'https://www.gnu.org/software/wget'>wget</a> and <a href = 'https://curl.se'>curl</a>, but written in pure Python with no dependencies. Never got killed, but I stopped working on it after <a href = 'https://github.com/DmmDGM'></a> dmed me and I ended up doing something else.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2107,
+        "title": "File Archive",
+        "about": "A website that allowed me to archive files in a root folder and then authorize specific accounts to access it. The theme was based on <a href = 'https://github.com/nostalgic-css/NES.css'>NES.css</a>, and ran for about 5 months.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/file-archive"
+            }
+        ]
+    },
+    {
+        "index": 2108,
+        "title": "Honknet",
+        "about": "Honknet was a collaboration between me and <a href = 'https://github.com/DmmDGM'>DmmD</a> where we attempted to make a chat system. It was later converted to Plasma, which died a year later.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/honknet"
+            }
+        ]
+    },
+    {
+        "index": 2109,
+        "title": "JAUS",
+        "about": "Just Another Url Shortener, a flask website that literally just acted as an old ass url shortener. Killed because it was slow and useless.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/jaus"
+            }
+        ]
+    },
+    {
+        "index": 2110,
+        "title": "Minicraft RP",
+        "about": "Program that provided discord rich presence for people playing <a href = 'https://github.com/MinicraftPlus/minicraft-plus-revived'>Minicraft+</a>.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2111,
+        "title": "Modbot",
+        "about": "A discord bot that was centered around moderation, mostly chat filtering and was used for a very short time in a private discord server.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2112,
+        "title": "MyShell",
+        "about": "A customizable shell program that allowed you to load custom 'kernels', giving full control over what was ran.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/myshell"
+            }
+        ]
+    },
+    {
+        "index": 2113,
+        "title": "Neutron",
+        "about": "A web logging system, complete with web interface and Python module. It would hook into your code and send all tracebacks to the server of your choosing for remote viewing.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/neutron"
+            }
+        ]
+    },
+    {
+        "index": 2114,
+        "title": "OPP",
+        "about": "A package manager that was intended to be cross platform and similar to <a href = 'https://en.wikipedia.org/wiki/APT_(software)'>apt</a>.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2115,
+        "title": "PyHTTPFS",
+        "about": "Flask based system that was meant to act as a static file sharing tool. Killed and removed because people kept using it and it was insecure.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2116,
+        "title": "PyNet (v1)",
+        "about": "A raw socket service that allowed sharing 'webpages' using a TUI client along with a web interface for controlling and administering the pages.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2117,
+        "title": "PyNet (v2)",
+        "about": "Basically a perfect copy of PyNet v1, but with a version bump and client changes.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2118,
+        "title": "PyNet (v3)",
+        "about": "A full rewrite of PyNet, including a client, server, custom byte protocol, tooling, and web services to manage it all. This variant was never completed, but the remnants of it still linger in my head from time to time.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2119,
+        "title": "Sprint v2",
+        "about": "Attempted rewrite of <a href = 'https://github.com/iiarchives/sprint'>Sprint</a>, but I never found the time to fix it. It was also plagued by unicode escape color bugs.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/sprint-v2"
+            }
+        ]
+    },
+    {
+        "index": 2120,
+        "title": "Tempmon",
+        "about": "Script I made to monitor my CPU temps, because my PC was overheating while trying to play Half-Life 2.",
+        "until": 21,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/tempmon"
+            }
+        ]
+    },
+    {
+        "index": 2121,
+        "title": "Time Lock",
+        "about": "Terminal app that utilized tapping keys in a timed pattern in order to unlock or access data.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2122,
+        "title": "Webchat",
+        "about": "Web chat system I made while in school suspension so I could talk to my friends easier then trying to get on discord. The database was implemented with Redis, which was a mistake but it was my first time using it.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2123,
+        "title": "Windows Cleaner",
+        "about": "Script that used powershell and registry editing to clean up and debloat a stock Windows 10 system.",
+        "until": 21,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2124,
+        "title": "iiPython.py",
+        "about": "Python library where I shoved a bunch of 'useful' primitives, including a socket library, terminal utilities/coloring, and a keypress system.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/iipython.py"
+            }
+        ]
+    },
+    {
+        "index": 2125,
+        "title": "Prism v3",
+        "about": "The final variation of <a href = 'https://github.com/iiPythonx/prism'>Prism</a>, featuring slash commands, intents, and all the other garbage that Discord implemented. Killed because I grew sick and tired of making Discord bots.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/prism-v3"
+            }
+        ]
+    },
+    {
+        "index": 2201,
+        "title": "iiPython Auth",
+        "about": "A custom implementation of an OAuth2 providing system. Killed before being implemented into any other projects.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/auth"
+            }
+        ]
+    },
+    {
+        "index": 2202,
+        "title": "Bongo Shell",
+        "about": "Attempt at a bash-compatible shell written in Nim, failed due to lack of motivation.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2203,
+        "title": "Dioxide",
+        "about": "Tool that locks students out of <a href = 'https://central-access.net'>ActiveStudent</a> accounts. Had a week of weaponization against my local school district, before being shut down to prevent expulsion.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2204,
+        "title": "Disk Speedtest",
+        "about": "Very small CLI tool that benchmarks connected flash drives using <a href = 'https://wiki.archlinux.org/title/Hdparm'>hdparm</a>.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2205,
+        "title": "Down Site",
+        "about": "A 'system offline' website that was meant to compliment my <a href = 'https://web.archive.org/web/20220809130557/https://iipython.cf/'>2022 flat site design</a>.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/downsite"
+            }
+        ]
+    },
+    {
+        "index": 2206,
+        "title": "eDOS",
+        "about": "Emulated operating system that was intended to be stored completely in a tarball.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/edos"
+            }
+        ]
+    },
+    {
+        "index": 2207,
+        "title": "English Sucks",
+        "about": "Project that would run the Minecraft Java 1.18 language file through Google Translate around 7 times, then saved the result to a resource pack to make funny item names.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2208,
+        "title": "Enigma",
+        "about": "TUI based Engima machine that was implemented using <a href = 'https://pypi.org/project/pyenigma'>pyenigma</a> as a school project.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2209,
+        "title": "Fedora95",
+        "about": "Collection of bash scripts that turned <a href = 'https://docs.fedoraproject.org/en-US/releases/rawhide'>Fedora Rawhide</a> into a <a href = 'https://github.com/grassmunk/Chicago95'>Chicago95</a> primed environment.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/fedora95"
+            }
+        ]
+    },
+    {
+        "index": 2210,
+        "title": "Hamsters",
+        "about": "A project that was intended to essentially be an in-terminal game engine powered by pixel graphics. You were supposed to be able to scan a QR code visible on your screen and load a game off of that 'cartridge'. Killed because I couldn't find a good way to read from the screen.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2211,
+        "title": "Haze Cipher",
+        "about": "A cipher that was intended to be reversible and hard to crack. It ended up being neither of those things, but at least I tried; it was removed from GitHub to prevent people from using it for serious data.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2213,
+        "title": "iiPythonator",
+        "about": "Discord self-bot that was meant to play music and music only, and it did a damn good job of that.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/iipythonator"
+            }
+        ]
+    },
+    {
+        "index": 2214,
+        "title": "iiPython Intranet",
+        "about": "A web interface that would spin up reverse proxies at runtime for projects and handle authentication. I killed it off due to lack of time and motivation.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2215,
+        "title": "Website (2022-23)",
+        "about": "The source code for my 2022-2023 website, which allowed users to define 'templates' and could switch their website template at any time. Some of my examples include <a href = 'https://web.archive.org/web/20230722054317/https://iipython.dev/'>my bear website</a> and <a href = 'https://web.archive.org/web/20220809130557/https://iipython.cf/'>my flat design</a>.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2216,
+        "title": "Image Loader v2",
+        "about": "A Python web server that allowed Roblox servers to request images as comma seperated RGB values, so the image could be recreated using parts in-game.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2217,
+        "title": "Launch+",
+        "about": "A single page app designed with <a href = 'https://github.com/iiarchives/nitrogen'>Nitrogen</a> (also dead) to act as Kiosk and provide apps such as weather access.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2218,
+        "title": "Nitrogen",
+        "about": "Python module that was similar to <a href = 'https://electronjs.org'>Electron</a>, allowing you to open web pages in <a href = 'https://doc.qt.io/'>Qt</a> and send data to the Python backend.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/nitrogen"
+            }
+        ]
+    },
+    {
+        "index": 2219,
+        "title": "p2p",
+        "about": "Project that allowed sending files over an HTTP tunnel between two devices using Peer to Peer networking.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2220,
+        "title": "PHAT",
+        "about": "A hardware based key system that was meant to use USB flash drives as authentication devices.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/phat"
+            }
+        ]
+    },
+    {
+        "index": 2221,
+        "title": "Rickroll",
+        "about": "A flask site that literally just rickrolls you, nothing else.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2222,
+        "title": "Roblox Status Live",
+        "about": "Collection of web services for monitoring the status of Roblox's vast network of servers and APIs. Included a collection agent, storage system, and frontend.",
+        "until": 22,
+        "alias": "RSL",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/robloxstatuslive"
+            }
+        ]
+    },
+    {
+        "index": 2223,
+        "title": "Service Launcher",
+        "about": "CLI tool that acted very similar to <a href = 'https://systemd.io/'>systemd</a> units. It took a config file defining what to run, and provided a daemon/CLI to interact with the processes.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/launcher"
+            }
+        ]
+    },
+    {
+        "index": 2224,
+        "title": "Start Page",
+        "about": "A startpage I made that was designed to be quick and minimal, originally designed for a member of one of my group chats.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2225,
+        "title": "StreamX",
+        "about": "A project I helped design that acted as a self-hosted alternative to Roblox's <a href = 'https://create.roblox.com/docs/workspace/streaming'>StreamingEnabled</a>. The original devforum thread is still available <a href = 'https://devforum.roblox.com/t/deprecated-streamx-reduce-lag-and-prevent-map-cloning/1992484'>here</a>.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/roblox-streamx"
+            }
+        ]
+    },
+    {
+        "index": 2226,
+        "title": "Virtual Assistant",
+        "about": "Python program that acted as a personal assistant running locally on your PC. No AI was used in it, I was using wildcard pattern matching which was just as bad as you can imagine.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2227,
+        "title": "WebTransfer",
+        "about": "File transferring web application built with Flask, you just had to make an account and add a friend to send any sized file to them.",
+        "until": 22,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/webtransfer"
+            }
+        ]
+    },
+    {
+        "index": 2228,
+        "title": "x2 Website",
+        "about": "The official website for x2, which allowed users to publish packages and download others. At this point its useless, and x2 has turned into <a href = 'https://github.com/iiPythonx/xpp'>xpp</a>.",
+        "until": 22,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2229,
+        "title": "xpp",
+        "about": "Complete rewrite and modernization of both the X Programming Language, and what was formerly known as x2. Custom programming language inspired by Batch, x86 Assembly, and others.",
+        "until": 24,
+        "alias": "x2",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/xpp"
+            }
+        ]
+    },
+    {
+        "index": 2301,
+        "title": "2023 Countdown",
+        "about": "A project designed to perform a countdown until New Years 2023. Reused in 2024, with varying degrees of success due to date processing issues.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2302,
+        "title": "Album Downloader",
+        "about": "Selenium-based utility to download entire albums from the now defunct <a href = 'https://free-mp3-download.net'>free-mp3-download.net</a> website.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2303,
+        "title": "Alpha",
+        "about": "Mockup of a very extendable and easy to understand programming language, eventually turned into <a href = 'https://github.com/gooslol/english'>English</a>.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2304,
+        "title": "Chungus",
+        "about": "A pure-python math engine designed to be implemented into <a href = 'https://github.com/iiPythox/xpp'>xpp</a>.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2305,
+        "title": "CubeRPC",
+        "about": "An extremely basic Discord RPC for <a href = 'https://musikcube.com'>musikcube</a>.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/cuberpc"
+            }
+        ]
+    },
+    {
+        "index": 2306,
+        "title": "GArchive",
+        "about": "Code for the original website for <a href = 'https://gc.iipython.dev'>Geesecraft</a>. Replaced by DmmD's new <a href = 'https://github.com/dmmd-archive/geesecraft'>Svelte-based code</a>.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/garchive/tree/cb087fb7be23bacc0a8612719762e235a0fbeecc"
+            }
+        ]
+    },
+    {
+        "index": 2307,
+        "title": "Goose NFT",
+        "about": "Jokily made terminal NFT system where a user could sign text files using a Public/Private keypair and then verify the files.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2308,
+        "title": "ISM",
+        "about": "iiPython System Manager, a web UI that was similar to <a href = 'https://grafana.com'>Grafana</a>, allowing you to keep a quick tab on your system.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/ism"
+            }
+        ]
+    },
+    {
+        "index": 2309,
+        "title": "Modrinth Modpack Updater",
+        "about": "A CLI tool that would take a JSON file containing modpack information, and automatically update all the mods to a specific Minecraft version.",
+        "until": 23,
+        "alias": "packupd",
+        "links": []
+    },
+    {
+        "index": 2310,
+        "title": "Ooga Booga",
+        "about": "URL shortener that was meant to replace JAUS, rewritten using modern async libraries and all.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/ooga-booga"
+            }
+        ]
+    },
+    {
+        "index": 2311,
+        "title": "Shuttle",
+        "about": "Chat system that was (essentially) meant to be Honknet v2, a collab between me and <a href = 'https://github.com/DmmDGM'>DmmD</a> to make a decentralized, modern chat system. It is on an indefinite hold as of May 2024.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/shuttle-chat"
+            }
+        ]
+    },
+    {
+        "index": 2312,
+        "title": "UU-Extended",
+        "about": "Minecraft Java mod based on <a href = 'https://fabricmc.net'>Fabric</a> to extend <a href = 'https://feed-the-beast.fandom.com/wiki/UU-Matter'>UU-Matter</a> from <a href = 'https://wiki.techreborn.ovh/'>Tech Reborn</a>.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/uu-extended"
+            }
+        ]
+    },
+    {
+        "index": 2313,
+        "title": "Xenon",
+        "about": "A Roblox streaming engine that was meant as a no-server-required rewrite of <a href = 'https://github.com/roblox-streamx'>StreamX</a>. It could stream anything except for attachment connections, and was much easier to implement. The original devforum thread is available <a href = 'https://devforum.roblox.com/t/xenon-streaming-engine-an-alternative-to-streamingenabled/2178495'>here</a>.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/xenon"
+            }
+        ]
+    },
+    {
+        "index": 2314,
+        "title": "Codelet",
+        "about": "A code giveaway platform for Roblox, intended to supersede 'FTS' giveaways. The project was made in conjunction with <a href = 'https://github.com/pyxfluff'>pyxfluff</a> but never published.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2315,
+        "title": "English",
+        "about": "Simple to use, english language based programming language. First project to be included in the <a href = 'https://github.com/gooslol'>Goos.lol</a> organization.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/gooslol/english"
+            }
+        ]
+    },
+    {
+        "index": 2316,
+        "title": "Goos.lol",
+        "about": "The official Goos.lol website, which is still visible on the <a href = 'https://web.archive.org/web/20240320011427/https://goos.lol/'>wayback machine</a>.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/goos.lol"
+            }
+        ]
+    },
+    {
+        "index": 2317,
+        "title": "iiPython Core",
+        "about": "Core service for all of my data and sites, meant to be a home for datasets. I abandoned it after getting the main UI up and indexing my music.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2318,
+        "title": "Musescore Downloader",
+        "about": "A site that allowed users to download sheet music from <a href = 'https://musescore.com'>Musescore</a> via the use of <a href = 'https://github.com/LibreScore/dl-librescore'>dl-librescore</a>.",
+        "until": 23,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2320,
+        "title": "Textnet",
+        "about": "Another attempted rewrite of PyNet, this one included a terminal rendering solution that was somewhat modernized but otherwise didn't get very far.",
+        "until": 23,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/textnet"
+            }
+        ]
+    },
+    {
+        "index": 2321,
+        "title": "Weather Archiver",
+        "about": "An old website designed to constantly record data from <a href = 'https://openweathermap.org'>OpenWeatherMap</a>, store it, and then graph it with a neat UI.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/weather"
+            }
+        ]
+    },
+    {
+        "index": 2401,
+        "title": "igame",
+        "about": "A python module for making terminal games, giving access to easy audio control, menu systems, and function timeouts. Implemented in some of <a href = 'https://k4ffu.dev'>K4ffu</a>'s projects, otherwise not used.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2402,
+        "title": "8255",
+        "about": "Assembly-inspired programming language that required manually managing the memory stack, dropping memory, etc.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/8255"
+            }
+        ]
+    },
+    {
+        "index": 2403,
+        "title": "Acellus",
+        "about": "Collection of decompiled scripts of <a href = 'https://www.acellus.com/'>Acellus</a>'s web interface. Allowed speeding up videos, preventing tab detection, pasting into writing tutor, and more.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/acellus"
+            }
+        ]
+    },
+    {
+        "index": 2404,
+        "title": "Album Art Downloader",
+        "about": "Python script that will automatically scan my music directory for any albums without cover art, and will then open <a href = 'https://covers.musichoarders.xyz'>MusicHoarder's cover website</a>.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2405,
+        "title": "Anime CLI",
+        "about": "TUI script that streams anime directly from torrents, originally based on <a href = 'https://consumet.org/'>Consumet</a>. It is one of the only projects that was published by <a href = 'https://github.com/gooslol'>Goos.lol</a>.",
+        "until": 25,
+        "alias": "anisq",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/gooslol/anisq"
+            }
+        ]
+    },
+    {
+        "index": 2406,
+        "title": "Assistant",
+        "about": "A remake of my original Virtual Assistant, this time using ChatGPT and actually implementing features such as weather, music control, etc.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2407,
+        "title": "cdbar",
+        "about": "Website that displays information about various CDs given a barcode, powered by <a href = 'https://musicbrainz.org'>MusicBrainz</a>.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/cdbar"
+            },
+            {
+                "type": "site",
+                "link": "https://cdbar.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2409,
+        "title": "Cephei",
+        "about": "Intended to be a chat system, it started as a rewrite of the currently on hold <a href = 'https://github.com/shuttle-chat'>Shuttle project</a>. I implemented a login and signup flow and then got tired of it.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2410,
+        "title": "CRS",
+        "about": "Central Routing System, a websocket based <a href = 'https://fastapi.tiangolo.com'>FastAPI</a> project that was intended to be used to replace <a href = 'https://en.wikipedia.org/wiki/REST'>REST</a> for some of my microservices and join them together.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/crs"
+            }
+        ]
+    },
+    {
+        "index": 2411,
+        "title": "Distributed Filesystem",
+        "about": "Test implementation of a distributed filesystem across several different nodes spanning different IP networks. Never completed.",
+        "until": 24,
+        "alias": "interfax",
+        "links": []
+    },
+    {
+        "index": 2412,
+        "title": "dnsbench",
+        "about": "Quick script that benchmarks local DNS servers using <a href = 'https://pypi.org/project/dnspython'>dnspython</a>.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2413,
+        "title": "Emojizer",
+        "about": "Discord bot that communicates with <a href = 'https://github.com/xtekky/gpt4free'>gpt4free</a> and responds to users with emojis only.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2414,
+        "title": "Feishin",
+        "about": "My personal fork of <a href = 'https://github.com/jeffvli'>jeffvli</a>'s <a href = 'https://github.com/jeffvli/feishin'>Feishin</a>, an Electron-based music player. This fork includes theming changes, QOL improvements, completely revamped Discord RPC, and much more.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/feishin"
+            }
+        ]
+    },
+    {
+        "index": 2415,
+        "title": "Feishin Micro",
+        "about": "Miniplayer for Feishin, that floats on your desktop and allows you to control the app without opening the entire window. Includes scrolling text UI, a song visualizer, and that's about it.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/feishin-micro"
+            }
+        ]
+    },
+    {
+        "index": 2416,
+        "title": "Feishin RPC",
+        "about": "External RPC application for Feishin that was meant to improve the Discord RPC experience. This was later built into my <a href = 'https://github.com/iiPythonx/feishin/tree/custom'>custom fork</a> so it is no longer maintained.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iipythonx/feishin-rpc"
+            }
+        ]
+    },
+    {
+        "index": 2417,
+        "title": "Fiku",
+        "about": "Attempted rewrite of <a href = 'https://github.com/krateng/maloja'>Maloja</a>, with the goal of being MUCH more efficient. Goal completed, although I only got like 3 pages implemented.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/fiku"
+            }
+        ]
+    },
+    {
+        "index": 2418,
+        "title": "File System",
+        "about": "Attempt at a blazing fast, privacy centered, and modern file sharing service.",
+        "until": 24,
+        "alias": "Goos.lol Files",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/fs"
+            }
+        ]
+    },
+    {
+        "index": 2419,
+        "title": "Halo",
+        "about": "An attempted remake of <a href = 'https://github.com/iiPythonx/nova'>Nova</a> with the main selling point being speed.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2420,
+        "title": "RFS",
+        "about": "A remote filesystem for copying files from system to system without SSH or something that requires a lot of setup.",
+        "until": 25,
+        "alias": "LBoH",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/rfs"
+            }
+        ]
+    },
+    {
+        "index": 2421,
+        "title": "LRCup",
+        "about": "Python CLI and library for interacting with the <a href = 'https://lrclib.net'>LRCLIB.net API</a>. It also includes tools for embedding lyrics, along with general LRC tools.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/lrcup"
+            }
+        ]
+    },
+    {
+        "index": 2422,
+        "title": "Navidrome Play Mover",
+        "about": "Script that can move track plays between albums in <a href = 'https://github.com/navidrome/navidrome'>Navidrome</a>.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2423,
+        "title": "ndcli",
+        "about": "Navidrome browsing CLI tool, implemented in Python and then later attempted in Go. Allowed checking track/album/artist statistics from the terminal.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/ndcli"
+            }
+        ]
+    },
+    {
+        "index": 2424,
+        "title": "NETGEAR UI",
+        "about": "Replacement interface for the NETGEAR C7800 series router, since the default one sucks.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/netgear"
+            }
+        ]
+    },
+    {
+        "index": 2425,
+        "title": "Website (Modern)",
+        "about": "My latest modern website, which has still gone through nearly 4 different variations at this point.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/website"
+            },
+            {
+                "type": "site",
+                "link": "https://iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2426,
+        "title": "Nightwatch",
+        "about": "A chat system similar to all the ones I've made previously, but this time with a full server, complete client, bot library, web frontend, and still actively maintained.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/nightwatch"
+            }
+        ]
+    },
+    {
+        "index": 2427,
+        "title": "Nova",
+        "about": "A site building framework built using the Python <a href = 'https://pypi.org/project/websockets'>websockets</a> module, <a href = 'https://github.com/pallets/jinja'>Jinja2</a> and no other dependencies. It's capable of auto minification, TypeScript compilation, and more.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/nova"
+            }
+        ]
+    },
+    {
+        "index": 2428,
+        "title": "Now Playing",
+        "about": "A microservice for sending now playing information from <a href = 'https://listenbrainz.org'>ListenBrainz</a> in a websocket. Actively in production use on my <a href = 'https://iipython.dev'>website</a>.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2429,
+        "title": "OBS Feishin",
+        "about": "A widget to display music information from Feishin in <a href = 'https://obsproject.com'>OBS Studio</a>. Made in a night, and never used again.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2430,
+        "title": "Pizza",
+        "about": "Metadata collection system and management tool, meant to compete primarily with <a href = 'https://beets.io'>beets</a>.",
+        "until": 24,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/pizza"
+            }
+        ]
+    },
+    {
+        "index": 2431,
+        "title": "Pizza Proxy",
+        "about": "Cover art proxying system for use in <a href = 'https://github.com/iiPythonx/feishin'>my fork of Feishin</a>, which allows users to get cover art in their RPC without opening ports.",
+        "until": null,
+        "alias": "pizza-cdn",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/pizza-cdn"
+            },
+            {
+                "type": "site",
+                "link": "https://pizza.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2432,
+        "title": "Statuspage",
+        "about": "Simple, fast as hell, efficient on resources multi-server status page powered by Cloudflare Pages. Killed due to me no longer needing a statuspage.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/statuspage"
+            }
+        ]
+    },
+    {
+        "index": 2433,
+        "title": "TP Link Lightbulb",
+        "about": "Basic TP-Link lightbulb controller written with Electron, since I couldn't find any better solutions.",
+        "until": null,
+        "alias": "tplinkbulb",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/tplinkbulb"
+            }
+        ]
+    },
+    {
+        "index": 2434,
+        "title": "USPS",
+        "about": "A fully featured USPS package tracker with additional support for UPS packages. I've used it to receive nearly 15 different packages over the past year.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/usps"
+            }
+        ]
+    },
+    {
+        "site": "https://os.iipython.dev",
+        "index": 2501,
+        "title": "DmmD OS",
+        "about": "An in-browser operating system based on Windows 95, designed to be ran from within <a href = 'https://github.com/DmmDGM/dmmd-bios'>DmmD's BIOS</a>.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/dmmd-os"
+            },
+            {
+                "type": "site",
+                "link": "https://os.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2502,
+        "title": "dmmd-py",
+        "about": "A python library/module to wrap all of <a href = 'https://github.com/dmmdgm'></a>'s APIs. As of right now that just includes his <a href = 'https://github.com/dmmdgm/dmmd-icdn'>iCDN</a>.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/dmmd-py"
+            }
+        ]
+    },
+    {
+        "index": 2503,
+        "title": "Networking",
+        "about": "A Cloudflare-backed site that showed HTTP(s) connection statistics and routing information.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2504,
+        "title": "PNV3",
+        "about": "The final form of PyNet, an actively in development rewrite of PyNet v3, hence keeping the original acronym.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/pnv3"
+            }
+        ]
+    },
+    {
+        "index": 2505,
+        "title": "Radar",
+        "about": "<a href = 'https://leafletjs.com/'>Leaflet</a>-powered web interface for the <a href = 'https://www.weather.gov/'>National Weather Service</a>'s radar API, because I couldn't find a site with a clean looking dark UI.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/radar"
+            },
+            {
+                "type": "site",
+                "link": "https://radar.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2506,
+        "title": "Radio",
+        "about": "A next generation web radio project, powered by websockets and <a href = 'https://fastapi.tiangolo.com/'>FastAPI</a>.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/radio"
+            },
+            {
+                "type": "site",
+                "link": "https://radio.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2507,
+        "title": "Sound",
+        "about": "Send files with sound or die trying: encode binary into hexadecimal, send as sound waves, receive on the other end and reconstruct the file.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/sound"
+            }
+        ]
+    },
+    {
+        "index": 2508,
+        "title": "htx",
+        "about": "Zero-dependency HTTP server and reverse proxy built entirely from scratch as an experiment/proof of concept. It can act as a standalone HTTP server, giving low level access to the protocol, and also has reverse proxy functionality.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/htx"
+            }
+        ]
+    },
+    {
+        "index": 2509,
+        "title": "il",
+        "about": "Python module for making clean logs, boxes, lines, and everything of the sort.",
+        "until": 25,
+        "alias": "indigo-logger",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/il"
+            }
+        ]
+    },
+    {
+        "index": 2510,
+        "title": "logic",
+        "about": "A logic symbol processor for PHI-1113 that I wrote in the span of a couple weeks. My professor thought it was 'pretty neat'.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/logic"
+            }
+        ]
+    },
+    {
+        "index": 2511,
+        "title": "NJROTC Autograde",
+        "about": "The goal was to create an application that allows for quick and easy autograding of cadet uniforms for using in JROTC.",
+        "until": 25,
+        "alias": "uniform",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/rotc-autograde"
+            },
+            {
+                "type": "site",
+                "link": "https://uniform.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2512,
+        "title": "cdrip",
+        "about": "Local <a href = 'https://bun.sh'>Bun</a>-based codebase that runs a webserver and then allows you to rip any CDs in your system using <a href = 'https://xiph.org/paranoia/'>cdparanoia</a>.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/cdrip"
+            }
+        ]
+    },
+    {
+        "index": 2513,
+        "title": "cdmaker",
+        "about": "Tool that creates fully readable CD images (bin/cue) given a directory of WAV files. I made it because I couldn't find any other tooling that worked out of the box without needing any dependencies or weird setup beforehand, while this script only requires you to have Python 3.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiarchives/cdmaker"
+            }
+        ]
+    },
+    {
+        "index": 2514,
+        "title": "pdb",
+        "about": "This site was a pretty basic frontend for a massive ass JSON(c) file that had all my project data on it, deprecated in May 2026 when I merged it into my main site.",
+        "until": 25,
+        "alias": "project index",
+        "links": []
+    },
+    {
+        "index": 2515,
+        "title": "metrics",
+        "about": "FastAPI based ASGI system that records Cloudflare site metrics, including TTFB, TLS Handshake Time, TLS Connection Time, and more. Can be ran from a customizable amount of nodes all around the world, with a 1-4 limit.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/metrics"
+            }
+        ]
+    },
+    {
+        "index": 2516,
+        "title": "carbon",
+        "about": "Asynchronous NoSQL database that uses SQLite as a backend for data storage. It has full support for replication and was a fun experiment to work on.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/carbon"
+            }
+        ]
+    },
+    {
+        "index": 2517,
+        "title": "radon",
+        "about": "An attempt at a decentralized network for sending encrypted data between peers.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/radon"
+            }
+        ]
+    },
+    {
+        "index": 2518,
+        "title": "ghost",
+        "about": "Work-in-progress self-hosted privacy-respecting analytics server designed to provide nothing but a visit count.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/ghost"
+            }
+        ]
+    },
+    {
+        "site": "https://cmd.iipython.dev",
+        "index": 2519,
+        "title": "cmd",
+        "about": "Web terminal complete with games, social interaction via email, a typing test, baud rate emulation, and more.",
+        "until": 25,
+        "alias": "cmd.iipython.dev",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/cmd"
+            },
+            {
+                "type": "site",
+                "link": "https://cmd.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2520,
+        "title": "rei",
+        "about": "CLI meant to assist with everything from managing projects to updating DNS records.",
+        "until": 25,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/rei"
+            }
+        ]
+    },
+    {
+        "index": 2521,
+        "title": "genrerip",
+        "about": "Tool to automatically find accurate music genres via MusicBrainz and LastFM.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/genrerip"
+            }
+        ]
+    },
+    {
+        "index": 2522,
+        "title": "shadow",
+        "about": "HTTP/1.1 compliant ASGI system, meant to replace HTX (2508).",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/ghost/blob/main/shadow.py"
+            }
+        ]
+    },
+    {
+        "index": 2523,
+        "title": "snorlax",
+        "about": "A YouTube archival service, all running locally. It supports downloading videos as well as entire channels, displaying it in a fairly decent interface.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/snorlax"
+            }
+        ]
+    },
+    {
+        "index": 2601,
+        "title": "iavx",
+        "about": "The iiPython AV1 Encoding System. As of 03/01/26 it's been used to encode around 10 different shows.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2602,
+        "title": "sniffer",
+        "about": "Automatically trace all externally linked domains on a website and display them in a node tree.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2603,
+        "title": "pixel-os",
+        "about": "New work-in-progress web based operating system, with full modding support.",
+        "until": 26,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/pixel"
+            }
+        ]
+    },
+    {
+        "index": 2604,
+        "title": "cyanide",
+        "about": "Central report system for K-12 schools in Mississippi, ranking vulnerabilities by risk.",
+        "until": 26,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/cyanide"
+            }
+        ]
     }
 ]
