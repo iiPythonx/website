@@ -71,10 +71,10 @@ export function AboutPage() {
             </section>
             <section>
                 <h2 class = "page-title">Services</h2>
-                <a href = "https://covers.iipython.dev">Pizza</a>
-                <a href = "https://index.iipython.dev">Project Index</a>
+                <a href = "https://pizza.iipython.dev">Pizza</a>
                 <a href = "https://radar.iipython.dev">NOAA Weather Radar</a>
                 <a href = "https://radio.iipython.dev">iiPython Radio</a>
+                <a href = "https://cdbar.iipython.dev">CDBAR</a>
                 <a href = "https://cmd.iipython.dev">iiPython CMD&trade;</a>
                 <Link href = "/projects">(view all)</Link>
             </section>

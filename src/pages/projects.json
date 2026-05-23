@@ -1,8 +1,8 @@
 [
     {
         "index": 2001,
-        "title": "ii-Python/iiPythonx",
-        "about": "The repository I use for editing my GitHub profile, although it also keeps all of my Linux dotfiles. Still active as of 2025.",
+        "title": "iiPythonx/iiPythonx",
+        "about": "The repository I use for editing my GitHub profile, although it also keeps all of my Linux dotfiles.",
         "until": null,
         "alias": "dotfiles",
         "links": [
@@ -901,7 +901,7 @@
         "title": "Assistant",
         "about": "A remake of my original Virtual Assistant, this time using ChatGPT and actually implementing features such as weather, music control, etc.",
         "until": 24,
-        "alias": null,
+        "alias": "voice-assistant",
         "links": []
     },
     {
@@ -963,7 +963,7 @@
         "title": "Emojizer",
         "about": "Discord bot that communicates with <a href = 'https://github.com/xtekky/gpt4free'>gpt4free</a> and responds to users with emojis only.",
         "until": 24,
-        "alias": null,
+        "alias": "emoji-bot",
         "links": []
     },
     {
@@ -1152,10 +1152,10 @@
     },
     {
         "index": 2429,
-        "title": "OBS Feishin",
+        "title": "Feishin OBS",
         "about": "A widget to display music information from Feishin in <a href = 'https://obsproject.com'>OBS Studio</a>. Made in a night, and never used again.",
         "until": 24,
-        "alias": null,
+        "alias": "feishin-obs",
         "links": []
     },
     {
@@ -1228,7 +1228,14 @@
         ]
     },
     {
-        "site": "https://os.iipython.dev",
+        "index": 2435,
+        "title": "gun.",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 24,
+        "alias": null,
+        "links": []
+    },
+    {
         "index": 2501,
         "title": "DmmD OS",
         "about": "An in-browser operating system based on Windows 95, designed to be ran from within <a href = 'https://github.com/DmmDGM/dmmd-bios'>DmmD's BIOS</a>.",
@@ -1263,7 +1270,7 @@
         "title": "Networking",
         "about": "A Cloudflare-backed site that showed HTTP(s) connection statistics and routing information.",
         "until": 25,
-        "alias": null,
+        "alias": "net.iipython.dev",
         "links": []
     },
     {
@@ -1421,7 +1428,7 @@
         "title": "metrics",
         "about": "FastAPI based ASGI system that records Cloudflare site metrics, including TTFB, TLS Handshake Time, TLS Connection Time, and more. Can be ran from a customizable amount of nodes all around the world, with a 1-4 limit.",
         "until": 25,
-        "alias": null,
+        "alias": "monitoring",
         "links": [
             {
                 "type": "git",
@@ -1469,7 +1476,6 @@
         ]
     },
     {
-        "site": "https://cmd.iipython.dev",
         "index": 2519,
         "title": "cmd",
         "about": "Web terminal complete with games, social interaction via email, a typing test, baud rate emulation, and more.",
@@ -1539,6 +1545,112 @@
         ]
     },
     {
+        "index": 2524,
+        "title": "anilist-preview",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2525,
+        "title": "av1.iipython.dev",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "site",
+                "link": "https://av1.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2526,
+        "title": "camp",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": "village",
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/camp"
+            }
+        ]
+    },
+    {
+        "index": 2527,
+        "title": "course-stalker",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": "msu.iipython.dev",
+        "links": []
+    },
+    {
+        "index": 2528,
+        "title": "decent-jellyfin-rpc",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2529,
+        "title": "amanda",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": "homelab-status",
+        "links": []
+    },
+    {
+        "index": 2530,
+        "title": "kb-visualizer",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2531,
+        "title": "labscan",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2532,
+        "title": "libanilist",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2533,
+        "title": "lyric-search",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2534,
+        "title": "ndcache",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2535,
+        "title": "ubpc",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 25,
+        "alias": null,
+        "links": []
+    },
+    {
         "index": 2601,
         "title": "iavx",
         "about": "The iiPython AV1 Encoding System. As of 03/01/26 it's been used to encode around 10 different shows.",
@@ -1559,13 +1671,8 @@
         "title": "pixel-os",
         "about": "New work-in-progress web based operating system, with full modding support.",
         "until": 26,
-        "alias": null,
-        "links": [
-            {
-                "type": "git",
-                "link": "https://github.com/iiPythonx/pixel"
-            }
-        ]
+        "alias": "new-os",
+        "links": []
     },
     {
         "index": 2604,
@@ -1579,5 +1686,84 @@
                 "link": "https://github.com/iiPythonx/cyanide"
             }
         ]
+    },
+    {
+        "index": 2605,
+        "title": "???",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": "q3",
+        "links": [
+            {
+                "type": "site",
+                "link": "https://q3.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2606,
+        "title": "cdspin",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2607,
+        "title": "gsmc-pack-web",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": [
+            {
+                "type": "site",
+                "link": "https://pack.iipython.dev"
+            }
+        ]
+    },
+    {
+        "index": 2608,
+        "title": "gview",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2609,
+        "title": "nyst",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2610,
+        "title": "qr",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": []
+    },
+    {
+        "index": 2611,
+        "title": "rcs",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://git.iipython.dev/iiPython/rcs"
+            }
+        ]
+    },
+    {
+        "index": 2612,
+        "title": "campfire",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": 26,
+        "alias": "ssh-thing",
+        "links": []
     }
 ]
