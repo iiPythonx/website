@@ -118,5 +118,9 @@ export function App() {
             </div>
         </div>
         <img src = "/snowball.avif" id = "snowball" ref = {snowballRef} />
+        <a href = "https://deflock.org" id = "flock">
+            <img src = "/flock.avif" />
+        </a>
+        <img src = "/fred.avif" id = "fred" />
     </>
 }
