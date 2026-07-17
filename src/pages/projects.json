@@ -852,8 +852,8 @@
     {
         "index": 2402,
         "title": "8255",
-        "about": "Assembly-inspired programming language that required manually managing the memory stack, dropping memory, etc.",
-        "until": 25,
+        "about": "A 16-bit CPU with 16 KiB of RAM, for playing around with. Includes software for benchmarking, a basic shell, and much more.",
+        "until": null,
         "alias": null,
         "links": [
             {
@@ -1133,7 +1133,7 @@
         "index": 2427,
         "title": "Nova",
         "about": "A site building framework built using the Python <a href = 'https://pypi.org/project/websockets'>websockets</a> module, <a href = 'https://github.com/pallets/jinja'>Jinja2</a> and no other dependencies. It's capable of auto minification, TypeScript compilation, and more.",
-        "until": 25,
+        "until": 26,
         "alias": null,
         "links": [
             {
@@ -1690,7 +1690,7 @@
     {
         "index": 2605,
         "title": "???",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "Fun troll website meant to seem interesting when it's kinda not.",
         "until": 26,
         "alias": "q3",
         "links": [
@@ -1703,7 +1703,7 @@
     {
         "index": 2606,
         "title": "cdspin",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "Joke of a project where you could interact with a 3D model of a CD, complete with spine photos and such. It was intended as a novelty but was cool regardless.",
         "until": 26,
         "alias": null,
         "links": []
@@ -1711,7 +1711,7 @@
     {
         "index": 2607,
         "title": "gsmc-pack-web",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "Web interface meant to do the same thing as upstream <a href = 'https://github.com/DmmDGM/gsmc-pack'>gsmc-pack</a>, but without the need to install software.",
         "until": 26,
         "alias": null,
         "links": [
@@ -1724,7 +1724,7 @@
     {
         "index": 2608,
         "title": "gview",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "Tool meant to aid the viewing of galleries (zip files with images) across bad network conditions. It converts images to AVIF on the fly, reducing load times on the client drastically.",
         "until": 26,
         "alias": null,
         "links": []
@@ -1732,7 +1732,7 @@
     {
         "index": 2609,
         "title": "nyst",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "Python library which was intended to be an easier to use interface to yt-dlp (or youtube-dl).",
         "until": 26,
         "alias": null,
         "links": []
@@ -1748,8 +1748,8 @@
     {
         "index": 2611,
         "title": "rcs",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
-        "until": 26,
+        "about": "Project containing tooling and scripts required to self-host a ROBLOX game server and connect to it from across the globe.",
+        "until": null,
         "alias": null,
         "links": [
             {
@@ -1761,9 +1761,30 @@
     {
         "index": 2612,
         "title": "campfire",
-        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "about": "A chat service where you log in and access the interface over SSH. Work started in Spring '26 and is on pause as of Fall.",
         "until": 26,
         "alias": "ssh-thing",
+        "links": []
+    },
+    {
+        "index": 2613,
+        "title": "stockfk",
+        "about": "DESCRIPTION YET TO BE WRITTEN.",
+        "until": null,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/stockfk"
+            }
+        ]
+    },
+    {
+        "index": 2614,
+        "title": "boxcar",
+        "about": "Joint project between me and the <a href = 'https://www.afrl.af.mil/'>AFRL</a> in Rome, NY focused on integrating <a href = 'https://sel4.systems'>seL4</a> into the Raspberry Pi 5 ecosystem.",
+        "until": 26,
+        "alias": null,
         "links": []
     }
 ]
