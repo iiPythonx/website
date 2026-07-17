@@ -132,6 +132,12 @@ header {
     margin: 10px 0px 10px 0px;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 /* 88x31 marquee */
 .m88 > div, nav {
     display: flex;

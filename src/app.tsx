@@ -16,7 +16,7 @@ const AVAILABLE_NAMES = [
     // ...
 ]
 
-const ProjectPage = lazy(() => import("./pages/projects"));
+const ProjectPage = lazy(() => import("./pages/projects/index.js"));
 
 export function App() {
     const [displayNameIndex, setDisplayNameIndex] = useState<number>(0);
