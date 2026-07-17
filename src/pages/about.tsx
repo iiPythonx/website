@@ -4,6 +4,8 @@ import GitHubIcon from "../assets/icons/github.svg?react";
 import DiscordIcon from "../assets/icons/discord.svg?react";
 import AniListIcon from "../assets/icons/anilist.svg?react";
 import SteamIcon from "../assets/icons/steam.svg?react";
+import MusicBrainzIcon from "../assets/icons/musicbrainz.svg?react";
+
 import { Page } from "./components/section";
 
 type Item = {
@@ -18,6 +20,7 @@ const ACCOUNT_LIST = [
     { name: "Discord", link: "https://discord.com/users/633185043774177280", text: "@iiPython",  icon: DiscordIcon },
     { name: "AniList", link: "https://anilist.co/user/iiPython/",            text: "@iiPython",  icon: AniListIcon },
     { name: "Steam",   link: "https://steamcommunity.com/id/iiPython_",      text: "@iiPython_", icon: SteamIcon },
+    { name: "MBZ",     link: "https://musicbrainz.org/user/iiPython",        text: "@iiPython",  icon: MusicBrainzIcon }
 ]
 
 function ItemMapping({ itemList }: { itemList: Item[] }) {
@@ -89,7 +92,7 @@ export function AboutPage() {
                         <a href = "https://radio.iipython.dev">iiPython Radio</a>
                         <a href = "https://cdbar.iipython.dev">CDBAR</a>
                         <a href = "https://cmd.iipython.dev">iiPython CMD&trade;</a>
-                        <Link href = "/projects">(view all)</Link>
+                        <Link href = "/projects?url=true">(view all)</Link>
                     </>
                 }
             ]} />

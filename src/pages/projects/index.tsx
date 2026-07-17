@@ -44,8 +44,15 @@ function Project({ index, title, about, until, alias, links }: ProjectProps) {
 }
 
 export default function ProjectListing() {
+    const filterPublicServices = (new URLSearchParams(window.location.search)).get("url") === "true";
+
+    const publicFilter = (project: ProjectProps) => {
+        const siteLink = project.links.find(link => link.type === "site")?.link ?? null;
+        return filterPublicServices ? siteLink !== null : true;
+    }
+
     return <div className = "project-list">
-        {(projects as ProjectProps[]).sort((a, b) => b.index - a.index).map(
+        {(projects as ProjectProps[]).sort((a, b) => b.index - a.index).filter(publicFilter).map(
             (project) => <>
                 <Project {...project} />
                 <hr className = "dark" />
