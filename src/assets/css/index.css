@@ -166,7 +166,7 @@ header {
     height: 38px;
     position: absolute;
     left: 10px;
-    bottom: 10px;
+    bottom: 80px;
 }
 #snowball.move {
     transition: rotate 1s ease;
@@ -190,4 +190,18 @@ header {
     position: absolute;
     rotate: 180deg;
     width: 150px;
+}
+
+/* Webring */
+#iipython-webring {
+    --webring-border: #fff;
+    --webring-background: #15181d;
+    --webring-text: #d4a5a5;
+    --webring-name: #6dabe4;
+    --webring-icon: url(#gradient);
+
+    /* Positioning */
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
 }
