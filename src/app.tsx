@@ -1,9 +1,13 @@
+import { render } from "preact";
 import { useState } from "preact/hooks";
 import { Link, Route, Switch, useLocation } from "wouter";
 import { lazy, Suspense } from "preact/compat";
 
 import { AboutPage } from "./pages/about";
 import { ContactPage } from "./pages/contact";
+
+import fredImage from "./assets/images/fred.avif";
+import flockImage from "./assets/images/flock.avif";
 
 import "./assets/css/index.css";
 import "./assets/oneko.js";
@@ -17,7 +21,7 @@ const AVAILABLE_NAMES = [
 
 const ProjectPage = lazy(() => import("./pages/projects/index.js"));
 
-export function App() {
+function App() {
     const [displayNameIndex, setDisplayNameIndex] = useState<number>(0);
     const [location,] = useLocation();
 
@@ -48,8 +52,10 @@ export function App() {
         <Marquee />
         <Snowball />
         <a href = "https://deflock.org" id = "flock">
-            <img src = "/flock.avif" />
+            <img src = {flockImage} />
         </a>
-        <img src = "/fred.avif" id = "fred" />
+        <img src = {fredImage} id = "fred" />
     </>
 }
+
+render(<App />, document.querySelector("main")!);

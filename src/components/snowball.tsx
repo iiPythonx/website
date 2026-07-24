@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "preact/hooks";
+import snowballUrl from "../assets/images/snowball.avif";
 
 export default function Snowball() {
     const snowballRef = useRef<HTMLImageElement | null>(null);
@@ -19,5 +20,5 @@ export default function Snowball() {
         });
     }, []);
 
-    return <img src = "/snowball.avif" id = "snowball" ref = {snowballRef} />;
+    return <img src = {snowballUrl} id = "snowball" ref = {snowballRef} />;
 }

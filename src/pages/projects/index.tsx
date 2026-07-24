@@ -1,6 +1,7 @@
-import projects from "./projects.json";
-import "./projects.css";
 import { useState } from "preact/hooks";
+
+import "./projects.css";
+import projects from "./projects.json";
 
 interface LinkProps {
     type: 'git' | 'site';
