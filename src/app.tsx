@@ -3,16 +3,16 @@ import { useState } from "preact/hooks";
 import { Link, Route, Switch, useLocation } from "wouter";
 import { lazy, Suspense } from "preact/compat";
 
-import { AboutPage } from "./pages/about";
-import { ContactPage } from "./pages/contact";
+import { AboutPage } from "@/pages/about";
+import { ContactPage } from "@/pages/contact";
 
-import fredImage from "./assets/images/fred.avif";
-import flockImage from "./assets/images/flock.avif";
+import fredImage from "@/assets/images/fred.avif";
+import flockImage from "@/assets/images/flock.avif";
 
-import "./assets/css/index.css";
-import "./assets/oneko.js";
-import Snowball from "./components/snowball.js";
-import Marquee from "./components/marquee.js";
+import "@/assets/index.css";
+import "@/assets/oneko.js";
+import Snowball from "@/components/snowball.js";
+import Marquee from "@/components/marquee.js";
 
 const AVAILABLE_NAMES = [
     "Benjamin O'Brien",

@@ -11,13 +11,13 @@
 @font-face {
     font-family: "Poppins";
     font-weight: normal;
-    src: url("../fonts/poppins.woff2");
+    src: url("./fonts/poppins.woff2");
 }
 
 @font-face {
     font-family: "Poppins";
     font-weight: bold;
-    src: url("../fonts/poppins_bold.woff2");
+    src: url("./fonts/poppins_bold.woff2");
 }
 
 /* Somewhat of a CSS reset */
