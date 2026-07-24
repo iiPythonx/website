@@ -166,7 +166,7 @@ header {
     height: 38px;
     position: absolute;
     left: 10px;
-    bottom: 80px;
+    bottom: 10px;
 }
 #snowball.move {
     transition: rotate 1s ease;
@@ -175,10 +175,12 @@ header {
 /* Flock animation */
 #flock {
     right: 10px;
-    bottom: 0px;
+    bottom: 72px;
     position: absolute;
 
     img {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
         width: 200px;
     }
 }
@@ -201,7 +203,7 @@ header {
     --webring-icon: url(#gradient);
 
     /* Positioning */
-    left: 10px;
+    right: 10px;
     bottom: 10px;
     position: absolute;
 }
