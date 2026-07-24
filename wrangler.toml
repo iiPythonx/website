@@ -3,6 +3,12 @@
 name = "website"
 compatibility_date = "2026-07-24"
 
+# Turn off workers.dev subdomain
+workers_dev = false
+
+# Asset management
 [assets]
 directory = "dist"
+
+# Redirect 404's -> index.html
 not_found_handling = "single-page-application"
