@@ -42,18 +42,18 @@ export default function Marquee() {
         <div>
             <img loading = "lazy" src = "/88x31/chrome_is_evil.avif" />
             <img loading = "lazy" src = "/88x31/coke.avif" />
-            <img loading = "lazy" src = "/88x31/f_ckfb.avif" />
             <img loading = "lazy" src = "/88x31/fftake.avif" />
             <img loading = "lazy" src = "/88x31/firefox.avif" />
+            <img loading = "lazy" src = "/88x31/fuck_facebook.avif" />
             <img loading = "lazy" src = "/88x31/gothtml.avif" />
             <img loading = "lazy" src = "/88x31/internetprivacy.gif" />
             <img loading = "lazy" src = "/88x31/koolaid.avif" />
-            <img loading = "lazy" src = "/88x31/madeon_linux.gif" />
-            <img loading = "lazy" src = "/88x31/roly-saynotoweb3.gif" />
+            <img loading = "lazy" src = "/88x31/made_on_linux.gif" />
+            <img loading = "lazy" src = "/88x31/saynotoweb3.gif" />
             <img loading = "lazy" src = "/88x31/stand_up_to_google.avif" />
             <img loading = "lazy" src = "/88x31/thunderbird.avif" />
             <img loading = "lazy" src = "/88x31/ubo.avif" />
-            <img loading = "lazy" src = "/88x31/vscodium100.avif" />
+            <img loading = "lazy" src = "/88x31/vscodium.avif" />
         </div>
     </div>;
 }

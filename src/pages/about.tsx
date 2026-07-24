@@ -1,12 +1,12 @@
 import { Link } from "wouter";
 
-import GitHubIcon from "./icons/github.svg?react";
-import DiscordIcon from "./icons/discord.svg?react";
-import AniListIcon from "./icons/anilist.svg?react";
-import SteamIcon from "./icons/steam.svg?react";
-import MusicBrainzIcon from "./icons/musicbrainz.svg?react";
+import GitHubIcon from "@/assets/icons/github.svg?react";
+import DiscordIcon from "@/assets/icons/discord.svg?react";
+import AniListIcon from "@/assets/icons/anilist.svg?react";
+import SteamIcon from "@/assets/icons/steam.svg?react";
+import MusicBrainzIcon from "@/assets/icons/musicbrainz.svg?react";
 
-import { Page } from "../../components/section";
+import { Page } from "@/components/section";
 
 type Item = {
     name:  string;

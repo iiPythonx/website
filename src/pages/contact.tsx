@@ -1,4 +1,4 @@
-import { Page } from "../components/section";
+import { Page } from "@/components/section";
 
 export function ContactPage() {
     return <Page sections = {[
