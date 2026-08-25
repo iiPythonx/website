@@ -851,14 +851,14 @@
     },
     {
         "index": 2402,
-        "title": "8255",
+        "title": "waffle",
         "about": "A 16-bit CPU with 16 KiB of RAM, for playing around with. Includes software for benchmarking, a basic shell, and much more.",
         "until": null,
         "alias": null,
         "links": [
             {
                 "type": "git",
-                "link": "https://github.com/iiPythonx/8255"
+                "link": "https://github.com/iiPythonx/waffle"
             }
         ]
     },
@@ -1786,5 +1786,22 @@
         "until": 26,
         "alias": null,
         "links": []
+    },
+    {
+        "index": 2615,
+        "title": "shield",
+        "about": "A replacement to <a href = 'https://github.com/cisagov/cset'>CSET</a> intended for use at Mississippi State University to aid the Cybersecurity Assessments program.",
+        "until": 26,
+        "alias": null,
+        "links": [
+            {
+                "type": "git",
+                "link": "https://github.com/iiPythonx/shield"
+            },
+            {
+                "type": "site",
+                "link": "https://shield.iipython.dev"
+            }
+        ]
     }
 ]
