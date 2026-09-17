@@ -6,13 +6,13 @@ import { lazy, Suspense } from "preact/compat";
 import { AboutPage } from "@/pages/about";
 import { ContactPage } from "@/pages/contact";
 
-import fredImage from "@/assets/images/fred.avif";
 import flockImage from "@/assets/images/flock.avif";
 
 import "@/assets/index.css";
 import "@/assets/oneko.js";
 import Snowball from "@/components/snowball.js";
 import Marquee from "@/components/marquee.js";
+import Fred from "./components/fred.js";
 
 const AVAILABLE_NAMES = [
     "Benjamin O'Brien",
@@ -54,7 +54,7 @@ function App() {
         <a href = "https://deflock.org" id = "flock">
             <img src = {flockImage} />
         </a>
-        <img src = {fredImage} id = "fred" />
+        <Fred />
     </>
 }
 
