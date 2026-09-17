@@ -45,6 +45,7 @@ export default function Marquee() {
             <img loading = "lazy" src = "/88x31/fftake.avif" />
             <img loading = "lazy" src = "/88x31/firefox.avif" />
             <img loading = "lazy" src = "/88x31/fuck_facebook.avif" />
+            <img loading = "lazy" src = "/88x31/fuck_flock.avif" />
             <img loading = "lazy" src = "/88x31/gothtml.avif" />
             <img loading = "lazy" src = "/88x31/internetprivacy.gif" />
             <img loading = "lazy" src = "/88x31/koolaid.avif" />
