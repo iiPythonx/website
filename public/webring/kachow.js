@@ -7,9 +7,13 @@ const MEMBERS = [
         url: "iipython.dev",
         name: "ben's house"
     },
+    // {
+    //     url: "k4ffu.dev",
+    //     name: "k4ffu's cave"
+    // },
     {
-        url: "k4ffu.dev",
-        name: "k4ffu's cave"
+        url: "pyxfluff.dev",
+        name: "pyx's site"
     }
 ];
 
@@ -21,6 +25,8 @@ const TEMPLATE = `
             padding-bottom: 5px;
             border: 1px solid var(--webring-border);
             background: var(--webring-background);
+            border-radius: var(--webring-border-radius);
+            backdrop-filter: var(--webring-backdrop-filter);
 
             /* Alignment */
             display: flex;
