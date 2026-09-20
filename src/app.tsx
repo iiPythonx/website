@@ -5,6 +5,7 @@ import { lazy, Suspense } from "preact/compat";
 
 import { AboutPage } from "@/pages/about";
 import { ContactPage } from "@/pages/contact";
+import { WebringPage } from "@/pages/webring";
 
 import flockImage from "@/assets/images/flock.avif";
 
@@ -12,12 +13,12 @@ import "@/assets/index.css";
 import "@/assets/oneko.js";
 import Snowball from "@/components/snowball.js";
 import Marquee from "@/components/marquee.js";
-import Fred from "./components/fred.js";
+import Fred from "@/components/fred.js";
 
 const AVAILABLE_NAMES = [
     "Benjamin O'Brien",
     "iiPython"
-]
+];
 
 const ProjectPage = lazy(() => import("./pages/projects/index.js"));
 
@@ -37,6 +38,8 @@ function App() {
             <Link className = {(a) => a || location === "/" ? "link-active" : "link-invert"} href = "/about">About</Link>
             <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/projects">Projects</Link>
             <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/contact">Contact</Link>
+            <span>|</span>
+            <Link className = {(a) => a ? "link-active" : "link-invert"} href = "/webring">Webring</Link>
         </header>
         <hr />
         <section id = "content">
@@ -46,6 +49,7 @@ function App() {
                     {() => <Suspense fallback={null}><ProjectPage /></Suspense>}
                 </Route>
                 <Route path = "/contact" component = {ContactPage} />
+                <Route path = "/webring" component = {WebringPage} />
                 <Route><AboutPage /></Route>
             </Switch>
         </section>

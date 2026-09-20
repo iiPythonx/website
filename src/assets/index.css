@@ -210,6 +210,10 @@ header {
 }
 
 /* Webring */
+code {
+    font-family: monospace;
+}
+
 #iipython-webring {
     --webring-border: #fff;
     --webring-background: var(--default-bg);

@@ -116,7 +116,7 @@ const TEMPLATE = `
             </button>
         </div>
         <div id = "marquee">
-            <span id = "name">welcome to <span class = "site-name">ben's house</span>&nbsp;/&nbsp;</span>
+            <span id = "name">welcome to <span class = "site-name">???</span>&nbsp;/&nbsp;</span>
         </div>
     </main>
 `;
@@ -146,10 +146,11 @@ const TEMPLATE = `
         window.location.href = `https://${MEMBERS[Math.floor(Math.random() * MEMBERS.length)].url}`;
     });
     shadow.getElementById("button-list").addEventListener("click", () => {
-        alert("this doesn't work yet lmao");
+        window.location.href = "https://iipython.dev/webring";
     })
     shadow.getElementById("button-next").addEventListener("click", () => {
-        window.location.href = `https://${MEMBERS[MEMBERS.indexOf(current) + 1].url}`;
+        const index = MEMBERS.indexOf(current);
+        window.location.href = `https://${MEMBERS[index === MEMBERS.length ? 0 : index + 1].url}`;
     });
 
     shadow.querySelector(".site-name").innerText = current.name;

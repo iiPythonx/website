@@ -7,13 +7,7 @@ import SteamIcon from "@/assets/icons/steam.svg?react";
 import MusicBrainzIcon from "@/assets/icons/musicbrainz.svg?react";
 
 import { Page } from "@/components/section";
-
-type Item = {
-    name:  string;
-    link:  string;
-    text:  string;
-    icon?: typeof GitHubIcon | null;
-}
+import { ItemMapping } from "@/components/item_map";
 
 const ACCOUNT_LIST = [
     { name: "GitHub",  link: "https://github.com/iiPythonx",                 text: "@iiPythonx", icon: GitHubIcon },
@@ -21,18 +15,7 @@ const ACCOUNT_LIST = [
     { name: "AniList", link: "https://anilist.co/user/iiPython/",            text: "@iiPython",  icon: AniListIcon },
     { name: "Steam",   link: "https://steamcommunity.com/id/iiPython_",      text: "@iiPython_", icon: SteamIcon },
     { name: "MBZ",     link: "https://musicbrainz.org/user/iiPython",        text: "@iiPython",  icon: MusicBrainzIcon }
-]
-
-function ItemMapping({ itemList }: { itemList: Item[] }) {
-    return itemList.map((item) => {
-        const Icon = item.icon;
-        return <div style = {{ display: "flex", gap: "6px", alignItems: "center" }}>
-            {Icon && <Icon />}
-            <span style = {{ width: "70px" }}>{item.name}:</span>
-            <span><a href = {item.link}>{item.text}</a></span>
-        </div>
-    });
-}
+];
 
 export function AboutPage() {
     return <>
