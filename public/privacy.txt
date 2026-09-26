@@ -1,133 +1,70 @@
-iiPython Privacy Policy, Revision 26.5.22-1
+iiPython Privacy Policy, Rev. 26.9.25-1
 
-Applicable Services:
-    - iipython.dev:         Class A
-    - cdn.iipython.dev:     Class A
-    - c2.iipython.dev:      Class A
-    - q3.iipython.dev:      Class A
-    - radar.iipython.dev:   Class A
-    - os.iipython.dev:      Class A
-    - cdbar.iipython.dev:   Class A
-    - uniform.iipython.dev: Class A
-    - pack.iipython.dev:    Class A
-    - remote.iipython.dev:  Class A
-    - nd.iipython.dev:      Class B
-    - cmd.iipython.dev:     Class B
-    - pizza.iipython.dev:   Class B
-    - git.iipython.dev:     Class B
-    - radio.iipython.dev:   Class B
-    - map.iipython.dev:     Class B
-    - mail.iipython.dev:    Class B
+# Type A
 
-Class A:
-    1. All of these domains are handled specifically through Cloudflare Workers or some
-    other Cloudflare based product. As such, the only applicable data collection happening
-    is specified directly in the Cloudflare privacy policy.
+Affected domains:
+    - (root) .iipython.dev
+    - c2     .iipython.dev
+    - cdbar  .iipython.dev
+    - cdn    .iipython.dev
+    - cmd    .iipython.dev [/assets/* /nes/*]
+    - os     .iipython.dev
+    - pack   .iipython.dev
+    - q3     .iipython.dev
+    - radar  .iipython.dev
+    - remote .iipython.dev
+    - shield .iipython.dev
+    - uniform.iipython.dev
+    - waffle .iipython.dev
 
-    Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
+All of these domains are handled through Cloudflare Workers and do not touch my infrastructure.
+The only applicable data collection happening is specified in the Cloudflare privacy policy.
 
-    2. No personal information of any kind is obtained from any of these services. There
-    are no sign up forms, there are no account services, there are no access logs.
+Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
 
-    3. No data is sold. As stated above, [I] store nothing so there's nothing to sell.
+No personal information of any kind is obtained from any of these services. There
+are no sign up forms and there are no account services of any kind.
 
-Class B:
+# Type B
 
-    1. These domains are proxied through Cloudflare directly to my own infrastructure. As such,
-    the Cloudflare privacy policy still applies, along with my personal data collection.
+Affected domains:
+    - *     .iipython.dev
+    - cmd   .iipython.dev [/*]
+    - git   .iipython.dev
+    - mail  .iipython.dev
+    - map   .iipython.dev
+    - pizza .iipython.dev
+    - radio .iipython.dev
 
-    Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
+These domains are proxied through Cloudflare to my own infrastructure. As such both the
+Cloudflare privacy policy as well as my personal data collection apply.
 
-    2. No information of any kind is collected from these services, with the strict exception of
-    cmd.iipython.dev, nd.iipython.dev, and mail.iipython.dev.
+Cloudflare privacy policy -> https://www.cloudflare.com/privacypolicy/
 
-        cmd.iipython.dev: full account system with profile. you are the one providing data, and
-        nothing else is being collected besides what you provide. there are no access logs, no
-        account locking, no ip tracking, etc. data includes username, fastest typing speed, bio,
-        password hash, etc. please see the source code at https://github.com/iiPythonx/cmd to see
-        what data is collected and how it is utilized.
+No information of any kind is collected from these services, with these exceptions:
 
-        nd.iipython.dev: this domain serves navidrome, which will log the amount of visitors that
-        visit a specific share url. no additional data is collected besides this metric.
+    - cmd.iipython.dev: full account system with profile. you are the one providing data, and
+    nothing else is being collected besides what you provide. there are no access logs, no
+    account locking, no ip tracking, etc. data includes username, fastest typing speed, bio,
+    password hash, etc. please see the source code at https://github.com/iiPythonx/cmd to see
+    what data is collected and how it is utilized.
 
-        mail.iipython.dev: this is a fully fledged mail server, and thus logs and analyzes all
-        incoming mail traffic, logged data includes ip addresses, geographical location, spam list
-        status, and more. sending mail to this server automatically assumes acceptance of these
-        logging practices.
+    - nd.iipython.dev: this domain serves navidrome, which will log the amount of visitors that
+    visit a specific share url. no additional data is collected besides this metric.
 
-    3. No data is sold. As stated above, I store nothing personal so there's nothing to sell.
+    - mail.iipython.dev: this is a fully fledged mail server, and thus logs and analyzes all
+    incoming mail traffic, logged data includes ip addresses, geographical location, spam list
+    status, and more. sending mail to this server automatically assumes acceptance of these
+    logging practices.
 
-    4. RTBF: If you would like your information deleted from any of these services, please send me
-    an email at ben <at> thiswebsite <dot> tld.
+# Errata
+
+No collected data is ever sold. As mentioned above, I store damn near no data in the first place
+so there's nothing to sell. Even if I did, fuck advertising companies, AI, and other internet ruiners.
+
+If you ever feel like something hosted on my iipython.dev domain is tracking you, please send me
+an email directly via YmVuQGlpcHl0aG9uLmRldg== (b64).
             (gotta stop the bots from scraping it somehow)
 
-==== >= 05/22/2026
-
-iiPython Privacy Policy, Revision 6.1.
-The following are NOT covered by this policy:
-    - iipython.dev           (Running on CloudFlare workers, never hits my infrastructure)
-    - pizza.iipython.dev     ^
-    - radar.iipython.dev     ^
-    - index.iipython.dev     ^
-    - uniform.iipython.dev   ^
-
-    CloudFlare privacy policy -> https://www.cloudflare.com/privacypolicy/
-
-The following ARE covered by this policy:
-    - lan.iipython.dev
-    - mail.iipython.dev
-    - covers.iipython.dev
-
-Special circumstances:
-    - aos-us-1.admsoftware.org
-
-    Subject to the AOS Privacy Policy, available at https://docs.admsoftware.org/AOS/legal/privacy.
-    Any questions regarding that policy should be directed to gdpr@admsoftware.org.
-
-    * My main policy does apply, however additional logging practices take place (on their part, not mine).
-
-==== >= 08/20/2025
-
-1. No information of any kind is collected by any of my services. I don't even have
-a place for you to select a username or fill out an address form.
-
-2. No access logs of any kind are kept for my public services. NGINX has been
-configured to log errors only, and even then the only information stored is the
-access time and URL (no ip, no user-agent, nothing).
-
-3. No data is sold. As stated above, I store nothing so there's nothing to sell.
-
-4. Note that some endpoints (notably wss://lan.iipython.dev/now-playing) are
-proxied through CloudFlare and are therefore subjected to the CloudFlare privacy policy.
-
-    This policy is available here -> https://www.cloudflare.com/privacypolicy/
-
-5. Any questions about any of this can be sent to: ben <at> thiswebsite <dot> tld.
-                                             (gotta stop the bots from scraping it somehow)
-
-==== < 08/20/2025
-
-Hark! O gentle user, lend thine ear,
-To learn of privacy, without a fear.
-In this digital realm, where shadows creep,
-Thy data shall be safe in restful sleep.
-
-No logs, no trace, no whisper left behind,
-No IPs to track, no sleight of mind.
-No cookies here to trail thy merry way,
-Nor cross-site spies to lead thee far astray.
-
-For services local, storage pure and clean,
-Nought but thy data in the local scene.
-No stranger bits amidst thy treasure trove,
-In sacred storage, only what thou strove.
-
-And lo! From yonder edge, thy service springs,
-Swiftly it comes on angel's wings.
-No need to tarry at the server's door,
-For from the edge, it cometh evermore.
-
-Thus, in this realm where privacy holds sway,
-Thou shalt find peace and rest each passing day.
-No prying eyes shall pierce thy digital veil,
-For in this world, thy privacy shall prevail.
+Additionally, if you would like for me to delete information about you (if I have it) then please
+email me and I will gladly do so.
