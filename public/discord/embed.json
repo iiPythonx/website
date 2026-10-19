@@ -53,7 +53,8 @@
                         "url": "https://github.com/iiPythonx",
                         "label": "GitHub",
                         "emoji": {
-                            "id": 1549471169877377155
+                            "id": "1549471169877377155",
+                            "name": "github~2"
                         }
                     }
                 ]
