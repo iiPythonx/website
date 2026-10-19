@@ -9,7 +9,7 @@
                 "components": [
                     {
                         "type": 10,
-                        "content": "## **[iiPython](https://iipython.dev)**\nKachow.\nSoftware developer, system administrator, and cybersecurity student."
+                        "content": "## **[iiPython](https://iipython.dev)**\nKachow.\nSoftware developer, sysadmin, and cybersecurity student."
                     }
                 ],
                 "accessory": {
@@ -53,8 +53,7 @@
                         "url": "https://github.com/iiPythonx",
                         "label": "GitHub",
                         "emoji": {
-                            "id": null,
-                            "name": "🛠"
+                            "id": 1549471169877377155
                         }
                     }
                 ]
